@@ -102,34 +102,34 @@ Standard_L8s,VM,0.628,Not Available,180,1440, 0.44 ,Yes,8,65536,4,8000,32,131072
 Standard_M128m,VM,Unknown,Unknown,160,20480, Unknown ,No,128,1952000,32,Unknown,64,262144,480000,16000,80000,2000,4096000,4000," 20,000.00 ", 100.00 ,Unknown,134630,Request,Not Supported,Yes
 Standard_M128s,VM,Unknown,Unknown,160,20480, Unknown ,Yes,128,2048000,32,25000,64,262144,480000,16000,80000,2000,4096000,4000," 20,000.00 ", 100.00 ,Unknown,Not Supported,Not Supported,Not Supported,Yes
 Standard_M64ms,VM,Unknown,Unknown,160,10240, Unknown ,Yes,64,1792000,32,16000,64,262144,480000,16000,40000,1000,2048000,2000," 20,000.00 ", 50.00 ,Unknown,68930,Request,Not Supported,No
-Standard_NC12,VM,Unknown,Unknown,Unknown,Unknown, Unknown ,No,12,114688,Unknown,Unknown,48,196608,24000,2880,24000,2880,696320,680," 35,294.12 ", 81.60 ,Unknown,Not Supported,Not Supported,Not Supported,No
-Standard_NC24,VM,Unknown,Unknown,Unknown,Unknown, Unknown ,No,24,229376,Unknown,Unknown,64,262144,32000,3840,32000,3840,1474560,1440," 22,222.22 ", 172.80 ,Unknown,Not Supported,Not Supported,Not Supported,No
-Standard_NC24r,VM,Unknown,Unknown,Unknown,Unknown, Unknown ,No,24,229376,Unknown,Unknown,64,262144,32000,3840,32000,3840,1474560,1440," 22,222.22 ", 172.80 ,Unknown,Not Supported,Not Supported,Not Supported,No
-Standard_NC6,VM,Unknown,Unknown,Unknown,Unknown, Unknown ,No,6,57344,Unknown,Unknown,24,98304,12000,1440,12000,1440,389120,380," 31,578.95 ", 45.60 ,Unknown,Not Supported,Not Supported,Not Supported,No
+Standard_NC12,VM,1.968,0.369,Unknown,Unknown, Unknown ,No,12,114688,Unknown,Unknown,48,196608,24000,2880,24000,2880,696320,680," 35,294.12 ", 81.60 ,Unknown,Not Supported,Not Supported,Not Supported,No
+Standard_NC24,VM,3.935,0.738,Unknown,Unknown, Unknown ,No,24,229376,Unknown,Unknown,64,262144,32000,3840,32000,3840,1474560,1440," 22,222.22 ", 172.80 ,Unknown,Not Supported,Not Supported,Not Supported,No
+Standard_NC24r,VM,4.328,Unknown,Unknown,Unknown, Unknown ,No,24,229376,Unknown,Unknown,64,262144,32000,3840,32000,3840,1474560,1440," 22,222.22 ", 172.80 ,Unknown,Not Supported,Not Supported,Not Supported,No
+Standard_NC6,VM,0.984,0.185,Unknown,Unknown, Unknown ,No,6,57344,Unknown,Unknown,24,98304,12000,1440,12000,1440,389120,380," 31,578.95 ", 45.60 ,Unknown,Not Supported,Not Supported,Not Supported,No
 Standard_NV12,VM,2.303,0.369,Unknown,Unknown, Unknown ,No,12,114688,Unknown,Unknown,48,196608,24000,2880,24000,2880,696320,680," 35,294.12 ", 81.60 ,Unknown,Not Supported,Not Supported,Not Supported,No
 Standard_NV24,VM,4.605,0.738,Unknown,Unknown, Unknown ,No,24,229376,Unknown,Unknown,64,262144,32000,3840,32000,3840,1474560,1440," 22,222.22 ", 172.80 ,Unknown,Not Supported,Not Supported,Not Supported,No
 Standard_NV6,VM,1.156,0.185,Unknown,Unknown, Unknown ,No,6,57344,Unknown,Unknown,24,98304,12000,1440,12000,1440,389120,380," 31,578.95 ", 45.60 ,Unknown,Not Supported,Not Supported,Not Supported,No
-Standard_E2_v3,VM,0.135,Not Available,Unknown,Unknown, Unknown ,No,2,16384,2,moderate,4,16384,2000,240,3000,46,Unknown,32,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
-Standard_E4_v3,VM,0.27,Not Available,Unknown,Unknown, Unknown ,No,4,32768,2,moderate,8,32768,4000,480,6000,93,Unknown,64,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
-Standard_E8_v3,VM,0.54,Not Available,Unknown,Unknown, Unknown ,No,8,65536,4,high,16,65536,8000,960,12000,187,Unknown,128,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
-Standard_E16_v3,VM,1.08,Not Available,Unknown,Unknown, Unknown ,No,16,131072,4,high,32,131072,16000,1920,24000,375,Unknown,256,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
-Standard_E32_v3,VM,2.159,Not Available,Unknown,Unknown, Unknown ,No,32,262144,8,extremely high,64,262144,32000,3840,48000,750,Unknown,512,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
-Standard_E64_v3,VM,4.07,Not Available,Unknown,Unknown, Unknown ,No,64,442368,8,extremely high,64,262144,32000,3840,96000,1000,Unknown,868,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
-Standard_D2_v3,VM,0.102,Not Available,Unknown,Unknown, Unknown ,No,2,8192,2,moderate,4,16384,2000,240,2000,3000,Unknown,50,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-Standard_D4_v3,VM,0.203,Not Available,Unknown,Unknown, Unknown ,No,4,16384,2,moderate,8,32768,4000,480,4000,6000,Unknown,100,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-Standard_D8_v3,VM,0.405,Not Available,Unknown,Unknown, Unknown ,No,8,32768,4,high,16,65536,8000,960,8000,12000,Unknown,200,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-Standard_D16_v3,VM,0.81,Not Available,Unknown,Unknown, Unknown ,No,16,65536,8,high,32,131072,16000,1920,16000,24000,Unknown,400,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-Standard_D32_v3,VM,1.62,Not Available,Unknown,Unknown, Unknown ,No,32,131072,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-Standard_D64_v3,VM,3.239,Not Available,Unknown,Unknown, Unknown ,No,64,262144,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-Standard_D2s_v3,VM,0.102,Not Available,Unknown,Unknown, Unknown ,Yes,2,8192,2,moderate,4,16384,2000,240,4000,32,Unknown,50,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-Standard_D4s_v3,VM,0.203,Not Available,Unknown,Unknown, Unknown ,Yes,4,16384,2,moderate,8,32768,4000,480,8000,64,Unknown,100,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-Standard_D8s_v3,VM,0.405,Not Available,Unknown,Unknown, Unknown ,Yes,8,32768,4,high,16,65536,8000,960,16000,128,Unknown,200,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-Standard_D16s_v3,VM,0.81,Not Available,Unknown,Unknown, Unknown ,Yes,16,65536,8,high,32,131072,16000,1920,32000,256,Unknown,400,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-Standard_D32s_v3,VM,1.62,Not Available,Unknown,Unknown, Unknown ,Yes,32,131072,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-Standard_D64s_v3,VM,3.239,Not Available,Unknown,Unknown, Unknown ,Yes,64,262144,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-Standard_E2s_v3,VM,0.135,Not Available,Unknown,Unknown, Unknown ,Yes,2,16384,2,moderate,4,16384,2000,240,4000,32,Unknown,32,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
-Standard_E4s_v3,VM,0.27,Not Available,Unknown,Unknown, Unknown ,Yes,4,32768,2,moderate,8,32768,4000,480,8000,64,Unknown,64,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
-Standard_E8s_v3,VM,0.54,Not Available,Unknown,Unknown, Unknown ,Yes,8,65536,4,high,16,65536,8000,960,16000,128,Unknown,128,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
-Standard_E16s_v3,VM,1.08,Not Available,Unknown,Unknown, Unknown ,Yes,16,131072,4,high,32,131072,16000,1920,32000,256,Unknown,256,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
-Standard_E32s_v3,VM,2.159,Not Available,Unknown,Unknown, Unknown ,Yes,32,262144,8,extremely high,64,262144,32000,3840,64000,512,Unknown,512,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
-Standard_E64s_v3,VM,4.07,Not Available,Unknown,Unknown, Unknown ,Yes,64,442368,8,extremely high,64,262144,32000,3840,128000,1024,Unknown,868,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
+Standard_E2_v3,VM,0.135,0.023,Unknown,Unknown, Unknown ,No,2,16384,2,moderate,4,16384,2000,240,3000,46,Unknown,32,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
+Standard_E4_v3,VM,0.27,0.045,Unknown,Unknown, Unknown ,No,4,32768,2,moderate,8,32768,4000,480,6000,93,Unknown,64,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
+Standard_E8_v3,VM,0.54,0.09,Unknown,Unknown, Unknown ,No,8,65536,4,high,16,65536,8000,960,12000,187,Unknown,128,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
+Standard_E16_v3,VM,1.08,0.18,Unknown,Unknown, Unknown ,No,16,131072,4,high,32,131072,16000,1920,24000,375,Unknown,256,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
+Standard_E32_v3,VM,2.159,0.36,Unknown,Unknown, Unknown ,No,32,262144,8,extremely high,64,262144,32000,3840,48000,750,Unknown,512,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
+Standard_E64_v3,VM,4.07,0.677,Unknown,Unknown, Unknown ,No,64,442368,8,extremely high,64,262144,32000,3840,96000,1000,Unknown,868,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
+Standard_D2_v3,VM,0.102,0.019,Unknown,Unknown, Unknown ,No,2,8192,2,moderate,4,16384,2000,240,2000,3000,Unknown,50,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+Standard_D4_v3,VM,0.203,0.037,Unknown,Unknown, Unknown ,No,4,16384,2,moderate,8,32768,4000,480,4000,6000,Unknown,100,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+Standard_D8_v3,VM,0.405,0.073,Unknown,Unknown, Unknown ,No,8,32768,4,high,16,65536,8000,960,8000,12000,Unknown,200,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+Standard_D16_v3,VM,0.81,0.146,Unknown,Unknown, Unknown ,No,16,65536,8,high,32,131072,16000,1920,16000,24000,Unknown,400,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+Standard_D32_v3,VM,1.62,0.291,Unknown,Unknown, Unknown ,No,32,131072,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+Standard_D64_v3,VM,3.239,0.582,Unknown,Unknown, Unknown ,No,64,262144,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+Standard_D2s_v3,VM,0.102,0.019,Unknown,Unknown, Unknown ,Yes,2,8192,2,moderate,4,16384,2000,240,4000,32,Unknown,50,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+Standard_D4s_v3,VM,0.203,0.037,Unknown,Unknown, Unknown ,Yes,4,16384,2,moderate,8,32768,4000,480,8000,64,Unknown,100,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+Standard_D8s_v3,VM,0.405,0.073,Unknown,Unknown, Unknown ,Yes,8,32768,4,high,16,65536,8000,960,16000,128,Unknown,200,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+Standard_D16s_v3,VM,0.81,0.146,Unknown,Unknown, Unknown ,Yes,16,65536,8,high,32,131072,16000,1920,32000,256,Unknown,400,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+Standard_D32s_v3,VM,1.62,0.291,Unknown,Unknown, Unknown ,Yes,32,131072,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+Standard_D64s_v3,VM,3.239,0.582,Unknown,Unknown, Unknown ,Yes,64,262144,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+Standard_E2s_v3,VM,0.135,0.023,Unknown,Unknown, Unknown ,Yes,2,16384,2,moderate,4,16384,2000,240,4000,32,Unknown,32,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
+Standard_E4s_v3,VM,0.27,0.045,Unknown,Unknown, Unknown ,Yes,4,32768,2,moderate,8,32768,4000,480,8000,64,Unknown,64,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
+Standard_E8s_v3,VM,0.54,0.09,Unknown,Unknown, Unknown ,Yes,8,65536,4,high,16,65536,8000,960,16000,128,Unknown,128,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
+Standard_E16s_v3,VM,1.08,0.18,Unknown,Unknown, Unknown ,Yes,16,131072,4,high,32,131072,16000,1920,32000,256,Unknown,256,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
+Standard_E32s_v3,VM,2.159,0.36,Unknown,Unknown, Unknown ,Yes,32,262144,8,extremely high,64,262144,32000,3840,64000,512,Unknown,512,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
+Standard_E64s_v3,VM,4.07,0.677,Unknown,Unknown, Unknown ,Yes,64,442368,8,extremely high,64,262144,32000,3840,128000,1024,Unknown,868,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,No
