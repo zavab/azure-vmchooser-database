@@ -133,3 +133,9 @@ Standard_E8s_v3,VM,0.54,0.09,Unknown,Unknown, Unknown ,Yes,8,65536,4,high,16,655
 Standard_E16s_v3,VM,1.08,0.18,Unknown,Unknown, Unknown ,Yes,16,131072,4,high,32,131072,16000,1920,32000,256,Unknown,256,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
 Standard_E32s_v3,VM,2.159,0.36,Unknown,Unknown, Unknown ,Yes,32,262144,8,extremely high,64,262144,32000,3840,64000,512,Unknown,512,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
 Standard_E64s_v3,VM,4.07,0.677,Unknown,Unknown, Unknown ,Yes,64,442368,8,extremely high,64,262144,32000,3840,128000,1024,Unknown,868,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+Standard_B1S,VM,0.006,Unknown,Unknown,Unknown, Unknown ,No,1,1024,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,2000,2,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown
+Standard_B2S,VM,0.023,Unknown,Unknown,Unknown, Unknown ,No,2,4096,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,8000,8,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown
+Standard_B1MS,VM,0.012,Unknown,Unknown,Unknown, Unknown ,No,1,2048,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,4000,4,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown
+Standard_B2MS,VM,0.046,Unknown,Unknown,Unknown, Unknown ,No,2,8192,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,16000,16,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown
+Standard_B4MS,VM,0.092,Unknown,Unknown,Unknown, Unknown ,No,4,16384,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,32000,32,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown
+Standard_B8MS,VM,0.183,Unknown,Unknown,Unknown, Unknown ,No,8,32768,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,64000,64,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown
