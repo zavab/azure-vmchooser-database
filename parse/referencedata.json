@@ -3199,7 +3199,7 @@
     "MaxVmThroughputMBs": 2000,
     "ResourceDiskSizeInMB": 4096000,
     "TempDiskSizeInGB": 4000,
-    "TempDiskIops": "20,000.00",
+    "TempDiskIops": "20000.00",
     "TempDiskReadMBs": 100,
     "TempDiskWriteMBs": "Unknown",
     "SAPS2T": "Not Supported",

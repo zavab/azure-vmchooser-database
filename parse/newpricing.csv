@@ -2854,4 +2854,4 @@ nv24,lowpriority,24,224,us-north-central,0.874,Unknown,No,Unknown,Unknown,64,262
 nv24,lowpriority,24,224,us-south-central,0.874,Unknown,No,Unknown,Unknown,64,262144,32000,3840,32000,3840,1474560,1440,22222.22,172.8,Unknown,Not Supported,Not Supported,Not Supported,No
 m64ms,standard,64,1750,us-east-2,10.337,160,Yes,32,16000,64,262144,480000,16000,40000,1000,2048000,2000,20000,50,Unknown,68930,68930,Not Supported,No
 m64s,standard,64,1000,us-east-2,6.669,160,Yes,32,16000,64,262144,480000,16000,40000,1000,2048000,2000,20000,50,Unknown,68930,68930,Not Supported,No
-m128s,standard,128,2000,us-east-2,13.338,160,Yes,32,25000,64,262144,480000,16000,80000,2000,4096000,4000,20,000.00,100,Unknown,Not Supported,Not Supported,Not Supported,Yes
+m128s,standard,128,2000,us-east-2,13.338,160,Yes,32,25000,64,262144,480000,16000,80000,2000,4096000,4000,20000.00,100,Unknown,Not Supported,Not Supported,Not Supported,Yes
