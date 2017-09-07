@@ -1,5 +1,6 @@
 var jsonfile = require('./apipricing.json');
 var reference = require('./referencedata.json');
+var referencessd = require('./referencedata-ssd.json');
 var offers = jsonfile.offers
 
 console.log("name,tier,cores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS2T,HANA,Hyperthreaded");
@@ -26,6 +27,13 @@ for(var offer in offers){
         var lookup = reference.filter(function(value){ return value.Name==filter;});
         var picked = lookup[0];
         console.log(name+","+tier+","+cores+","+mem+","+region+","+price.value+","+picked.ACU+","+picked.SSD+","+picked.MaxNics+","+picked.Bandwidth+","+picked.MaxDataDiskCount+","+picked.MaxDataDiskSizeGB+","+picked.MaxDataDiskIops+","+picked.MaxDataDiskThroughputMBs+","+picked.MaxVmIops+","+picked.MaxVmThroughputMBs+","+picked.ResourceDiskSizeInMB+","+picked.TempDiskSizeInGB+","+picked.TempDiskIops+","+picked.TempDiskReadMBs+","+picked.TempDiskWriteMBs+","+picked.SAPS2T+","+picked.SAPS2T+","+picked.HANA+","+picked.Hyperthreaded);
+        var lookupssd = referencessd.filter(function(value){ return value.Link==filter;});
+        if (Object.keys(lookupssd).length) {
+          var picked = lookupssd[0];
+          var ssdname = picked.Name.split("_");
+          var pickedname = ssdname[1];
+          console.log(pickedname+","+tier+","+cores+","+mem+","+region+","+price.value+","+picked.ACU+","+picked.SSD+","+picked.MaxNics+","+picked.Bandwidth+","+picked.MaxDataDiskCount+","+picked.MaxDataDiskSizeGB+","+picked.MaxDataDiskIops+","+picked.MaxDataDiskThroughputMBs+","+picked.MaxVmIops+","+picked.MaxVmThroughputMBs+","+picked.ResourceDiskSizeInMB+","+picked.TempDiskSizeInGB+","+picked.TempDiskIops+","+picked.TempDiskReadMBs+","+picked.TempDiskWriteMBs+","+picked.SAPS2T+","+picked.SAPS2T+","+picked.HANA+","+picked.Hyperthreaded);
+        }
       }
     }
   }
