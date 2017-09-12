@@ -26,15 +26,16 @@ for(var offer in offers){
         var filter = filtertier+"_"+name;
         var lookup = reference.filter(function(value){ return value.Name==filter;});
         var picked = lookup[0];
-	var pcores = cores;
-	if(picked.hasOwnProperty("BaseCpuPerformancePct")){
-	  var pcores = pcores * picked.BaseCpuPerformancePct;
+	      var pcores = cores;
+	      if(picked.hasOwnProperty("BaseCpuPerformancePct")){
+	        var pcores = pcores * picked.BaseCpuPerformancePct;
           // calculating the base performance for systems like the B-series
-	}
-	if(picked.Hyperthreaded.indexOf("Yes") > -1) {
+	      }
+	      if(picked.Hyperthreaded.indexOf("Yes") > -1) {
           var pcores = pcores * 1.3 / 2;
-	  // A hyperthreaded core gains 30% compared to a single threaded. So 130% performance for two vCPU's, is an equivalent of 65% of a physical core.
+	        // A hyperthreaded core gains 30% compared to a single threaded. So 130% performance for two vCPU's, is an equivalent of 65% of a physical core.
         }
+        picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
         console.log(name+","+tier+","+cores+","+pcores+","+mem+","+region+","+price.value+","+picked.ACU+","+picked.SSD+","+picked.MaxNics+","+picked.Bandwidth+","+picked.MaxDataDiskCount+","+picked.MaxDataDiskSizeGB+","+picked.MaxDataDiskIops+","+picked.MaxDataDiskThroughputMBs+","+picked.MaxVmIops+","+picked.MaxVmThroughputMBs+","+picked.ResourceDiskSizeInMB+","+picked.TempDiskSizeInGB+","+picked.TempDiskIops+","+picked.TempDiskReadMBs+","+picked.TempDiskWriteMBs+","+picked.SAPS2T+","+picked.SAPS2T+","+picked.HANA+","+picked.Hyperthreaded);
         var lookupssd = referencessd.filter(function(value){ return value.Link==filter;});
         if (Object.keys(lookupssd).length) {

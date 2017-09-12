@@ -695,18 +695,18 @@ a11,lowpriority,16,16,112,us-east,0.28,225,No,4,unknown,64,262144,32000,3840,320
 a11,lowpriority,16,16,112,us-north-central,0.28,225,No,4,unknown,64,262144,32000,3840,32000,3840,391168,382,12000,187,93,22000,22000,Not Supported,No
 a11,lowpriority,16,16,112,us-south-central,0.28,225,No,4,unknown,64,262144,32000,3840,32000,3840,391168,382,12000,187,93,22000,22000,Not Supported,No
 a11,lowpriority,16,16,112,us-west,0.28,225,No,4,unknown,64,262144,32000,3840,32000,3840,391168,382,12000,187,93,22000,22000,Not Supported,No
-b1s,standard,1,0.065,1,europe-west,0.007,Unknown,No,2,unknown,2,Unknown,Unknown,Unknown,320,10,2048,2,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-b1s,standard,1,0.065,1,us-west-2,0.006,Unknown,No,2,unknown,2,Unknown,Unknown,Unknown,320,10,2048,2,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-b2s,standard,2,0.52,4,europe-west,0.027,Unknown,No,3,unknown,4,Unknown,Unknown,Unknown,1280,15,8192,8,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-b2s,standard,2,0.52,4,us-west-2,0.024,Unknown,No,3,unknown,4,Unknown,Unknown,Unknown,1280,15,8192,8,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-b1ms,standard,1,0.13,2,europe-west,0.014,Unknown,No,2,unknown,2,Unknown,Unknown,Unknown,640,10,4096,4,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-b1ms,standard,1,0.13,2,us-west-2,0.012,Unknown,No,2,unknown,2,Unknown,Unknown,Unknown,640,10,4096,4,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-b2ms,standard,2,0.78,8,europe-west,0.054,Unknown,No,3,unknown,4,Unknown,Unknown,Unknown,1920,22.5,16384,16,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-b2ms,standard,2,0.78,8,us-west-2,0.047,Unknown,No,3,unknown,4,Unknown,Unknown,Unknown,1920,22.5,16384,16,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-b4ms,standard,4,2.3400000000000003,16,europe-west,0.108,Unknown,No,4,unknown,8,Unknown,Unknown,Unknown,2280,35,32768,32,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-b4ms,standard,4,2.3400000000000003,16,us-west-2,0.094,Unknown,No,4,unknown,8,Unknown,Unknown,Unknown,2280,35,32768,32,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-b8ms,standard,8,7.0200000000000005,32,europe-west,0.216,Unknown,No,4,unknown,16,Unknown,Unknown,Unknown,4320,50,65536,64,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-b8ms,standard,8,7.0200000000000005,32,us-west-2,0.188,Unknown,No,4,unknown,16,Unknown,Unknown,Unknown,4320,50,65536,64,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+b1s,standard,1,0.065,1,europe-west,0.007,Unknown,No,2,unknown,2,8192,Unknown,Unknown,320,10,2048,2,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+b1s,standard,1,0.065,1,us-west-2,0.006,Unknown,No,2,unknown,2,8192,Unknown,Unknown,320,10,2048,2,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+b2s,standard,2,0.52,4,europe-west,0.027,Unknown,No,3,unknown,4,16384,Unknown,Unknown,1280,15,8192,8,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+b2s,standard,2,0.52,4,us-west-2,0.024,Unknown,No,3,unknown,4,16384,Unknown,Unknown,1280,15,8192,8,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+b1ms,standard,1,0.13,2,europe-west,0.014,Unknown,No,2,unknown,2,8192,Unknown,Unknown,640,10,4096,4,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+b1ms,standard,1,0.13,2,us-west-2,0.012,Unknown,No,2,unknown,2,8192,Unknown,Unknown,640,10,4096,4,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+b2ms,standard,2,0.78,8,europe-west,0.054,Unknown,No,3,unknown,4,16384,Unknown,Unknown,1920,22.5,16384,16,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+b2ms,standard,2,0.78,8,us-west-2,0.047,Unknown,No,3,unknown,4,16384,Unknown,Unknown,1920,22.5,16384,16,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+b4ms,standard,4,2.3400000000000003,16,europe-west,0.108,Unknown,No,4,unknown,8,32768,Unknown,Unknown,2280,35,32768,32,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+b4ms,standard,4,2.3400000000000003,16,us-west-2,0.094,Unknown,No,4,unknown,8,32768,Unknown,Unknown,2280,35,32768,32,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+b8ms,standard,8,7.0200000000000005,32,europe-west,0.216,Unknown,No,4,unknown,16,65536,Unknown,Unknown,4320,50,65536,64,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
+b8ms,standard,8,7.0200000000000005,32,us-west-2,0.188,Unknown,No,4,unknown,16,65536,Unknown,Unknown,4320,50,65536,64,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
 a1v2,standard,1,1,2,asia-pacific-east,0.05,100,No,2,250,2,8192,1000,120,1000,120,10240,10,48000,750,375,Not Supported,Not Supported,Not Supported,No
 a1v2,standard,1,1,2,asia-pacific-southeast,0.045,100,No,2,250,2,8192,1000,120,1000,120,10240,10,48000,750,375,Not Supported,Not Supported,Not Supported,No
 a1v2,standard,1,1,2,australia-east,0.05,100,No,2,250,2,8192,1000,120,1000,120,10240,10,48000,750,375,Not Supported,Not Supported,Not Supported,No
@@ -3037,57 +3037,57 @@ d16v3,lowpriority,16,10.4,64,us-east-2,0.172,Unknown,No,8,high,32,131072,16000,1
 d16sv3,lowpriority,16,10.4,64,us-east-2,0.172,Unknown,Yes,8,high,32,131072,16000,1920,32000,256,Unknown,400,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
 d16v3,lowpriority,16,10.4,64,us-west-2,0.172,Unknown,No,8,high,32,131072,16000,1920,16000,24000,Unknown,400,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
 d16sv3,lowpriority,16,10.4,64,us-west-2,0.172,Unknown,Yes,8,high,32,131072,16000,1920,32000,256,Unknown,400,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
-d32v3,standard,32,20.8,128,asia-pacific-southeast,2,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d32v3,standard,32,20.8,128,asia-pacific-southeast,2,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d32sv3,standard,32,20.8,128,asia-pacific-southeast,2,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d32v3,standard,32,20.8,128,canada-central,1.776,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d32v3,standard,32,20.8,128,canada-central,1.776,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d32sv3,standard,32,20.8,128,canada-central,1.776,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d32v3,standard,32,20.8,128,canada-east,1.776,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d32v3,standard,32,20.8,128,canada-east,1.776,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d32sv3,standard,32,20.8,128,canada-east,1.776,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d32v3,standard,32,20.8,128,europe-north,1.776,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d32v3,standard,32,20.8,128,europe-north,1.776,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d32sv3,standard,32,20.8,128,europe-north,1.776,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d32v3,standard,32,20.8,128,europe-west,1.92,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d32v3,standard,32,20.8,128,europe-west,1.92,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d32sv3,standard,32,20.8,128,europe-west,1.92,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d32v3,standard,32,20.8,128,us-east,1.6,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d32v3,standard,32,20.8,128,us-east,1.6,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d32sv3,standard,32,20.8,128,us-east,1.6,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d32v3,standard,32,20.8,128,us-east-2,1.76,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d32v3,standard,32,20.8,128,us-east-2,1.76,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d32sv3,standard,32,20.8,128,us-east-2,1.76,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d32v3,standard,32,20.8,128,us-west-2,1.6,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d32v3,standard,32,20.8,128,us-west-2,1.6,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d32sv3,standard,32,20.8,128,us-west-2,1.6,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d32v3,lowpriority,32,20.8,128,asia-pacific-southeast,0.345,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d32v3,lowpriority,32,20.8,128,asia-pacific-southeast,0.345,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d32sv3,lowpriority,32,20.8,128,asia-pacific-southeast,0.345,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d32v3,lowpriority,32,20.8,128,europe-west,0.345,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d32v3,lowpriority,32,20.8,128,europe-west,0.345,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d32sv3,lowpriority,32,20.8,128,europe-west,0.345,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d32v3,lowpriority,32,20.8,128,us-east,0.345,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d32v3,lowpriority,32,20.8,128,us-east,0.345,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d32sv3,lowpriority,32,20.8,128,us-east,0.345,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d32v3,lowpriority,32,20.8,128,us-east-2,0.345,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d32v3,lowpriority,32,20.8,128,us-east-2,0.345,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d32sv3,lowpriority,32,20.8,128,us-east-2,0.345,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d32v3,lowpriority,32,20.8,128,us-west-2,0.345,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d32v3,lowpriority,32,20.8,128,us-west-2,0.345,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d32sv3,lowpriority,32,20.8,128,us-west-2,0.345,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d64v3,standard,64,41.6,256,asia-pacific-southeast,4,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d64v3,standard,64,41.6,256,asia-pacific-southeast,4,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d64sv3,standard,64,41.6,256,asia-pacific-southeast,4,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d64v3,standard,64,41.6,256,canada-central,3.552,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d64v3,standard,64,41.6,256,canada-central,3.552,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d64sv3,standard,64,41.6,256,canada-central,3.552,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d64v3,standard,64,41.6,256,canada-east,3.552,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d64v3,standard,64,41.6,256,canada-east,3.552,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d64sv3,standard,64,41.6,256,canada-east,3.552,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d64v3,standard,64,41.6,256,europe-north,3.552,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d64v3,standard,64,41.6,256,europe-north,3.552,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d64sv3,standard,64,41.6,256,europe-north,3.552,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d64v3,standard,64,41.6,256,europe-west,3.84,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d64v3,standard,64,41.6,256,europe-west,3.84,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d64sv3,standard,64,41.6,256,europe-west,3.84,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d64v3,standard,64,41.6,256,us-east,3.2,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d64v3,standard,64,41.6,256,us-east,3.2,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d64sv3,standard,64,41.6,256,us-east,3.2,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d64v3,standard,64,41.6,256,us-east-2,3.52,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d64v3,standard,64,41.6,256,us-east-2,3.52,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d64sv3,standard,64,41.6,256,us-east-2,3.52,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d64v3,standard,64,41.6,256,us-west-2,3.2,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d64v3,standard,64,41.6,256,us-west-2,3.2,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d64sv3,standard,64,41.6,256,us-west-2,3.2,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d64v3,lowpriority,64,41.6,256,asia-pacific-southeast,0.69,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d64v3,lowpriority,64,41.6,256,asia-pacific-southeast,0.69,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d64sv3,lowpriority,64,41.6,256,asia-pacific-southeast,0.69,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d64v3,lowpriority,64,41.6,256,europe-west,0.69,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d64v3,lowpriority,64,41.6,256,europe-west,0.69,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d64sv3,lowpriority,64,41.6,256,europe-west,0.69,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d64v3,lowpriority,64,41.6,256,us-east,0.69,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d64v3,lowpriority,64,41.6,256,us-east,0.69,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d64sv3,lowpriority,64,41.6,256,us-east,0.69,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d64v3,lowpriority,64,41.6,256,us-east-2,0.69,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d64v3,lowpriority,64,41.6,256,us-east-2,0.69,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d64sv3,lowpriority,64,41.6,256,us-east-2,0.69,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
-d64v3,lowpriority,64,41.6,256,us-west-2,0.69,Unknown,No,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
+d64v3,lowpriority,64,41.6,256,us-west-2,0.69,Unknown,No,Unknown,Unknown,Unknown,NaN,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 d64sv3,lowpriority,64,41.6,256,us-west-2,0.69,Unknown,Yes,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Yes
 e2v3,standard,2,1.3,16,asia-pacific-southeast,0.16,Unknown,No,2,moderate,4,16384,2000,240,3000,46,Unknown,32,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
 e2sv3,standard,2,1.3,16,asia-pacific-southeast,0.16,Unknown,Yes,2,moderate,4,16384,2000,240,4000,32,Unknown,32,Unknown,Unknown,Unknown,Not Supported,Not Supported,Not Supported,Yes
