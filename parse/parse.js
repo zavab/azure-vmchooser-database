@@ -28,7 +28,7 @@ for(var offer in offers){
         var picked = lookup[0];
 	      var pcores = cores;
 	      if(picked.hasOwnProperty("BaseCpuPerformancePct")){
-	        var pcores = pcores * picked.BaseCpuPerformancePct;
+	        var pcores = picked.BaseCpuPerformancePct / pcores;
           // calculating the base performance for systems like the B-series
 	      }
 	      if(picked.Hyperthreaded.indexOf("Yes") > -1) {
