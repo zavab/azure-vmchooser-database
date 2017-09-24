@@ -822,7 +822,7 @@
     "NumberOfCores": 32,
     "MemoryInMB": 458752,
     "MaxNics": 8,
-    "Bandwidth": "20000 (AN)",
+    "Bandwidth": "20000",
     "MaxDataDiskCount": 64,
     "MaxDataDiskSizeGB": 262144,
     "MaxDataDiskIops": 480000,
