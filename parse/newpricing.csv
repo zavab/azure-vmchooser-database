@@ -2933,54 +2933,54 @@ d15v2,lowpriority,20,20,140,us-west-central,0.299,210,No,8,20000,64,262144,32000
 ds15v2,lowpriority,20,20,140,us-west-central,0.299,210,Yes,8,2000,64,262144,480000,16000,64000,960,286720,280,-1,-1,-1,30430,-3,-2,No,linux-d15v2-lowpriority
 d15v2,lowpriority,20,20,140,west-india,0.299,210,No,8,20000,64,262144,32000,3840,32000,3840,286720,280,-1,-1,-1,-2,-2,-2,No,linux-d15v2-lowpriority
 ds15v2,lowpriority,20,20,140,west-india,0.299,210,Yes,8,2000,64,262144,480000,16000,64000,960,286720,280,-1,-1,-1,30430,-3,-2,No,linux-d15v2-lowpriority
-d2v3,standard,2,1.3,8,asia-pacific-southeast,0.125,-1,No,2,moderate,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
-d2sv3,standard,2,1.3,8,asia-pacific-southeast,0.125,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
-d2v3,standard,2,1.3,8,australia-east,0.125,-1,No,2,moderate,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
-d2sv3,standard,2,1.3,8,australia-east,0.125,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
-d2v3,standard,2,1.3,8,europe-west,0.12,-1,No,2,moderate,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
-d2sv3,standard,2,1.3,8,europe-west,0.12,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
-d2v3,standard,2,1.3,8,us-east,0.1,-1,No,2,moderate,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
-d2sv3,standard,2,1.3,8,us-east,0.1,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
-d2v3,standard,2,1.3,8,us-east-2,0.11,-1,No,2,moderate,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
-d2sv3,standard,2,1.3,8,us-east-2,0.11,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
-d2v3,standard,2,1.3,8,us-west-2,0.1,-1,No,2,moderate,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
-d2sv3,standard,2,1.3,8,us-west-2,0.1,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
-d4v3,standard,4,2.6,16,asia-pacific-southeast,0.25,-1,No,2,moderate,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
-d4sv3,standard,4,2.6,16,asia-pacific-southeast,0.25,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
-d4v3,standard,4,2.6,16,australia-east,0.25,-1,No,2,moderate,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
-d4sv3,standard,4,2.6,16,australia-east,0.25,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
-d4v3,standard,4,2.6,16,europe-west,0.24,-1,No,2,moderate,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
-d4sv3,standard,4,2.6,16,europe-west,0.24,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
-d4v3,standard,4,2.6,16,us-east,0.2,-1,No,2,moderate,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
-d4sv3,standard,4,2.6,16,us-east,0.2,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
-d4v3,standard,4,2.6,16,us-east-2,0.22,-1,No,2,moderate,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
-d4sv3,standard,4,2.6,16,us-east-2,0.22,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
-d4v3,standard,4,2.6,16,us-west-2,0.2,-1,No,2,moderate,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
-d4sv3,standard,4,2.6,16,us-west-2,0.2,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
-d8v3,standard,8,5.2,32,asia-pacific-southeast,0.5,-1,No,4,high,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
-d8sv3,standard,8,5.2,32,asia-pacific-southeast,0.5,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
-d8v3,standard,8,5.2,32,australia-east,0.5,-1,No,4,high,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
-d8sv3,standard,8,5.2,32,australia-east,0.5,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
-d8v3,standard,8,5.2,32,europe-west,0.48,-1,No,4,high,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
-d8sv3,standard,8,5.2,32,europe-west,0.48,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
-d8v3,standard,8,5.2,32,us-east,0.4,-1,No,4,high,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
-d8sv3,standard,8,5.2,32,us-east,0.4,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
-d8v3,standard,8,5.2,32,us-east-2,0.44,-1,No,4,high,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
-d8sv3,standard,8,5.2,32,us-east-2,0.44,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
-d8v3,standard,8,5.2,32,us-west-2,0.4,-1,No,4,high,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
-d8sv3,standard,8,5.2,32,us-west-2,0.4,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
-d16v3,standard,16,10.4,64,asia-pacific-southeast,1,-1,No,8,high,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
-d16sv3,standard,16,10.4,64,asia-pacific-southeast,1,-1,Yes,8,high,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
-d16v3,standard,16,10.4,64,australia-east,1,-1,No,8,high,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
-d16sv3,standard,16,10.4,64,australia-east,1,-1,Yes,8,high,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
-d16v3,standard,16,10.4,64,europe-west,0.96,-1,No,8,high,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
-d16sv3,standard,16,10.4,64,europe-west,0.96,-1,Yes,8,high,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
-d16v3,standard,16,10.4,64,us-east,0.8,-1,No,8,high,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
-d16sv3,standard,16,10.4,64,us-east,0.8,-1,Yes,8,high,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
-d16v3,standard,16,10.4,64,us-east-2,0.88,-1,No,8,high,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
-d16sv3,standard,16,10.4,64,us-east-2,0.88,-1,Yes,8,high,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
-d16v3,standard,16,10.4,64,us-west-2,0.8,-1,No,8,high,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
-d16sv3,standard,16,10.4,64,us-west-2,0.8,-1,Yes,8,high,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
+d2v3,standard,2,1.3,8,asia-pacific-southeast,0.125,-1,No,2,-4,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
+d2sv3,standard,2,1.3,8,asia-pacific-southeast,0.125,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
+d2v3,standard,2,1.3,8,australia-east,0.125,-1,No,2,-4,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
+d2sv3,standard,2,1.3,8,australia-east,0.125,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
+d2v3,standard,2,1.3,8,europe-west,0.12,-1,No,2,-4,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
+d2sv3,standard,2,1.3,8,europe-west,0.12,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
+d2v3,standard,2,1.3,8,us-east,0.1,-1,No,2,-4,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
+d2sv3,standard,2,1.3,8,us-east,0.1,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
+d2v3,standard,2,1.3,8,us-east-2,0.11,-1,No,2,-4,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
+d2sv3,standard,2,1.3,8,us-east-2,0.11,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
+d2v3,standard,2,1.3,8,us-west-2,0.1,-1,No,2,-4,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
+d2sv3,standard,2,1.3,8,us-west-2,0.1,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-standard
+d4v3,standard,4,2.6,16,asia-pacific-southeast,0.25,-1,No,2,-4,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
+d4sv3,standard,4,2.6,16,asia-pacific-southeast,0.25,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
+d4v3,standard,4,2.6,16,australia-east,0.25,-1,No,2,-4,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
+d4sv3,standard,4,2.6,16,australia-east,0.25,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
+d4v3,standard,4,2.6,16,europe-west,0.24,-1,No,2,-4,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
+d4sv3,standard,4,2.6,16,europe-west,0.24,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
+d4v3,standard,4,2.6,16,us-east,0.2,-1,No,2,-4,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
+d4sv3,standard,4,2.6,16,us-east,0.2,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
+d4v3,standard,4,2.6,16,us-east-2,0.22,-1,No,2,-4,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
+d4sv3,standard,4,2.6,16,us-east-2,0.22,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
+d4v3,standard,4,2.6,16,us-west-2,0.2,-1,No,2,-4,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
+d4sv3,standard,4,2.6,16,us-west-2,0.2,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-standard
+d8v3,standard,8,5.2,32,asia-pacific-southeast,0.5,-1,No,4,-4,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
+d8sv3,standard,8,5.2,32,asia-pacific-southeast,0.5,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
+d8v3,standard,8,5.2,32,australia-east,0.5,-1,No,4,-4,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
+d8sv3,standard,8,5.2,32,australia-east,0.5,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
+d8v3,standard,8,5.2,32,europe-west,0.48,-1,No,4,-4,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
+d8sv3,standard,8,5.2,32,europe-west,0.48,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
+d8v3,standard,8,5.2,32,us-east,0.4,-1,No,4,-4,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
+d8sv3,standard,8,5.2,32,us-east,0.4,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
+d8v3,standard,8,5.2,32,us-east-2,0.44,-1,No,4,-4,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
+d8sv3,standard,8,5.2,32,us-east-2,0.44,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
+d8v3,standard,8,5.2,32,us-west-2,0.4,-1,No,4,-4,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
+d8sv3,standard,8,5.2,32,us-west-2,0.4,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-standard
+d16v3,standard,16,10.4,64,asia-pacific-southeast,1,-1,No,8,-4,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
+d16sv3,standard,16,10.4,64,asia-pacific-southeast,1,-1,Yes,8,-4,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
+d16v3,standard,16,10.4,64,australia-east,1,-1,No,8,-4,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
+d16sv3,standard,16,10.4,64,australia-east,1,-1,Yes,8,-4,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
+d16v3,standard,16,10.4,64,europe-west,0.96,-1,No,8,-4,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
+d16sv3,standard,16,10.4,64,europe-west,0.96,-1,Yes,8,-4,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
+d16v3,standard,16,10.4,64,us-east,0.8,-1,No,8,-4,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
+d16sv3,standard,16,10.4,64,us-east,0.8,-1,Yes,8,-4,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
+d16v3,standard,16,10.4,64,us-east-2,0.88,-1,No,8,-4,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
+d16sv3,standard,16,10.4,64,us-east-2,0.88,-1,Yes,8,-4,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
+d16v3,standard,16,10.4,64,us-west-2,0.8,-1,No,8,-4,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
+d16sv3,standard,16,10.4,64,us-west-2,0.8,-1,Yes,8,-4,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-standard
 d32v3,standard,32,20.8,128,asia-pacific-southeast,2,-1,No,-1,-1,-1,-4096,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,Yes,linux-d32v3-standard
 d32sv3,standard,32,20.8,128,asia-pacific-southeast,2,-1,Yes,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,Yes,linux-d32v3-standard
 d32v3,standard,32,20.8,128,australia-east,2,-1,No,-1,-1,-1,-4096,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,Yes,linux-d32v3-standard
@@ -3005,46 +3005,46 @@ d64v3,standard,64,41.6,256,us-east-2,3.52,-1,No,-1,-1,-1,-4096,-1,-1,-1,-1,-1,-1
 d64sv3,standard,64,41.6,256,us-east-2,3.52,-1,Yes,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,Yes,linux-d64v3-standard
 d64v3,standard,64,41.6,256,us-west-2,3.2,-1,No,-1,-1,-1,-4096,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,Yes,linux-d64v3-standard
 d64sv3,standard,64,41.6,256,us-west-2,3.2,-1,Yes,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,Yes,linux-d64v3-standard
-d2v3,lowpriority,2,1.3,8,asia-pacific-southeast,0.022,-1,No,2,moderate,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
-d2sv3,lowpriority,2,1.3,8,asia-pacific-southeast,0.022,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
-d2v3,lowpriority,2,1.3,8,europe-west,0.022,-1,No,2,moderate,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
-d2sv3,lowpriority,2,1.3,8,europe-west,0.022,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
-d2v3,lowpriority,2,1.3,8,us-east,0.022,-1,No,2,moderate,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
-d2sv3,lowpriority,2,1.3,8,us-east,0.022,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
-d2v3,lowpriority,2,1.3,8,us-east-2,0.022,-1,No,2,moderate,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
-d2sv3,lowpriority,2,1.3,8,us-east-2,0.022,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
-d2v3,lowpriority,2,1.3,8,us-west-2,0.022,-1,No,2,moderate,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
-d2sv3,lowpriority,2,1.3,8,us-west-2,0.022,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
-d4v3,lowpriority,4,2.6,16,asia-pacific-southeast,0.043,-1,No,2,moderate,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
-d4sv3,lowpriority,4,2.6,16,asia-pacific-southeast,0.043,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
-d4v3,lowpriority,4,2.6,16,europe-west,0.043,-1,No,2,moderate,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
-d4sv3,lowpriority,4,2.6,16,europe-west,0.043,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
-d4v3,lowpriority,4,2.6,16,us-east,0.043,-1,No,2,moderate,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
-d4sv3,lowpriority,4,2.6,16,us-east,0.043,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
-d4v3,lowpriority,4,2.6,16,us-east-2,0.043,-1,No,2,moderate,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
-d4sv3,lowpriority,4,2.6,16,us-east-2,0.043,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
-d4v3,lowpriority,4,2.6,16,us-west-2,0.043,-1,No,2,moderate,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
-d4sv3,lowpriority,4,2.6,16,us-west-2,0.043,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
-d8v3,lowpriority,8,5.2,32,asia-pacific-southeast,0.086,-1,No,4,high,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
-d8sv3,lowpriority,8,5.2,32,asia-pacific-southeast,0.086,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
-d8v3,lowpriority,8,5.2,32,europe-west,0.086,-1,No,4,high,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
-d8sv3,lowpriority,8,5.2,32,europe-west,0.086,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
-d8v3,lowpriority,8,5.2,32,us-east,0.086,-1,No,4,high,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
-d8sv3,lowpriority,8,5.2,32,us-east,0.086,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
-d8v3,lowpriority,8,5.2,32,us-east-2,0.086,-1,No,4,high,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
-d8sv3,lowpriority,8,5.2,32,us-east-2,0.086,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
-d8v3,lowpriority,8,5.2,32,us-west-2,0.086,-1,No,4,high,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
-d8sv3,lowpriority,8,5.2,32,us-west-2,0.086,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
-d16v3,lowpriority,16,10.4,64,asia-pacific-southeast,0.172,-1,No,8,high,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
-d16sv3,lowpriority,16,10.4,64,asia-pacific-southeast,0.172,-1,Yes,8,high,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
-d16v3,lowpriority,16,10.4,64,europe-west,0.172,-1,No,8,high,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
-d16sv3,lowpriority,16,10.4,64,europe-west,0.172,-1,Yes,8,high,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
-d16v3,lowpriority,16,10.4,64,us-east,0.172,-1,No,8,high,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
-d16sv3,lowpriority,16,10.4,64,us-east,0.172,-1,Yes,8,high,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
-d16v3,lowpriority,16,10.4,64,us-east-2,0.172,-1,No,8,high,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
-d16sv3,lowpriority,16,10.4,64,us-east-2,0.172,-1,Yes,8,high,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
-d16v3,lowpriority,16,10.4,64,us-west-2,0.172,-1,No,8,high,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
-d16sv3,lowpriority,16,10.4,64,us-west-2,0.172,-1,Yes,8,high,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
+d2v3,lowpriority,2,1.3,8,asia-pacific-southeast,0.022,-1,No,2,-4,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
+d2sv3,lowpriority,2,1.3,8,asia-pacific-southeast,0.022,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
+d2v3,lowpriority,2,1.3,8,europe-west,0.022,-1,No,2,-4,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
+d2sv3,lowpriority,2,1.3,8,europe-west,0.022,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
+d2v3,lowpriority,2,1.3,8,us-east,0.022,-1,No,2,-4,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
+d2sv3,lowpriority,2,1.3,8,us-east,0.022,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
+d2v3,lowpriority,2,1.3,8,us-east-2,0.022,-1,No,2,-4,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
+d2sv3,lowpriority,2,1.3,8,us-east-2,0.022,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
+d2v3,lowpriority,2,1.3,8,us-west-2,0.022,-1,No,2,-4,4,16384,2000,240,2000,3000,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
+d2sv3,lowpriority,2,1.3,8,us-west-2,0.022,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,50,-1,-1,-1,-2,-2,-2,Yes,linux-d2v3-lowpriority
+d4v3,lowpriority,4,2.6,16,asia-pacific-southeast,0.043,-1,No,2,-4,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
+d4sv3,lowpriority,4,2.6,16,asia-pacific-southeast,0.043,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
+d4v3,lowpriority,4,2.6,16,europe-west,0.043,-1,No,2,-4,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
+d4sv3,lowpriority,4,2.6,16,europe-west,0.043,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
+d4v3,lowpriority,4,2.6,16,us-east,0.043,-1,No,2,-4,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
+d4sv3,lowpriority,4,2.6,16,us-east,0.043,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
+d4v3,lowpriority,4,2.6,16,us-east-2,0.043,-1,No,2,-4,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
+d4sv3,lowpriority,4,2.6,16,us-east-2,0.043,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
+d4v3,lowpriority,4,2.6,16,us-west-2,0.043,-1,No,2,-4,8,32768,4000,480,4000,6000,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
+d4sv3,lowpriority,4,2.6,16,us-west-2,0.043,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,100,-1,-1,-1,-2,-2,-2,Yes,linux-d4v3-lowpriority
+d8v3,lowpriority,8,5.2,32,asia-pacific-southeast,0.086,-1,No,4,-4,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
+d8sv3,lowpriority,8,5.2,32,asia-pacific-southeast,0.086,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
+d8v3,lowpriority,8,5.2,32,europe-west,0.086,-1,No,4,-4,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
+d8sv3,lowpriority,8,5.2,32,europe-west,0.086,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
+d8v3,lowpriority,8,5.2,32,us-east,0.086,-1,No,4,-4,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
+d8sv3,lowpriority,8,5.2,32,us-east,0.086,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
+d8v3,lowpriority,8,5.2,32,us-east-2,0.086,-1,No,4,-4,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
+d8sv3,lowpriority,8,5.2,32,us-east-2,0.086,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
+d8v3,lowpriority,8,5.2,32,us-west-2,0.086,-1,No,4,-4,16,65536,8000,960,8000,12000,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
+d8sv3,lowpriority,8,5.2,32,us-west-2,0.086,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,200,-1,-1,-1,-2,-2,-2,Yes,linux-d8v3-lowpriority
+d16v3,lowpriority,16,10.4,64,asia-pacific-southeast,0.172,-1,No,8,-4,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
+d16sv3,lowpriority,16,10.4,64,asia-pacific-southeast,0.172,-1,Yes,8,-4,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
+d16v3,lowpriority,16,10.4,64,europe-west,0.172,-1,No,8,-4,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
+d16sv3,lowpriority,16,10.4,64,europe-west,0.172,-1,Yes,8,-4,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
+d16v3,lowpriority,16,10.4,64,us-east,0.172,-1,No,8,-4,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
+d16sv3,lowpriority,16,10.4,64,us-east,0.172,-1,Yes,8,-4,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
+d16v3,lowpriority,16,10.4,64,us-east-2,0.172,-1,No,8,-4,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
+d16sv3,lowpriority,16,10.4,64,us-east-2,0.172,-1,Yes,8,-4,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
+d16v3,lowpriority,16,10.4,64,us-west-2,0.172,-1,No,8,-4,32,131072,16000,1920,16000,24000,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
+d16sv3,lowpriority,16,10.4,64,us-west-2,0.172,-1,Yes,8,-4,32,131072,16000,1920,32000,256,-1,400,-1,-1,-1,-2,-2,-2,Yes,linux-d16v3-lowpriority
 d32v3,lowpriority,32,20.8,128,asia-pacific-southeast,0.345,-1,No,-1,-1,-1,-4096,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,Yes,linux-d32v3-lowpriority
 d32sv3,lowpriority,32,20.8,128,asia-pacific-southeast,0.345,-1,Yes,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,Yes,linux-d32v3-lowpriority
 d32v3,lowpriority,32,20.8,128,europe-west,0.345,-1,No,-1,-1,-1,-4096,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,Yes,linux-d32v3-lowpriority
@@ -3065,126 +3065,126 @@ d64v3,lowpriority,64,41.6,256,us-east-2,0.69,-1,No,-1,-1,-1,-4096,-1,-1,-1,-1,-1
 d64sv3,lowpriority,64,41.6,256,us-east-2,0.69,-1,Yes,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,Yes,linux-d64v3-lowpriority
 d64v3,lowpriority,64,41.6,256,us-west-2,0.69,-1,No,-1,-1,-1,-4096,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,Yes,linux-d64v3-lowpriority
 d64sv3,lowpriority,64,41.6,256,us-west-2,0.69,-1,Yes,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,Yes,linux-d64v3-lowpriority
-e2v3,standard,2,1.3,16,asia-pacific-southeast,0.16,-1,No,2,moderate,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
-e2sv3,standard,2,1.3,16,asia-pacific-southeast,0.16,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
-e2v3,standard,2,1.3,16,australia-east,0.16,-1,No,2,moderate,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
-e2sv3,standard,2,1.3,16,australia-east,0.16,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
-e2v3,standard,2,1.3,16,europe-west,0.16,-1,No,2,moderate,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
-e2sv3,standard,2,1.3,16,europe-west,0.16,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
-e2v3,standard,2,1.3,16,us-east,0.133,-1,No,2,moderate,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
-e2sv3,standard,2,1.3,16,us-east,0.133,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
-e2v3,standard,2,1.3,16,us-east-2,0.146,-1,No,2,moderate,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
-e2sv3,standard,2,1.3,16,us-east-2,0.146,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
-e2v3,standard,2,1.3,16,us-west-2,0.133,-1,No,2,moderate,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
-e2sv3,standard,2,1.3,16,us-west-2,0.133,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
-e4v3,standard,4,2.6,32,asia-pacific-southeast,0.32,-1,No,2,moderate,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
-e4sv3,standard,4,2.6,32,asia-pacific-southeast,0.32,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
-e4v3,standard,4,2.6,32,australia-east,0.319,-1,No,2,moderate,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
-e4sv3,standard,4,2.6,32,australia-east,0.319,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
-e4v3,standard,4,2.6,32,europe-west,0.32,-1,No,2,moderate,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
-e4sv3,standard,4,2.6,32,europe-west,0.32,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
-e4v3,standard,4,2.6,32,us-east,0.266,-1,No,2,moderate,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
-e4sv3,standard,4,2.6,32,us-east,0.266,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
-e4v3,standard,4,2.6,32,us-east-2,0.293,-1,No,2,moderate,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
-e4sv3,standard,4,2.6,32,us-east-2,0.293,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
-e4v3,standard,4,2.6,32,us-west-2,0.266,-1,No,2,moderate,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
-e4sv3,standard,4,2.6,32,us-west-2,0.266,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
-e8v3,standard,8,5.2,64,asia-pacific-southeast,0.64,-1,No,4,high,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
-e8sv3,standard,8,5.2,64,asia-pacific-southeast,0.64,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
-e8v3,standard,8,5.2,64,australia-east,0.638,-1,No,4,high,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
-e8sv3,standard,8,5.2,64,australia-east,0.638,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
-e8v3,standard,8,5.2,64,europe-west,0.64,-1,No,4,high,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
-e8sv3,standard,8,5.2,64,europe-west,0.64,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
-e8v3,standard,8,5.2,64,us-east,0.532,-1,No,4,high,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
-e8sv3,standard,8,5.2,64,us-east,0.532,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
-e8v3,standard,8,5.2,64,us-east-2,0.585,-1,No,4,high,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
-e8sv3,standard,8,5.2,64,us-east-2,0.585,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
-e8v3,standard,8,5.2,64,us-west-2,0.532,-1,No,4,high,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
-e8sv3,standard,8,5.2,64,us-west-2,0.532,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
-e16v3,standard,16,10.4,128,asia-pacific-southeast,1.28,-1,No,4,high,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
-e16sv3,standard,16,10.4,128,asia-pacific-southeast,1.28,-1,Yes,4,high,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
-e16v3,standard,16,10.4,128,australia-east,1.277,-1,No,4,high,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
-e16sv3,standard,16,10.4,128,australia-east,1.277,-1,Yes,4,high,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
-e16v3,standard,16,10.4,128,europe-west,1.28,-1,No,4,high,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
-e16sv3,standard,16,10.4,128,europe-west,1.28,-1,Yes,4,high,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
-e16v3,standard,16,10.4,128,us-east,1.064,-1,No,4,high,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
-e16sv3,standard,16,10.4,128,us-east,1.064,-1,Yes,4,high,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
-e16v3,standard,16,10.4,128,us-east-2,1.17,-1,No,4,high,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
-e16sv3,standard,16,10.4,128,us-east-2,1.17,-1,Yes,4,high,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
-e16v3,standard,16,10.4,128,us-west-2,1.064,-1,No,4,high,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
-e16sv3,standard,16,10.4,128,us-west-2,1.064,-1,Yes,4,high,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
-e32v3,standard,32,20.8,256,asia-pacific-southeast,2.56,-1,No,8,extremely high,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
-e32sv3,standard,32,20.8,256,asia-pacific-southeast,2.56,-1,Yes,8,extremely high,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
-e32v3,standard,32,20.8,256,australia-east,2.554,-1,No,8,extremely high,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
-e32sv3,standard,32,20.8,256,australia-east,2.554,-1,Yes,8,extremely high,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
-e32v3,standard,32,20.8,256,europe-west,2.56,-1,No,8,extremely high,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
-e32sv3,standard,32,20.8,256,europe-west,2.56,-1,Yes,8,extremely high,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
-e32v3,standard,32,20.8,256,us-east,2.128,-1,No,8,extremely high,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
-e32sv3,standard,32,20.8,256,us-east,2.128,-1,Yes,8,extremely high,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
-e32v3,standard,32,20.8,256,us-east-2,2.341,-1,No,8,extremely high,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
-e32sv3,standard,32,20.8,256,us-east-2,2.341,-1,Yes,8,extremely high,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
-e32v3,standard,32,20.8,256,us-west-2,2.128,-1,No,8,extremely high,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
-e32sv3,standard,32,20.8,256,us-west-2,2.128,-1,Yes,8,extremely high,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
-e64v3,standard,64,41.6,432,asia-pacific-southeast,4.826,-1,No,8,extremely high,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
-e64sv3,standard,64,41.6,432,asia-pacific-southeast,4.826,-1,Yes,8,extremely high,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
-e64v3,standard,64,41.6,432,australia-east,4.814,-1,No,8,extremely high,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
-e64sv3,standard,64,41.6,432,australia-east,4.814,-1,Yes,8,extremely high,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
-e64v3,standard,64,41.6,432,europe-west,4.826,-1,No,8,extremely high,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
-e64sv3,standard,64,41.6,432,europe-west,4.826,-1,Yes,8,extremely high,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
-e64v3,standard,64,41.6,432,us-east,4.011,-1,No,8,extremely high,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
-e64sv3,standard,64,41.6,432,us-east,4.011,-1,Yes,8,extremely high,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
-e64v3,standard,64,41.6,432,us-east-2,4.412,-1,No,8,extremely high,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
-e64sv3,standard,64,41.6,432,us-east-2,4.412,-1,Yes,8,extremely high,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
-e64v3,standard,64,41.6,432,us-west-2,4.011,-1,No,8,extremely high,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
-e64sv3,standard,64,41.6,432,us-west-2,4.011,-1,Yes,8,extremely high,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
-e2v3,lowpriority,2,1.3,16,asia-pacific-southeast,0.027,-1,No,2,moderate,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-lowpriority
-e2sv3,lowpriority,2,1.3,16,asia-pacific-southeast,0.027,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-lowpriority
-e2v3,lowpriority,2,1.3,16,europe-west,0.027,-1,No,2,moderate,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-lowpriority
-e2sv3,lowpriority,2,1.3,16,europe-west,0.027,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-lowpriority
-e2v3,lowpriority,2,1.3,16,us-east,0.027,-1,No,2,moderate,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-lowpriority
-e2sv3,lowpriority,2,1.3,16,us-east,0.027,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-lowpriority
-e2v3,lowpriority,2,1.3,16,us-west-2,0.027,-1,No,2,moderate,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-lowpriority
-e2sv3,lowpriority,2,1.3,16,us-west-2,0.027,-1,Yes,2,moderate,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-lowpriority
-e4v3,lowpriority,4,2.6,32,asia-pacific-southeast,0.053,-1,No,2,moderate,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-lowpriority
-e4sv3,lowpriority,4,2.6,32,asia-pacific-southeast,0.053,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-lowpriority
-e4v3,lowpriority,4,2.6,32,europe-west,0.053,-1,No,2,moderate,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-lowpriority
-e4sv3,lowpriority,4,2.6,32,europe-west,0.053,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-lowpriority
-e4v3,lowpriority,4,2.6,32,us-east,0.053,-1,No,2,moderate,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-lowpriority
-e4sv3,lowpriority,4,2.6,32,us-east,0.053,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-lowpriority
-e4v3,lowpriority,4,2.6,32,us-west-2,0.053,-1,No,2,moderate,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-lowpriority
-e4sv3,lowpriority,4,2.6,32,us-west-2,0.053,-1,Yes,2,moderate,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-lowpriority
-e8v3,lowpriority,8,5.2,64,asia-pacific-southeast,0.106,-1,No,4,high,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-lowpriority
-e8sv3,lowpriority,8,5.2,64,asia-pacific-southeast,0.106,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-lowpriority
-e8v3,lowpriority,8,5.2,64,europe-west,0.106,-1,No,4,high,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-lowpriority
-e8sv3,lowpriority,8,5.2,64,europe-west,0.106,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-lowpriority
-e8v3,lowpriority,8,5.2,64,us-east,0.106,-1,No,4,high,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-lowpriority
-e8sv3,lowpriority,8,5.2,64,us-east,0.106,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-lowpriority
-e8v3,lowpriority,8,5.2,64,us-west-2,0.106,-1,No,4,high,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-lowpriority
-e8sv3,lowpriority,8,5.2,64,us-west-2,0.106,-1,Yes,4,high,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-lowpriority
-e16v3,lowpriority,16,10.4,128,asia-pacific-southeast,0.213,-1,No,4,high,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-lowpriority
-e16sv3,lowpriority,16,10.4,128,asia-pacific-southeast,0.213,-1,Yes,4,high,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-lowpriority
-e16v3,lowpriority,16,10.4,128,europe-west,0.213,-1,No,4,high,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-lowpriority
-e16sv3,lowpriority,16,10.4,128,europe-west,0.213,-1,Yes,4,high,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-lowpriority
-e16v3,lowpriority,16,10.4,128,us-east,0.213,-1,No,4,high,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-lowpriority
-e16sv3,lowpriority,16,10.4,128,us-east,0.213,-1,Yes,4,high,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-lowpriority
-e16v3,lowpriority,16,10.4,128,us-west-2,0.213,-1,No,4,high,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-lowpriority
-e16sv3,lowpriority,16,10.4,128,us-west-2,0.213,-1,Yes,4,high,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-lowpriority
-e32v3,lowpriority,32,20.8,256,asia-pacific-southeast,0.426,-1,No,8,extremely high,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-lowpriority
-e32sv3,lowpriority,32,20.8,256,asia-pacific-southeast,0.426,-1,Yes,8,extremely high,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-lowpriority
-e32v3,lowpriority,32,20.8,256,europe-west,0.426,-1,No,8,extremely high,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-lowpriority
-e32sv3,lowpriority,32,20.8,256,europe-west,0.426,-1,Yes,8,extremely high,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-lowpriority
-e32v3,lowpriority,32,20.8,256,us-east,0.426,-1,No,8,extremely high,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-lowpriority
-e32sv3,lowpriority,32,20.8,256,us-east,0.426,-1,Yes,8,extremely high,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-lowpriority
-e32v3,lowpriority,32,20.8,256,us-west-2,0.426,-1,No,8,extremely high,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-lowpriority
-e32sv3,lowpriority,32,20.8,256,us-west-2,0.426,-1,Yes,8,extremely high,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-lowpriority
-e64v3,lowpriority,64,41.6,432,asia-pacific-southeast,0.802,-1,No,8,extremely high,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-lowpriority
-e64sv3,lowpriority,64,41.6,432,asia-pacific-southeast,0.802,-1,Yes,8,extremely high,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-lowpriority
-e64v3,lowpriority,64,41.6,432,europe-west,0.802,-1,No,8,extremely high,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-lowpriority
-e64sv3,lowpriority,64,41.6,432,europe-west,0.802,-1,Yes,8,extremely high,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-lowpriority
-e64v3,lowpriority,64,41.6,432,us-east,0.802,-1,No,8,extremely high,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-lowpriority
-e64sv3,lowpriority,64,41.6,432,us-east,0.802,-1,Yes,8,extremely high,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-lowpriority
-e64v3,lowpriority,64,41.6,432,us-west-2,0.802,-1,No,8,extremely high,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-lowpriority
-e64sv3,lowpriority,64,41.6,432,us-west-2,0.802,-1,Yes,8,extremely high,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-lowpriority
+e2v3,standard,2,1.3,16,asia-pacific-southeast,0.16,-1,No,2,-4,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
+e2sv3,standard,2,1.3,16,asia-pacific-southeast,0.16,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
+e2v3,standard,2,1.3,16,australia-east,0.16,-1,No,2,-4,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
+e2sv3,standard,2,1.3,16,australia-east,0.16,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
+e2v3,standard,2,1.3,16,europe-west,0.16,-1,No,2,-4,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
+e2sv3,standard,2,1.3,16,europe-west,0.16,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
+e2v3,standard,2,1.3,16,us-east,0.133,-1,No,2,-4,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
+e2sv3,standard,2,1.3,16,us-east,0.133,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
+e2v3,standard,2,1.3,16,us-east-2,0.146,-1,No,2,-4,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
+e2sv3,standard,2,1.3,16,us-east-2,0.146,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
+e2v3,standard,2,1.3,16,us-west-2,0.133,-1,No,2,-4,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
+e2sv3,standard,2,1.3,16,us-west-2,0.133,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-standard
+e4v3,standard,4,2.6,32,asia-pacific-southeast,0.32,-1,No,2,-4,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
+e4sv3,standard,4,2.6,32,asia-pacific-southeast,0.32,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
+e4v3,standard,4,2.6,32,australia-east,0.319,-1,No,2,-4,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
+e4sv3,standard,4,2.6,32,australia-east,0.319,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
+e4v3,standard,4,2.6,32,europe-west,0.32,-1,No,2,-4,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
+e4sv3,standard,4,2.6,32,europe-west,0.32,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
+e4v3,standard,4,2.6,32,us-east,0.266,-1,No,2,-4,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
+e4sv3,standard,4,2.6,32,us-east,0.266,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
+e4v3,standard,4,2.6,32,us-east-2,0.293,-1,No,2,-4,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
+e4sv3,standard,4,2.6,32,us-east-2,0.293,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
+e4v3,standard,4,2.6,32,us-west-2,0.266,-1,No,2,-4,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
+e4sv3,standard,4,2.6,32,us-west-2,0.266,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-standard
+e8v3,standard,8,5.2,64,asia-pacific-southeast,0.64,-1,No,4,-4,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
+e8sv3,standard,8,5.2,64,asia-pacific-southeast,0.64,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
+e8v3,standard,8,5.2,64,australia-east,0.638,-1,No,4,-4,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
+e8sv3,standard,8,5.2,64,australia-east,0.638,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
+e8v3,standard,8,5.2,64,europe-west,0.64,-1,No,4,-4,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
+e8sv3,standard,8,5.2,64,europe-west,0.64,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
+e8v3,standard,8,5.2,64,us-east,0.532,-1,No,4,-4,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
+e8sv3,standard,8,5.2,64,us-east,0.532,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
+e8v3,standard,8,5.2,64,us-east-2,0.585,-1,No,4,-4,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
+e8sv3,standard,8,5.2,64,us-east-2,0.585,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
+e8v3,standard,8,5.2,64,us-west-2,0.532,-1,No,4,-4,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
+e8sv3,standard,8,5.2,64,us-west-2,0.532,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-standard
+e16v3,standard,16,10.4,128,asia-pacific-southeast,1.28,-1,No,4,-4,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
+e16sv3,standard,16,10.4,128,asia-pacific-southeast,1.28,-1,Yes,4,-4,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
+e16v3,standard,16,10.4,128,australia-east,1.277,-1,No,4,-4,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
+e16sv3,standard,16,10.4,128,australia-east,1.277,-1,Yes,4,-4,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
+e16v3,standard,16,10.4,128,europe-west,1.28,-1,No,4,-4,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
+e16sv3,standard,16,10.4,128,europe-west,1.28,-1,Yes,4,-4,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
+e16v3,standard,16,10.4,128,us-east,1.064,-1,No,4,-4,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
+e16sv3,standard,16,10.4,128,us-east,1.064,-1,Yes,4,-4,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
+e16v3,standard,16,10.4,128,us-east-2,1.17,-1,No,4,-4,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
+e16sv3,standard,16,10.4,128,us-east-2,1.17,-1,Yes,4,-4,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
+e16v3,standard,16,10.4,128,us-west-2,1.064,-1,No,4,-4,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
+e16sv3,standard,16,10.4,128,us-west-2,1.064,-1,Yes,4,-4,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-standard
+e32v3,standard,32,20.8,256,asia-pacific-southeast,2.56,-1,No,8,-4,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
+e32sv3,standard,32,20.8,256,asia-pacific-southeast,2.56,-1,Yes,8,-4,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
+e32v3,standard,32,20.8,256,australia-east,2.554,-1,No,8,-4,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
+e32sv3,standard,32,20.8,256,australia-east,2.554,-1,Yes,8,-4,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
+e32v3,standard,32,20.8,256,europe-west,2.56,-1,No,8,-4,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
+e32sv3,standard,32,20.8,256,europe-west,2.56,-1,Yes,8,-4,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
+e32v3,standard,32,20.8,256,us-east,2.128,-1,No,8,-4,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
+e32sv3,standard,32,20.8,256,us-east,2.128,-1,Yes,8,-4,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
+e32v3,standard,32,20.8,256,us-east-2,2.341,-1,No,8,-4,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
+e32sv3,standard,32,20.8,256,us-east-2,2.341,-1,Yes,8,-4,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
+e32v3,standard,32,20.8,256,us-west-2,2.128,-1,No,8,-4,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
+e32sv3,standard,32,20.8,256,us-west-2,2.128,-1,Yes,8,-4,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-standard
+e64v3,standard,64,41.6,432,asia-pacific-southeast,4.826,-1,No,8,-4,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
+e64sv3,standard,64,41.6,432,asia-pacific-southeast,4.826,-1,Yes,8,-4,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
+e64v3,standard,64,41.6,432,australia-east,4.814,-1,No,8,-4,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
+e64sv3,standard,64,41.6,432,australia-east,4.814,-1,Yes,8,-4,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
+e64v3,standard,64,41.6,432,europe-west,4.826,-1,No,8,-4,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
+e64sv3,standard,64,41.6,432,europe-west,4.826,-1,Yes,8,-4,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
+e64v3,standard,64,41.6,432,us-east,4.011,-1,No,8,-4,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
+e64sv3,standard,64,41.6,432,us-east,4.011,-1,Yes,8,-4,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
+e64v3,standard,64,41.6,432,us-east-2,4.412,-1,No,8,-4,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
+e64sv3,standard,64,41.6,432,us-east-2,4.412,-1,Yes,8,-4,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
+e64v3,standard,64,41.6,432,us-west-2,4.011,-1,No,8,-4,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
+e64sv3,standard,64,41.6,432,us-west-2,4.011,-1,Yes,8,-4,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-standard
+e2v3,lowpriority,2,1.3,16,asia-pacific-southeast,0.027,-1,No,2,-4,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-lowpriority
+e2sv3,lowpriority,2,1.3,16,asia-pacific-southeast,0.027,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-lowpriority
+e2v3,lowpriority,2,1.3,16,europe-west,0.027,-1,No,2,-4,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-lowpriority
+e2sv3,lowpriority,2,1.3,16,europe-west,0.027,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-lowpriority
+e2v3,lowpriority,2,1.3,16,us-east,0.027,-1,No,2,-4,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-lowpriority
+e2sv3,lowpriority,2,1.3,16,us-east,0.027,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-lowpriority
+e2v3,lowpriority,2,1.3,16,us-west-2,0.027,-1,No,2,-4,4,16384,2000,240,3000,46,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-lowpriority
+e2sv3,lowpriority,2,1.3,16,us-west-2,0.027,-1,Yes,2,-4,4,16384,2000,240,4000,32,-1,32,-1,-1,-1,-2,-2,-2,Yes,linux-e2v3-lowpriority
+e4v3,lowpriority,4,2.6,32,asia-pacific-southeast,0.053,-1,No,2,-4,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-lowpriority
+e4sv3,lowpriority,4,2.6,32,asia-pacific-southeast,0.053,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-lowpriority
+e4v3,lowpriority,4,2.6,32,europe-west,0.053,-1,No,2,-4,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-lowpriority
+e4sv3,lowpriority,4,2.6,32,europe-west,0.053,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-lowpriority
+e4v3,lowpriority,4,2.6,32,us-east,0.053,-1,No,2,-4,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-lowpriority
+e4sv3,lowpriority,4,2.6,32,us-east,0.053,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-lowpriority
+e4v3,lowpriority,4,2.6,32,us-west-2,0.053,-1,No,2,-4,8,32768,4000,480,6000,93,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-lowpriority
+e4sv3,lowpriority,4,2.6,32,us-west-2,0.053,-1,Yes,2,-4,8,32768,4000,480,8000,64,-1,64,-1,-1,-1,-2,-2,-2,Yes,linux-e4v3-lowpriority
+e8v3,lowpriority,8,5.2,64,asia-pacific-southeast,0.106,-1,No,4,-4,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-lowpriority
+e8sv3,lowpriority,8,5.2,64,asia-pacific-southeast,0.106,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-lowpriority
+e8v3,lowpriority,8,5.2,64,europe-west,0.106,-1,No,4,-4,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-lowpriority
+e8sv3,lowpriority,8,5.2,64,europe-west,0.106,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-lowpriority
+e8v3,lowpriority,8,5.2,64,us-east,0.106,-1,No,4,-4,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-lowpriority
+e8sv3,lowpriority,8,5.2,64,us-east,0.106,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-lowpriority
+e8v3,lowpriority,8,5.2,64,us-west-2,0.106,-1,No,4,-4,16,65536,8000,960,12000,187,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-lowpriority
+e8sv3,lowpriority,8,5.2,64,us-west-2,0.106,-1,Yes,4,-4,16,65536,8000,960,16000,128,-1,128,-1,-1,-1,-2,-2,-2,Yes,linux-e8v3-lowpriority
+e16v3,lowpriority,16,10.4,128,asia-pacific-southeast,0.213,-1,No,4,-4,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-lowpriority
+e16sv3,lowpriority,16,10.4,128,asia-pacific-southeast,0.213,-1,Yes,4,-4,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-lowpriority
+e16v3,lowpriority,16,10.4,128,europe-west,0.213,-1,No,4,-4,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-lowpriority
+e16sv3,lowpriority,16,10.4,128,europe-west,0.213,-1,Yes,4,-4,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-lowpriority
+e16v3,lowpriority,16,10.4,128,us-east,0.213,-1,No,4,-4,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-lowpriority
+e16sv3,lowpriority,16,10.4,128,us-east,0.213,-1,Yes,4,-4,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-lowpriority
+e16v3,lowpriority,16,10.4,128,us-west-2,0.213,-1,No,4,-4,32,131072,16000,1920,24000,375,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-lowpriority
+e16sv3,lowpriority,16,10.4,128,us-west-2,0.213,-1,Yes,4,-4,32,131072,16000,1920,32000,256,-1,256,-1,-1,-1,-2,-2,-2,Yes,linux-e16v3-lowpriority
+e32v3,lowpriority,32,20.8,256,asia-pacific-southeast,0.426,-1,No,8,-4,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-lowpriority
+e32sv3,lowpriority,32,20.8,256,asia-pacific-southeast,0.426,-1,Yes,8,-4,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-lowpriority
+e32v3,lowpriority,32,20.8,256,europe-west,0.426,-1,No,8,-4,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-lowpriority
+e32sv3,lowpriority,32,20.8,256,europe-west,0.426,-1,Yes,8,-4,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-lowpriority
+e32v3,lowpriority,32,20.8,256,us-east,0.426,-1,No,8,-4,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-lowpriority
+e32sv3,lowpriority,32,20.8,256,us-east,0.426,-1,Yes,8,-4,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-lowpriority
+e32v3,lowpriority,32,20.8,256,us-west-2,0.426,-1,No,8,-4,64,262144,32000,3840,48000,750,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-lowpriority
+e32sv3,lowpriority,32,20.8,256,us-west-2,0.426,-1,Yes,8,-4,64,262144,32000,3840,64000,512,-1,512,-1,-1,-1,-2,-2,-2,Yes,linux-e32v3-lowpriority
+e64v3,lowpriority,64,41.6,432,asia-pacific-southeast,0.802,-1,No,8,-4,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-lowpriority
+e64sv3,lowpriority,64,41.6,432,asia-pacific-southeast,0.802,-1,Yes,8,-4,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-lowpriority
+e64v3,lowpriority,64,41.6,432,europe-west,0.802,-1,No,8,-4,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-lowpriority
+e64sv3,lowpriority,64,41.6,432,europe-west,0.802,-1,Yes,8,-4,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-lowpriority
+e64v3,lowpriority,64,41.6,432,us-east,0.802,-1,No,8,-4,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-lowpriority
+e64sv3,lowpriority,64,41.6,432,us-east,0.802,-1,Yes,8,-4,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-lowpriority
+e64v3,lowpriority,64,41.6,432,us-west-2,0.802,-1,No,8,-4,64,262144,32000,3840,96000,1000,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-lowpriority
+e64sv3,lowpriority,64,41.6,432,us-west-2,0.802,-1,Yes,8,-4,64,262144,32000,3840,128000,1024,-1,868,-1,-1,-1,-2,-2,-2,Yes,linux-e64v3-lowpriority
 f1,standard,1,1,2,asia-pacific-east,0.072,210,No,2,750,4,16384,2000,240,2000,240,16384,16,16000,128,-1,9300,91050,-2,No,linux-f1-standard
 f1s,standard,1,1,2,asia-pacific-east,0.072,210,Yes,2,750,4,16384,30000,1000,3200,48,4096,4,4000,32,-1,-2,-2,-2,No,linux-f1-standard
 f1,standard,1,1,2,asia-pacific-southeast,0.058,210,No,2,750,4,16384,2000,240,2000,240,16384,16,16000,128,-1,9300,91050,-2,No,linux-f1-standard
