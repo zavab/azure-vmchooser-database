@@ -1,0 +1,130 @@
+[
+  {
+    "Name": "S4",
+    "Type": "Standard",
+    "Capacity": 32,
+    "IOPS": 500,
+    "Throughput": 60,
+    "Price": 1.30 
+  },
+  {
+    "Name": "S6",
+    "Type": "Standard",
+    "Capacity": 64,
+    "IOPS": 500,
+    "Throughput": 60,
+    "Price": 2.54
+  },
+  {
+    "Name": "S10",
+    "Type": "Standard",
+    "Capacity":128,
+    "IOPS": 500,
+    "Throughput": 60,
+    "Price": 4.97
+  },
+  {
+    "Name": "S15",
+    "Type": "Standard",
+    "Capacity": 256,
+    "IOPS": 500,
+    "Throughput": 60,
+    "Price": 9.56
+  },
+  {
+    "Name": "S20",
+    "Type": "Standard",
+    "Capacity": 512,
+    "IOPS": 500,
+    "Throughput": 60,
+    "Price": 18.36
+  },
+  {
+    "Name": "S30",
+    "Type": "Standard",
+    "Capacity": 1024,
+    "IOPS": 500,
+    "Throughput": 60,
+    "Price": 34.55
+  },
+  {
+    "Name": "S40",
+    "Type": "Standard",
+    "Capacity": 2048,
+    "IOPS": 500,
+    "Throughput": 60,
+    "Price": 69.09
+  },
+  {
+    "Name": "S50",
+    "Type": "Standard",
+    "Capacity": 4096,
+    "IOPS": 500,
+    "Throughput": 60,
+    "Price": 138.17
+  },
+  {
+    "Name": "P4",
+    "Type": "Premium",
+    "Capacity": 32,
+    "IOPS": 120,
+    "Throughput": 25,
+    "Price": 4.90 
+  },
+  {
+    "Name": "P6",
+    "Type": "Premium",
+    "Capacity": 64,
+    "IOPS": 240,
+    "Throughput": 50,
+    "Price": 9.47
+  },
+  {
+    "Name": "P10",
+    "Type": "Premium",
+    "Capacity":128,
+    "IOPS": 500,
+    "Throughput": 100,
+    "Price": 18.29
+  },
+  {
+    "Name": "P15",
+    "Type": "Premium",
+    "Capacity": 256,
+    "IOPS": 1100,
+    "Throughput": 125,
+    "Price": 35.26
+  },
+  {
+    "Name": "P20",
+    "Type": "Premium",
+    "Capacity": 512,
+    "IOPS": 2300,
+    "Throughput": 150,
+    "Price": 67.92
+  },
+  {
+    "Name": "P30",
+    "Type": "Premium",
+    "Capacity": 1024,
+    "IOPS": 5000,
+    "Throughput": 200,
+    "Price": 125.39
+  },
+  {
+    "Name": "P40",
+    "Type": "Premium",
+    "Capacity": 2048,
+    "IOPS": 7500,
+    "Throughput": 250,
+    "Price": 240.29
+  },
+  {
+    "Name": "P50",
+    "Type": "Premium",
+    "Capacity": 4096,
+    "IOPS": 7500,
+    "Throughput": 250,
+    "Price": 459.69
+  }
+]
