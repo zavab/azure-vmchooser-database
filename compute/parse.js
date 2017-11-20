@@ -50,16 +50,16 @@ for(var pricesheet in pricing){
         // A hyperthreaded core gains 30% compared to a single threaded. So 130% performance for two vCPU's, is an equivalent of 65% of a physical core.
             }
             var priceUSD = price.value;
-            var priceEUR = price.value * currency.rates.EUR;
-            var priceGBP = price.value * currency.rates.GBP;
-            var priceAUD = price.value * currency.rates.AUD;
-            var priceJPY = price.value * currency.rates.JPY;
-            var priceCAD = price.value * currency.rates.CAD;
-            var priceDKK = price.value * currency.rates.DKK;
-            var priceCHF = price.value * currency.rates.CHF;
-            var priceSEK = price.value * currency.rates.SEK;
-            var priceIDR = price.value * currency.rates.IDR;
-            var priceINR = price.value * currency.rates.INR;
+            var priceEUR = priceUSD * currency.eur.conversion;
+            var priceGBP = priceUSD * currency.gbp.conversion;
+            var priceAUD = priceUSD * currency.aud.conversion;
+            var priceJPY = priceUSD * currency.jpy.conversion;
+            var priceCAD = priceUSD * currency.cad.conversion;
+            var priceDKK = priceUSD * currency.dkk.conversion;
+            var priceCHF = priceUSD * currency.chf.conversion;
+            var priceSEK = priceUSD * currency.sek.conversion;
+            var priceIDR = priceUSD * currency.idr.conversion;
+            var priceINR = priceUSD * currency.inr.conversion;
             picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
             console.log(name+","+pricesheet+","+tier+","+cores+","+pcores+","+mem+","+region+","+price.value+","+picked.ACU+","+picked.SSD+","+picked.MaxNics+","+picked.Bandwidth+","+picked.MaxDataDiskCount+","+picked.MaxDataDiskSizeGB+","+picked.MaxDataDiskIops+","+picked.MaxDataDiskThroughputMBs+","+picked.MaxVmIops+","+picked.MaxVmThroughputMBs+","+picked.ResourceDiskSizeInMB+","+picked.TempDiskSizeInGB+","+picked.TempDiskIops+","+picked.TempDiskReadMBs+","+picked.TempDiskWriteMBs+","+picked.SAPS2T+","+picked.SAPS3T+","+picked.HANA+","+picked.Hyperthreaded+","+offer+","+vmid+","+priceUSD+","+priceEUR+","+priceGBP+","+priceAUD+","+priceJPY+","+priceCAD+","+priceDKK+","+priceCHF+","+priceSEK+","+priceIDR+","+priceINR);
             var lookupssd = referencessd.filter(function(value){ return value.Link==filter;});
