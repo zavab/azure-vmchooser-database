@@ -28,16 +28,16 @@ for(var offer in offers){
       if (capacity === undefined) {
       } else {
         var priceUSD = offers[offer].prices[price].value;
-        var priceEUR = priceUSD * currency.rates.EUR;
-        var priceGBP = priceUSD * currency.rates.GBP;
-        var priceAUD = priceUSD * currency.rates.AUD;
-        var priceJPY = priceUSD * currency.rates.JPY;
-        var priceCAD = priceUSD * currency.rates.CAD;
-        var priceDKK = priceUSD * currency.rates.DKK;
-        var priceCHF = priceUSD * currency.rates.CHF;
-        var priceSEK = priceUSD * currency.rates.SEK;
-        var priceIDR = priceUSD * currency.rates.IDR;
-        var priceINR = priceUSD * currency.rates.INR;
+        var priceEUR = priceUSD * currency.eur.conversion;
+        var priceGBP = priceUSD * currency.gbp.conversion;
+        var priceAUD = priceUSD * currency.aud.conversion;
+        var priceJPY = priceUSD * currency.jpy.conversion;
+        var priceCAD = priceUSD * currency.cad.conversion;
+        var priceDKK = priceUSD * currency.dkk.conversion;
+        var priceCHF = priceUSD * currency.chf.conversion;
+        var priceSEK = priceUSD * currency.sek.conversion;
+        var priceIDR = priceUSD * currency.idr.conversion;
+        var priceINR = priceUSD * currency.inr.conversion;
         var region = price;
         var name = "md-"+size+"-"+tier+"-"+price;
       console.log(name+",disk,"+tier+","+size+","+region+","+priceUSD+","+capacity+","+iops+","+throughput+","+name+","+priceUSD+","+priceEUR+","+priceGBP+","+priceAUD+","+priceJPY+","+priceCAD+","+priceDKK+","+priceCHF+","+priceSEK+","+priceIDR+","+priceINR);
