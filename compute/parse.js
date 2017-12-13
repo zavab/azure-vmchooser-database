@@ -13,7 +13,6 @@ console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNi
 for(var pricesheet in pricing){
   var jsonfile = require(pricing[pricesheet]);
   var offers = jsonfile.offers;
-
   for(var offer in offers){
     if(offer.indexOf("linux") > -1) {
       var offername = offer.split("-");
@@ -37,17 +36,16 @@ for(var pricesheet in pricing){
           var picked = lookup[0];
           var pcores = cores;
           var vmid = offer+"-"+region+"-"+pricesheet;
-
           if (picked === undefined) {
-            //console.log(picked);
+            //console.log(name+"@notfound");
           } else {
-      if(picked.hasOwnProperty("BaseCpuPerformancePct")){
-        var pcores = picked.BaseCpuPerformancePct / pcores;
+            if(picked.hasOwnProperty("BaseCpuPerformancePct")){
+              var pcores = picked.BaseCpuPerformancePct / pcores;
               // calculating the base performance for systems like the B-series
-      }
-      if(picked.Hyperthreaded.indexOf("Yes") > -1) {
+            }
+            if(picked.Hyperthreaded.indexOf("Yes") > -1) {
               var pcores = pcores * 1.3 / 2;
-        // A hyperthreaded core gains 30% compared to a single threaded. So 130% performance for two vCPU's, is an equivalent of 65% of a physical core.
+              // A hyperthreaded core gains 30% compared to a single threaded. So 130% performance for two vCPU's, is an equivalent of 65% of a physical core.
             }
             var priceUSD = price.value;
             var priceEUR = priceUSD * currency.eur.conversion;
@@ -62,15 +60,17 @@ for(var pricesheet in pricing){
             var priceINR = priceUSD * currency.inr.conversion;
             picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
             console.log(name+",vm,"+pricesheet+","+tier+","+cores+","+pcores+","+mem+","+region+","+price.value+","+picked.ACU+","+picked.SSD+","+picked.MaxNics+","+picked.Bandwidth+","+picked.MaxDataDiskCount+","+picked.MaxDataDiskSizeGB+","+picked.MaxDataDiskIops+","+picked.MaxDataDiskThroughputMBs+","+picked.MaxVmIops+","+picked.MaxVmThroughputMBs+","+picked.ResourceDiskSizeInMB+","+picked.TempDiskSizeInGB+","+picked.TempDiskIops+","+picked.TempDiskReadMBs+","+picked.TempDiskWriteMBs+","+picked.SAPS2T+","+picked.SAPS3T+","+picked.HANA+","+picked.Hyperthreaded+","+offer+","+vmid+","+priceUSD+","+priceEUR+","+priceGBP+","+priceAUD+","+priceJPY+","+priceCAD+","+priceDKK+","+priceCHF+","+priceSEK+","+priceIDR+","+priceINR);
-            var lookupssd = referencessd.filter(function(value){ return value.Link==filter;});
-            if (Object.keys(lookupssd).length) {
-              var picked = lookupssd[0];
-              var ssdname = picked.Name.split("_");
-              var pickedname = ssdname[1];
-              var pickedoffer = "linux-"+pickedname+"-"+tier;
-              var vmid = pickedoffer+"-"+region+"-"+pricesheet;
-              console.log(pickedname+",vm,"+pricesheet+","+tier+","+cores+","+pcores+","+mem+","+region+","+price.value+","+picked.ACU+","+picked.SSD+","+picked.MaxNics+","+picked.Bandwidth+","+picked.MaxDataDiskCount+","+picked.MaxDataDiskSizeGB+","+picked.MaxDataDiskIops+","+picked.MaxDataDiskThroughputMBs+","+picked.MaxVmIops+","+picked.MaxVmThroughputMBs+","+picked.ResourceDiskSizeInMB+","+picked.TempDiskSizeInGB+","+picked.TempDiskIops+","+picked.TempDiskReadMBs+","+picked.TempDiskWriteMBs+","+picked.SAPS2T+","+picked.SAPS3T+","+picked.HANA+","+picked.Hyperthreaded+","+pickedoffer+","+vmid+","+priceUSD+","+priceEUR+","+priceGBP+","+priceAUD+","+priceJPY+","+priceCAD+","+priceDKK+","+priceCHF+","+priceSEK+","+priceIDR+","+priceINR);
-            }
+            //console.log(name+"@hdd");
+          }
+          var lookupssd = referencessd.filter(function(value){ return value.Link==filter;});
+          if (Object.keys(lookupssd).length) {
+            var picked = lookupssd[0];
+            var ssdname = picked.Name.split("_");
+            var pickedname = ssdname[1];
+            var pickedoffer = "linux-"+pickedname+"-"+tier;
+            var vmid = pickedoffer+"-"+region+"-"+pricesheet;
+            console.log(pickedname+",vm,"+pricesheet+","+tier+","+cores+","+pcores+","+mem+","+region+","+price.value+","+picked.ACU+","+picked.SSD+","+picked.MaxNics+","+picked.Bandwidth+","+picked.MaxDataDiskCount+","+picked.MaxDataDiskSizeGB+","+picked.MaxDataDiskIops+","+picked.MaxDataDiskThroughputMBs+","+picked.MaxVmIops+","+picked.MaxVmThroughputMBs+","+picked.ResourceDiskSizeInMB+","+picked.TempDiskSizeInGB+","+picked.TempDiskIops+","+picked.TempDiskReadMBs+","+picked.TempDiskWriteMBs+","+picked.SAPS2T+","+picked.SAPS3T+","+picked.HANA+","+picked.Hyperthreaded+","+pickedoffer+","+vmid+","+priceUSD+","+priceEUR+","+priceGBP+","+priceAUD+","+priceJPY+","+priceCAD+","+priceDKK+","+priceCHF+","+priceSEK+","+priceIDR+","+priceINR);
+            //console.log(pickedname+"@ssd");
           }
         }
       }
