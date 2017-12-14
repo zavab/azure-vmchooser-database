@@ -105,10 +105,10 @@
     "ACU": -1,
     "SSD": "No",
     "NumberOfCores": 1,
-	  "BaseCpuPerformancePct": 0.1,
-	  "MaxCpuPerformancePct": 1,
-	  "CreditsBankedPerHour": 6,
-	  "MaxBankedCredits": 144,
+	"BaseCpuPerformancePct": 0.1,
+	"MaxCpuPerformancePct": 1,
+	"CreditsBankedPerHour": 6,
+	"MaxBankedCredits": 144,
     "MemoryInMB": 1024,
     "MaxNics": "2",
     "Bandwidth": -1,
@@ -126,7 +126,8 @@
     "SAPS2T": -2,
     "SAPS3T": -2,
     "HANA": -2,
-    "Hyperthreaded": "Yes"
+    "Hyperthreaded": "Yes",
+	"Burstable": "Yes"
   },
     {
     "Name": "standard_b2s",
@@ -153,7 +154,8 @@
     "SAPS2T": -2,
     "SAPS3T": -2,
     "HANA": -2,
-    "Hyperthreaded": "Yes"
+    "Hyperthreaded": "Yes",
+	"Burstable": "Yes"
   },
   {
     "Name": "standard_b1ms",
@@ -180,7 +182,8 @@
     "SAPS2T": -2,
     "SAPS3T": -2,
     "HANA": -2,
-    "Hyperthreaded": "Yes"
+    "Hyperthreaded": "Yes",
+	"Burstable": "Yes"
   },
     {
     "Name": "standard_b2ms",
@@ -207,7 +210,8 @@
     "SAPS2T": -2,
     "SAPS3T": -2,
     "HANA": -2,
-    "Hyperthreaded": "Yes"
+    "Hyperthreaded": "Yes",
+	"Burstable": "Yes"
   },
   {
     "Name": "standard_b4ms",
@@ -234,7 +238,8 @@
     "SAPS2T": -2,
     "SAPS3T": -2,
     "HANA": -2,
-    "Hyperthreaded": "Yes"
+    "Hyperthreaded": "Yes",
+	"Burstable": "Yes"
   },
     {
     "Name": "standard_b8ms",
@@ -261,7 +266,8 @@
     "SAPS2T": -2,
     "SAPS3T": -2,
     "HANA": -2,
-    "Hyperthreaded": "Yes"
+    "Hyperthreaded": "Yes",
+	"Burstable": "Yes"
   },
     {
     "Name": "basic_a0",
@@ -4031,7 +4037,8 @@
     "SAPS2T": -1,
     "SAPS3T": -1,
     "HANA": -1,
-    "Hyperthreaded": -1
+    "Hyperthreaded": -1,
+	"Burstable": "Yes"
   },
   {
     "Name": "standard_B2S",
@@ -4060,7 +4067,8 @@
     "SAPS2T": -1,
     "SAPS3T": -1,
     "HANA": -1,
-    "Hyperthreaded": -1
+    "Hyperthreaded": -1,
+	"Burstable": "Yes"
   },
   {
     "Name": "standard_B1MS",
@@ -4089,7 +4097,8 @@
     "SAPS2T": -1,
     "SAPS3T": -1,
     "HANA": -1,
-    "Hyperthreaded": -1
+    "Hyperthreaded": -1,
+	"Burstable": "Yes"
   },
   {
     "Name": "standard_B2MS",
@@ -4118,7 +4127,8 @@
     "SAPS2T": -1,
     "SAPS3T": -1,
     "HANA": -1,
-    "Hyperthreaded": -1
+    "Hyperthreaded": -1,
+	"Burstable": "Yes"
   },
   {
     "Name": "standard_B4MS",
@@ -4147,7 +4157,8 @@
     "SAPS2T": -1,
     "SAPS3T": -1,
     "HANA": -1,
-    "Hyperthreaded": -1
+    "Hyperthreaded": -1,
+	"Burstable": "Yes"
   },
   {
     "Name": "standard_B8MS",
@@ -4176,6 +4187,7 @@
     "SAPS2T": -1,
     "SAPS3T": -1,
     "HANA": -1,
-    "Hyperthreaded": -1
+    "Hyperthreaded": -1,
+	"Burstable": "Yes"
   }
 ]
