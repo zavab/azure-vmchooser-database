@@ -24,7 +24,7 @@
     "HANA": -2,
     "Hyperthreaded": "No"
   },
-    {
+  {
     "Name": "standard_nd12",
     "Type": "VM",
     "ACU": -1,
@@ -74,7 +74,7 @@
     "HANA": -2,
     "Hyperthreaded": "No"
   },
-    {
+  {
     "Name": "standard_nd24r",
     "Type": "VM",
     "ACU": -1,
@@ -105,10 +105,10 @@
     "ACU": -1,
     "SSD": "No",
     "NumberOfCores": 1,
-	"BaseCpuPerformancePct": 0.1,
-	"MaxCpuPerformancePct": 1,
-	"CreditsBankedPerHour": 6,
-	"MaxBankedCredits": 144,
+    "BaseCpuPerformancePct": 0.1,
+    "MaxCpuPerformancePct": 1,
+    "CreditsBankedPerHour": 6,
+    "MaxBankedCredits": 144,
     "MemoryInMB": 1024,
     "MaxNics": "2",
     "Bandwidth": -1,
@@ -127,16 +127,16 @@
     "SAPS3T": -2,
     "HANA": -2,
     "Hyperthreaded": "Yes",
-	"Burstable": "Yes"
+    "Burstable": "Yes"
   },
-    {
+  {
     "Name": "standard_b2s",
     "Type": "VM",
     "ACU": -1,
     "SSD": "No",
     "NumberOfCores": 2,
-	  "BaseCpuPerformancePct": 0.4,
-	  "MaxCpuPerformancePct": 2,
+    "BaseCpuPerformancePct": 0.4,
+    "MaxCpuPerformancePct": 2,
     "MemoryInMB": 4096,
     "MaxNics": "3",
     "Bandwidth": -1,
@@ -155,7 +155,7 @@
     "SAPS3T": -2,
     "HANA": -2,
     "Hyperthreaded": "Yes",
-	"Burstable": "Yes"
+    "Burstable": "Yes"
   },
   {
     "Name": "standard_b1ms",
@@ -163,8 +163,8 @@
     "ACU": -1,
     "SSD": "No",
     "NumberOfCores": 1,
-	  "BaseCpuPerformancePct": 0.2,
-	  "MaxCpuPerformancePct": 1,
+    "BaseCpuPerformancePct": 0.2,
+    "MaxCpuPerformancePct": 1,
     "MemoryInMB": 2048,
     "MaxNics": "2",
     "Bandwidth": -1,
@@ -183,16 +183,16 @@
     "SAPS3T": -2,
     "HANA": -2,
     "Hyperthreaded": "Yes",
-	"Burstable": "Yes"
+    "Burstable": "Yes"
   },
-    {
+  {
     "Name": "standard_b2ms",
     "Type": "VM",
     "ACU": -1,
     "SSD": "No",
     "NumberOfCores": 2,
-	  "BaseCpuPerformancePct": 0.6,
-	  "MaxCpuPerformancePct": 2,
+    "BaseCpuPerformancePct": 0.6,
+    "MaxCpuPerformancePct": 2,
     "MemoryInMB": 8192,
     "MaxNics": "3",
     "Bandwidth": -1,
@@ -211,7 +211,7 @@
     "SAPS3T": -2,
     "HANA": -2,
     "Hyperthreaded": "Yes",
-	"Burstable": "Yes"
+    "Burstable": "Yes"
   },
   {
     "Name": "standard_b4ms",
@@ -219,8 +219,8 @@
     "ACU": -1,
     "SSD": "No",
     "NumberOfCores": 4,
-	  "BaseCpuPerformancePct": 0.9,
-	  "MaxCpuPerformancePct": 4,
+    "BaseCpuPerformancePct": 0.9,
+    "MaxCpuPerformancePct": 4,
     "MemoryInMB": 16384,
     "MaxNics": "4",
     "Bandwidth": -1,
@@ -239,16 +239,16 @@
     "SAPS3T": -2,
     "HANA": -2,
     "Hyperthreaded": "Yes",
-	"Burstable": "Yes"
+    "Burstable": "Yes"
   },
-    {
+  {
     "Name": "standard_b8ms",
     "Type": "VM",
     "ACU": -1,
     "SSD": "No",
     "NumberOfCores": 8,
-	  "BaseCpuPerformancePct": 1.35,
-	  "MaxCpuPerformancePct": 8,
+    "BaseCpuPerformancePct": 1.35,
+    "MaxCpuPerformancePct": 8,
     "MemoryInMB": 32768,
     "MaxNics": "4",
     "Bandwidth": -1,
@@ -267,9 +267,9 @@
     "SAPS3T": -2,
     "HANA": -2,
     "Hyperthreaded": "Yes",
-	"Burstable": "Yes"
+    "Burstable": "Yes"
   },
-    {
+  {
     "Name": "basic_a0",
     "Type": "VM",
     "PricePerHourPAYG": 0.016,
@@ -1572,7 +1572,8 @@
     "SAPS2T": -2,
     "SAPS3T": -2,
     "HANA": -2,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "Isolated": "Yes"
   },
   {
     "Name": "standard_d2",
@@ -2732,7 +2733,8 @@
     "SAPS2T": -2,
     "SAPS3T": -2,
     "HANA": -2,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "Isolated": "Yes"
   },
   {
     "Name": "standard_gS1",
@@ -3109,7 +3111,8 @@
     "SAPS2T": -2,
     "SAPS3T": -2,
     "HANA": -2,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "Isolated": "Yes"
   },
   {
     "Name": "standard_l4",
@@ -3199,6 +3202,36 @@
     "Hyperthreaded": "Yes"
   },
   {
+    "Name": "standard_m128ms",
+    "Type": "VM",
+    "PricePerHourPAYG": -1,
+    "PricePerHourLP": -1,
+    "ACU": 160,
+    "CoreFactor": 20480,
+    "CoreFactorIndex": -1,
+    "SSD": "Yes",
+    "NumberOfCores": 128,
+    "MemoryInMB": 3800000,
+    "MaxNics": 32,
+    "Bandwidth": 25000,
+    "MaxDataDiskCount": 64,
+    "MaxDataDiskSizeGB": 262144,
+    "MaxDataDiskIops": 480000,
+    "MaxDataDiskThroughputMBs": 16000,
+    "MaxVmIops": 80000,
+    "MaxVmThroughputMBs": 2000,
+    "ResourceDiskSizeInMB": 4096000,
+    "TempDiskSizeInGB": 4000,
+    "TempDiskIops": "20000.00",
+    "TempDiskReadMBs": 100,
+    "TempDiskWriteMBs": -1,
+    "SAPS2T": -2,
+    "SAPS3T": -2,
+    "HANA": -2,
+    "Hyperthreaded": "Yes",
+    "Isolated": "Yes"
+  },
+  {
     "Name": "standard_m128s",
     "Type": "VM",
     "PricePerHourPAYG": -1,
@@ -3225,7 +3258,8 @@
     "SAPS2T": -2,
     "SAPS3T": -2,
     "HANA": -2,
-    "Hyperthreaded": "Yes"
+    "Hyperthreaded": "Yes",
+    "Isolated": "Yes"
   },
   {
     "Name": "standard_m64ms",
@@ -4038,7 +4072,7 @@
     "SAPS3T": -1,
     "HANA": -1,
     "Hyperthreaded": -1,
-	"Burstable": "Yes"
+    "Burstable": "Yes"
   },
   {
     "Name": "standard_B2S",
@@ -4068,7 +4102,7 @@
     "SAPS3T": -1,
     "HANA": -1,
     "Hyperthreaded": -1,
-	"Burstable": "Yes"
+    "Burstable": "Yes"
   },
   {
     "Name": "standard_B1MS",
@@ -4098,7 +4132,7 @@
     "SAPS3T": -1,
     "HANA": -1,
     "Hyperthreaded": -1,
-	"Burstable": "Yes"
+    "Burstable": "Yes"
   },
   {
     "Name": "standard_B2MS",
@@ -4128,7 +4162,7 @@
     "SAPS3T": -1,
     "HANA": -1,
     "Hyperthreaded": -1,
-	"Burstable": "Yes"
+    "Burstable": "Yes"
   },
   {
     "Name": "standard_B4MS",
@@ -4158,7 +4192,7 @@
     "SAPS3T": -1,
     "HANA": -1,
     "Hyperthreaded": -1,
-	"Burstable": "Yes"
+    "Burstable": "Yes"
   },
   {
     "Name": "standard_B8MS",
@@ -4188,6 +4222,6 @@
     "SAPS3T": -1,
     "HANA": -1,
     "Hyperthreaded": -1,
-	"Burstable": "Yes"
+    "Burstable": "Yes"
   }
 ]

@@ -3,12 +3,12 @@ var referencessd = require('./referencedata-ssd.json');
 var currency = require('./currency.json');
 
 var pricing = {
-  "payg":'./apipricing-base-payg.json',
-  "ri1y":'./apipricing-base-1y.json',
-  "ri3y":'./apipricing-base-3y.json'
-}
+    "payg": './apipricing-base-payg.json',
+    "ri1y": './apipricing-base-1y.json',
+    "ri3y": './apipricing-base-3y.json'
+};
 
-console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,HANA,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,burstable");
+console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,HANA,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,burstable,isolated");
 
 for(var pricesheet in pricing){
   var jsonfile = require(pricing[pricesheet]);
@@ -32,7 +32,7 @@ for(var pricesheet in pricing){
           var region = price;
           var price = offers[offer].prices[price];
           var filter = filtertier+"_"+name;
-          var lookup = reference.filter(function(value){ return value.Name==filter;});
+          var lookup = reference.filter(function(value){ return value.Name===filter;});
           var picked = lookup[0];
           var pcores = cores;
           var vmid = offer+"-"+region+"-"+pricesheet;
@@ -65,14 +65,19 @@ for(var pricesheet in pricing){
             if (picked.Burstable !== undefined) {
               var burstable = "Yes";
             }
+            // Isolated check
+            var isolated = "No";
+            if (picked.Isolated !== undefined) {
+                var isolated = "Yes";
+            }
             // Calc max disk size for VM
             picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
             // Print output
-            console.log(name+",vm,"+pricesheet+","+tier+","+cores+","+pcores+","+mem+","+region+","+price.value+","+picked.ACU+","+picked.SSD+","+picked.MaxNics+","+picked.Bandwidth+","+picked.MaxDataDiskCount+","+picked.MaxDataDiskSizeGB+","+picked.MaxDataDiskIops+","+picked.MaxDataDiskThroughputMBs+","+picked.MaxVmIops+","+picked.MaxVmThroughputMBs+","+picked.ResourceDiskSizeInMB+","+picked.TempDiskSizeInGB+","+picked.TempDiskIops+","+picked.TempDiskReadMBs+","+picked.TempDiskWriteMBs+","+picked.SAPS2T+","+picked.SAPS3T+","+picked.HANA+","+picked.Hyperthreaded+","+offer+","+vmid+","+priceUSD+","+priceEUR+","+priceGBP+","+priceAUD+","+priceJPY+","+priceCAD+","+priceDKK+","+priceCHF+","+priceSEK+","+priceIDR+","+priceINR+","+burstable);
+            console.log(name+",vm,"+pricesheet+","+tier+","+cores+","+pcores+","+mem+","+region+","+price.value+","+picked.ACU+","+picked.SSD+","+picked.MaxNics+","+picked.Bandwidth+","+picked.MaxDataDiskCount+","+picked.MaxDataDiskSizeGB+","+picked.MaxDataDiskIops+","+picked.MaxDataDiskThroughputMBs+","+picked.MaxVmIops+","+picked.MaxVmThroughputMBs+","+picked.ResourceDiskSizeInMB+","+picked.TempDiskSizeInGB+","+picked.TempDiskIops+","+picked.TempDiskReadMBs+","+picked.TempDiskWriteMBs+","+picked.SAPS2T+","+picked.SAPS3T+","+picked.HANA+","+picked.Hyperthreaded+","+offer+","+vmid+","+priceUSD+","+priceEUR+","+priceGBP+","+priceAUD+","+priceJPY+","+priceCAD+","+priceDKK+","+priceCHF+","+priceSEK+","+priceIDR+","+priceINR+","+burstable+","+isolated);
             //console.log(name+"@hdd");
           }
           // Checkup for SSD Powered Machines
-          var lookupssd = referencessd.filter(function(value){ return value.Link==filter;});
+          var lookupssd = referencessd.filter(function(value){ return value.Link===filter;});
           if (Object.keys(lookupssd).length) {
             var picked = lookupssd[0];
             var ssdname = picked.Name.split("_");
@@ -92,10 +97,15 @@ for(var pricesheet in pricing){
             if (picked.Burstable !== undefined) {
               var burstable = "Yes";
             }
+            // Isolated check
+            var isolated = "No";
+            if (picked.Isolated !== undefined) {
+                var isolated = "Yes";
+            }
             // Calc max disk size for VM
             picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
             // Print output
-            console.log(pickedname+",vm,"+pricesheet+","+tier+","+cores+","+pcores+","+mem+","+region+","+price.value+","+picked.ACU+","+picked.SSD+","+picked.MaxNics+","+picked.Bandwidth+","+picked.MaxDataDiskCount+","+picked.MaxDataDiskSizeGB+","+picked.MaxDataDiskIops+","+picked.MaxDataDiskThroughputMBs+","+picked.MaxVmIops+","+picked.MaxVmThroughputMBs+","+picked.ResourceDiskSizeInMB+","+picked.TempDiskSizeInGB+","+picked.TempDiskIops+","+picked.TempDiskReadMBs+","+picked.TempDiskWriteMBs+","+picked.SAPS2T+","+picked.SAPS3T+","+picked.HANA+","+picked.Hyperthreaded+","+pickedoffer+","+vmid+","+priceUSD+","+priceEUR+","+priceGBP+","+priceAUD+","+priceJPY+","+priceCAD+","+priceDKK+","+priceCHF+","+priceSEK+","+priceIDR+","+priceINR+","+burstable);
+            console.log(pickedname+",vm,"+pricesheet+","+tier+","+cores+","+pcores+","+mem+","+region+","+price.value+","+picked.ACU+","+picked.SSD+","+picked.MaxNics+","+picked.Bandwidth+","+picked.MaxDataDiskCount+","+picked.MaxDataDiskSizeGB+","+picked.MaxDataDiskIops+","+picked.MaxDataDiskThroughputMBs+","+picked.MaxVmIops+","+picked.MaxVmThroughputMBs+","+picked.ResourceDiskSizeInMB+","+picked.TempDiskSizeInGB+","+picked.TempDiskIops+","+picked.TempDiskReadMBs+","+picked.TempDiskWriteMBs+","+picked.SAPS2T+","+picked.SAPS3T+","+picked.HANA+","+picked.Hyperthreaded+","+pickedoffer+","+vmid+","+priceUSD+","+priceEUR+","+priceGBP+","+priceAUD+","+priceJPY+","+priceCAD+","+priceDKK+","+priceCHF+","+priceSEK+","+priceIDR+","+priceINR+","+burstable+","+isolated);
             //console.log(pickedname+"@ssd");
           }
         }

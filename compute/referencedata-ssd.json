@@ -327,7 +327,8 @@
     "SAPS2T": 30430,
     "SAPS3T": -3,
     "HANA": -2,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "Isolated": "Yes"
   },
   {
     "Name": "standard_ds2",
@@ -837,7 +838,8 @@
     "SAPS2T": 41670,
     "SAPS3T": -3,
     "HANA": "Supported",
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "Isolated": "Yes"
   },
   {
     "Name": "standard_m128s",
@@ -867,7 +869,8 @@
     "SAPS2T": -2,
     "SAPS3T": -2,
     "HANA": -2,
-    "Hyperthreaded": "Yes"
+    "Hyperthreaded": "Yes",
+    "Isolated": "Yes"
   },
   {
     "Name": "standard_m64ms",
@@ -1290,6 +1293,68 @@
     "Hyperthreaded": "Yes"
   },
   {
+    "Name": "standard_e64i_v3",
+    "Link": "standard_e64v3",
+    "Type": "VM",
+    "PricePerHourPAYG": 4.07,
+    "PricePerHourLP": 0.677,
+    "ACU": 190,
+    "CoreFactor": -1,
+    "CoreFactorIndex": -1,
+    "SSD": "No",
+    "NumberOfCores": 64,
+    "MemoryInMB": 442368,
+    "MaxNics": 8,
+    "Bandwidth": -1,
+    "MaxDataDiskCount": 64,
+    "MaxDataDiskSizeGB": 262144,
+    "MaxDataDiskIops": 32000,
+    "MaxDataDiskThroughputMBs": 3840,
+    "MaxVmIops": 128000,
+    "MaxVmThroughputMBs": 1024,
+    "ResourceDiskSizeInMB": -1,
+    "TempDiskSizeInGB": 868,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "SAPS2T": -2,
+    "SAPS3T": -2,
+    "HANA": -2,
+    "Hyperthreaded": "Yes",
+    "Isolated": "Yes"
+  },
+  {
+    "Name": "standard_E64is_v3",
+    "Link": "standard_e64v3",
+    "Type": "VM",
+    "PricePerHourPAYG": 4.07,
+    "PricePerHourLP": 0.677,
+    "ACU": 190,
+    "CoreFactor": -1,
+    "CoreFactorIndex": -1,
+    "SSD": "Yes",
+    "NumberOfCores": 64,
+    "MemoryInMB": 442368,
+    "MaxNics": 8,
+    "Bandwidth": -1,
+    "MaxDataDiskCount": 64,
+    "MaxDataDiskSizeGB": 262144,
+    "MaxDataDiskIops": 32000,
+    "MaxDataDiskThroughputMBs": 3840,
+    "MaxVmIops": 128000,
+    "MaxVmThroughputMBs": 1024,
+    "ResourceDiskSizeInMB": -1,
+    "TempDiskSizeInGB": 868,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "SAPS2T": -2,
+    "SAPS3T": -2,
+    "HANA": -2,
+    "Hyperthreaded": "Yes",
+    "Isolated": "Yes"
+  },
+  {
     "Name": "standard_fs2v2",
     "Link": "standard_f2v2",
     "Type": "VM",
@@ -1351,7 +1416,7 @@
   },
   {
     "Name": "standard_fs8v2",
-	"Link": "standard_f8v2",
+    "Link": "standard_f8v2",
     "Type": "VM",
     "PricePerHourPAYG": 0.092,
     "PricePerHourLP": -1,
@@ -1381,7 +1446,7 @@
   },
   {
     "Name": "standard_fs16v2",
-	"Link": "standard_f16v2",
+    "Link": "standard_f16v2",
     "Type": "VM",
     "PricePerHourPAYG": 0.092,
     "PricePerHourLP": -1,
@@ -1411,7 +1476,7 @@
   },
   {
     "Name": "standard_fs32v2",
-	"Link": "standard_f32v2",
+    "Link": "standard_f32v2",
     "Type": "VM",
     "PricePerHourPAYG": 0.092,
     "PricePerHourLP": -1,
@@ -1441,7 +1506,7 @@
   },
   {
     "Name": "standard_f64v2",
-	"Link": "standard_fs64v2",
+    "Link": "standard_fs64v2",
     "Type": "VM",
     "PricePerHourPAYG": 0.092,
     "PricePerHourLP": -1,
@@ -1471,7 +1536,7 @@
   },
   {
     "Name": "standard_fs72v2",
-	"Link": "standard_f72v2",
+    "Link": "standard_f72v2",
     "Type": "VM",
     "PricePerHourPAYG": 0.092,
     "PricePerHourLP": -1,
@@ -1497,6 +1562,7 @@
     "SAPS2T": -1,
     "SAPS3T": -1,
     "HANA": -1,
-    "Hyperthreaded": "Yes"
+    "Hyperthreaded": "Yes",
+    "Isolated": "Yes"
   }
 ]
