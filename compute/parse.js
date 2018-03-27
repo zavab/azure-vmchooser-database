@@ -79,7 +79,6 @@ for (var pricesheet in pricing) {
                     // Checkup for SSD Powered (or other variants, like Isolated) Machines that leverage the same pricing SKU
                     var output = referencessd.filter(function (x) { return x.Link === filter; });
                     if (Object.keys(output).length) {
-                        console.log(filter);
                         for (var variant in output) {
                             var picked = output[variant];
                             var ssdname = picked.Name.split("_");

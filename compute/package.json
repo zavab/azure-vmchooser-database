@@ -4,7 +4,7 @@
   "description": "",
   "main": "parse.js",
   "dependencies": {
-    "csvtojson": "^1.1.9"
+    "csvtojson": "*"
   },
   "devDependencies": {},
   "scripts": {
