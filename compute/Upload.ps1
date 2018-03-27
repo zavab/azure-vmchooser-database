@@ -1,3 +1,7 @@
+Param(
+  [string]$storageAccountName
+)
+
 # Setting the container name. Creates a container in which the files will be uploaded
 $ContainerName = "database"
 
