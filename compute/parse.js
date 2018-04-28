@@ -84,7 +84,7 @@ for (var pricesheet in pricing) {
                         var picked = output[variant];
                         var ssdname = picked.Name.split("_");
                         var pickedname = ssdname[1];
-                        var pickedoffer = "linux-" + pickedname + "-" + tier;
+                        var pickedoffer = os + pickedname + "-" + tier;
                         var vmid = pickedoffer + "-" + region + "-" + pricesheet;
                         if (picked.hasOwnProperty("BaseCpuPerformancePct")) {
                             var pcores = picked.BaseCpuPerformancePct / pcores;
