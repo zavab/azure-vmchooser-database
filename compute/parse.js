@@ -1,6 +1,7 @@
 var reference = require('./referencedata.json');
 var referencessd = require('./referencedata-ssd.json');
 var currency = require('./currency.json');
+var debug = false;
 
 var pricing = {
     "payg": './apipricing-base-payg.json',
@@ -51,7 +52,9 @@ for (var pricesheet in pricing) {
                 var priceINR = priceUSD * currency.inr.conversion;
                 // Checkup for non-ssd powered machines
                 if (picked === undefined) {
-                    //console.log(name+"@notfound");
+                    if (debug) {
+                        console.log(name + "@notfound@standard@" + pricesheet);
+                    }
                 } else {
                     if (picked.hasOwnProperty("BaseCpuPerformancePct")) {
                         var pcores = picked.BaseCpuPerformancePct / pcores;
@@ -74,9 +77,13 @@ for (var pricesheet in pricing) {
                     // Calc max disk size for VM
                     picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
                     // Print output
-                    console.log(name + ",vm," + pricesheet + "," + tier + "," + cores + "," + pcores + "," + mem + "," + region + "," + price.value + "," + picked.ACU + "," + picked.SSD + "," + picked.MaxNics + "," + picked.Bandwidth + "," + picked.MaxDataDiskCount + "," + picked.MaxDataDiskSizeGB + "," + picked.MaxDataDiskIops + "," + picked.MaxDataDiskThroughputMBs + "," + picked.MaxVmIops + "," + picked.MaxVmThroughputMBs + "," + picked.ResourceDiskSizeInMB + "," + picked.TempDiskSizeInGB + "," + picked.TempDiskIops + "," + picked.TempDiskReadMBs + "," + picked.TempDiskWriteMBs + "," + picked.SAPS2T + "," + picked.SAPS3T + "," + picked.HANA + "," + picked.Hyperthreaded + "," + offer + "," + vmid + "," + priceUSD + "," + priceEUR + "," + priceGBP + "," + priceAUD + "," + priceJPY + "," + priceCAD + "," + priceDKK + "," + priceCHF + "," + priceSEK + "," + priceIDR + "," + priceINR + "," + burstable + "," + isolated + "," + os);
-                    //console.log(name+"@hdd");
-                }
+
+                    if (debug == false) {
+                        console.log(name + ",vm," + pricesheet + "," + tier + "," + cores + "," + pcores + "," + mem + "," + region + "," + price.value + "," + picked.ACU + "," + picked.SSD + "," + picked.MaxNics + "," + picked.Bandwidth + "," + picked.MaxDataDiskCount + "," + picked.MaxDataDiskSizeGB + "," + picked.MaxDataDiskIops + "," + picked.MaxDataDiskThroughputMBs + "," + picked.MaxVmIops + "," + picked.MaxVmThroughputMBs + "," + picked.ResourceDiskSizeInMB + "," + picked.TempDiskSizeInGB + "," + picked.TempDiskIops + "," + picked.TempDiskReadMBs + "," + picked.TempDiskWriteMBs + "," + picked.SAPS2T + "," + picked.SAPS3T + "," + picked.HANA + "," + picked.Hyperthreaded + "," + offer + "," + vmid + "," + priceUSD + "," + priceEUR + "," + priceGBP + "," + priceAUD + "," + priceJPY + "," + priceCAD + "," + priceDKK + "," + priceCHF + "," + priceSEK + "," + priceIDR + "," + priceINR + "," + burstable + "," + isolated + "," + os);
+                    } else {
+                        console.log(name + "@found@standard@" + pricesheet);
+                    }
+                } 
                 // Checkup for SSD Powered (or other variants, like Isolated) Machines that leverage the same pricing SKU
                 var output = referencessd.filter(function (x) { return x.Link === filter; });
                 if (Object.keys(output).length) {
@@ -84,7 +91,7 @@ for (var pricesheet in pricing) {
                         var picked = output[variant];
                         var ssdname = picked.Name.split("_");
                         var pickedname = ssdname[1];
-                        var pickedoffer = os + pickedname + "-" + tier;
+                        var pickedoffer = os + "-" + pickedname + "-" + tier;
                         var vmid = pickedoffer + "-" + region + "-" + pricesheet;
                         if (picked.hasOwnProperty("BaseCpuPerformancePct")) {
                             var pcores = picked.BaseCpuPerformancePct / pcores;
@@ -107,8 +114,15 @@ for (var pricesheet in pricing) {
                         // Calc max disk size for VM
                         picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
                         // Print output
-                        console.log(pickedname + ",vm," + pricesheet + "," + tier + "," + cores + "," + pcores + "," + mem + "," + region + "," + price.value + "," + picked.ACU + "," + picked.SSD + "," + picked.MaxNics + "," + picked.Bandwidth + "," + picked.MaxDataDiskCount + "," + picked.MaxDataDiskSizeGB + "," + picked.MaxDataDiskIops + "," + picked.MaxDataDiskThroughputMBs + "," + picked.MaxVmIops + "," + picked.MaxVmThroughputMBs + "," + picked.ResourceDiskSizeInMB + "," + picked.TempDiskSizeInGB + "," + picked.TempDiskIops + "," + picked.TempDiskReadMBs + "," + picked.TempDiskWriteMBs + "," + picked.SAPS2T + "," + picked.SAPS3T + "," + picked.HANA + "," + picked.Hyperthreaded + "," + pickedoffer + "," + vmid + "," + priceUSD + "," + priceEUR + "," + priceGBP + "," + priceAUD + "," + priceJPY + "," + priceCAD + "," + priceDKK + "," + priceCHF + "," + priceSEK + "," + priceIDR + "," + priceINR + "," + burstable + "," + isolated + "," + os);
-                        //console.log(pickedname+"@ssd");
+                        if (debug == false) {
+                            console.log(pickedname + ",vm," + pricesheet + "," + tier + "," + cores + "," + pcores + "," + mem + "," + region + "," + price.value + "," + picked.ACU + "," + picked.SSD + "," + picked.MaxNics + "," + picked.Bandwidth + "," + picked.MaxDataDiskCount + "," + picked.MaxDataDiskSizeGB + "," + picked.MaxDataDiskIops + "," + picked.MaxDataDiskThroughputMBs + "," + picked.MaxVmIops + "," + picked.MaxVmThroughputMBs + "," + picked.ResourceDiskSizeInMB + "," + picked.TempDiskSizeInGB + "," + picked.TempDiskIops + "," + picked.TempDiskReadMBs + "," + picked.TempDiskWriteMBs + "," + picked.SAPS2T + "," + picked.SAPS3T + "," + picked.HANA + "," + picked.Hyperthreaded + "," + pickedoffer + "," + vmid + "," + priceUSD + "," + priceEUR + "," + priceGBP + "," + priceAUD + "," + priceJPY + "," + priceCAD + "," + priceDKK + "," + priceCHF + "," + priceSEK + "," + priceIDR + "," + priceINR + "," + burstable + "," + isolated + "," + os);
+                        } else {
+                            console.log(name + "@found@premium@" + pricesheet);
+                        }
+                    }
+                } else {
+                    if (debug) {
+                        console.log(name + "@notfound@premium@" + pricesheet);
                     }
                 }
             }
