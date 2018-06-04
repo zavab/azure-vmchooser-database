@@ -9,7 +9,7 @@ var pricing = {
     "ri3y": './apipricing-base-3y.json'
 };
 
-console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,HANA,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,burstable,isolated,os");
+console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,SAPHANA,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,burstable,isolated,os");
 
 for (var pricesheet in pricing) {
     var jsonfile = require(pricing[pricesheet]);
@@ -74,12 +74,71 @@ for (var pricesheet in pricing) {
                     if (picked.Isolated !== undefined) {
                         var isolated = "Yes";
                     }
+                    // SAP HANA check
+                    var SAPHANA = "No";
+                    if (picked.HANA !== undefined) {
+                        SAPHANA = picked.HANA
+                    }
+                    // SAP SAPS2T check
+                    var SAPS2T = "-1";
+                    if (picked.SAPS2T !== undefined) {
+                        SAPS2T = picked.SAPS2T
+                    }
+                    // SAP SAPS3T check
+                    var SAPS3T = "-1";
+                    if (picked.SAPS3T !== undefined) {
+                        SAPS3T = picked.SAPS3T
+                    }
                     // Calc max disk size for VM
                     picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
                     // Print output
 
                     if (debug == false) {
-                        console.log(name + ",vm," + pricesheet + "," + tier + "," + cores + "," + pcores + "," + mem + "," + region + "," + price.value + "," + picked.ACU + "," + picked.SSD + "," + picked.MaxNics + "," + picked.Bandwidth + "," + picked.MaxDataDiskCount + "," + picked.MaxDataDiskSizeGB + "," + picked.MaxDataDiskIops + "," + picked.MaxDataDiskThroughputMBs + "," + picked.MaxVmIops + "," + picked.MaxVmThroughputMBs + "," + picked.ResourceDiskSizeInMB + "," + picked.TempDiskSizeInGB + "," + picked.TempDiskIops + "," + picked.TempDiskReadMBs + "," + picked.TempDiskWriteMBs + "," + picked.SAPS2T + "," + picked.SAPS3T + "," + picked.HANA + "," + picked.Hyperthreaded + "," + offer + "," + vmid + "," + priceUSD + "," + priceEUR + "," + priceGBP + "," + priceAUD + "," + priceJPY + "," + priceCAD + "," + priceDKK + "," + priceCHF + "," + priceSEK + "," + priceIDR + "," + priceINR + "," + burstable + "," + isolated + "," + os);
+                        console.log(
+                            name +
+                            ",vm," +
+                            pricesheet + "," +
+                            tier + "," +
+                            cores + "," +
+                            pcores + "," +
+                            mem + "," +
+                            region + "," +
+                            price.value + "," +
+                            picked.ACU + "," +
+                            picked.SSD + "," +
+                            picked.MaxNics + "," +
+                            picked.Bandwidth + "," +
+                            picked.MaxDataDiskCount + "," +
+                            picked.MaxDataDiskSizeGB + "," +
+                            picked.MaxDataDiskIops + "," +
+                            picked.MaxDataDiskThroughputMBs + "," +
+                            picked.MaxVmIops + "," +
+                            picked.MaxVmThroughputMBs + "," +
+                            picked.ResourceDiskSizeInMB + "," +
+                            picked.TempDiskSizeInGB + "," +
+                            picked.TempDiskIops + "," +
+                            picked.TempDiskReadMBs + "," +
+                            picked.TempDiskWriteMBs + "," +
+                            SAPS2T + "," +
+                            SAPS3T + "," +
+                            SAPHANA + "," +
+                            picked.Hyperthreaded + "," +
+                            offer + "," +
+                            vmid + "," +
+                            priceUSD + "," +
+                            priceEUR + "," +
+                            priceGBP + "," +
+                            priceAUD + "," +
+                            priceJPY + "," +
+                            priceCAD + "," +
+                            priceDKK + "," +
+                            priceCHF + "," +
+                            priceSEK + "," +
+                            priceIDR + "," +
+                            priceINR + "," +
+                            burstable + "," +
+                            isolated + "," +
+                            os);
                     } else {
                         console.log(name + "@found@standard@" + pricesheet);
                     }
@@ -111,11 +170,70 @@ for (var pricesheet in pricing) {
                         if (picked.Isolated !== undefined) {
                             var isolated = "Yes";
                         }
+                        // SAP HANA check
+                        var SAPHANA = "No";
+                        if (picked.HANA !== undefined) {
+                            SAPHANA = picked.HANA
+                        }
+                        // SAP SAPS2T check
+                        var SAPS2T = "-1";
+                        if (picked.SAPS2T !== undefined) {
+                            SAPS2T = picked.SAPS2T
+                        }
+                        // SAP SAPS3T check
+                        var SAPS3T = "-1";
+                        if (picked.SAPS3T !== undefined) {
+                            SAPS3T = picked.SAPS3T
+                        }
                         // Calc max disk size for VM
                         picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
                         // Print output
                         if (debug == false) {
-                            console.log(pickedname + ",vm," + pricesheet + "," + tier + "," + cores + "," + pcores + "," + mem + "," + region + "," + price.value + "," + picked.ACU + "," + picked.SSD + "," + picked.MaxNics + "," + picked.Bandwidth + "," + picked.MaxDataDiskCount + "," + picked.MaxDataDiskSizeGB + "," + picked.MaxDataDiskIops + "," + picked.MaxDataDiskThroughputMBs + "," + picked.MaxVmIops + "," + picked.MaxVmThroughputMBs + "," + picked.ResourceDiskSizeInMB + "," + picked.TempDiskSizeInGB + "," + picked.TempDiskIops + "," + picked.TempDiskReadMBs + "," + picked.TempDiskWriteMBs + "," + picked.SAPS2T + "," + picked.SAPS3T + "," + picked.HANA + "," + picked.Hyperthreaded + "," + pickedoffer + "," + vmid + "," + priceUSD + "," + priceEUR + "," + priceGBP + "," + priceAUD + "," + priceJPY + "," + priceCAD + "," + priceDKK + "," + priceCHF + "," + priceSEK + "," + priceIDR + "," + priceINR + "," + burstable + "," + isolated + "," + os);
+                            console.log(
+                                pickedname +
+                                ",vm," +
+                                pricesheet + "," +
+                                tier + "," +
+                                cores + "," +
+                                pcores + "," +
+                                mem + "," +
+                                region + "," +
+                                price.value + "," +
+                                picked.ACU + "," +
+                                picked.SSD + "," +
+                                picked.MaxNics + "," +
+                                picked.Bandwidth + "," +
+                                picked.MaxDataDiskCount + "," +
+                                picked.MaxDataDiskSizeGB + "," +
+                                picked.MaxDataDiskIops + "," +
+                                picked.MaxDataDiskThroughputMBs + "," +
+                                picked.MaxVmIops + "," +
+                                picked.MaxVmThroughputMBs + "," +
+                                picked.ResourceDiskSizeInMB + "," +
+                                picked.TempDiskSizeInGB + "," +
+                                picked.TempDiskIops + "," +
+                                picked.TempDiskReadMBs + "," +
+                                picked.TempDiskWriteMBs + "," +
+                                SAPS2T + "," +
+                                SAPS3T + "," +
+                                SAPHANA + "," +
+                                picked.Hyperthreaded + "," +
+                                pickedoffer + "," +
+                                vmid + "," +
+                                priceUSD + "," +
+                                priceEUR + "," +
+                                priceGBP + "," +
+                                priceAUD + "," +
+                                priceJPY + "," +
+                                priceCAD + "," +
+                                priceDKK + "," +
+                                priceCHF + "," +
+                                priceSEK + "," +
+                                priceIDR + "," +
+                                priceINR + "," +
+                                burstable + "," +
+                                isolated + "," +
+                                os);
                         } else {
                             console.log(name + "@found@premium@" + pricesheet);
                         }
