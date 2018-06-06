@@ -91,7 +91,8 @@
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
     "SAPS2T": 3530,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_ds12",
@@ -140,7 +141,8 @@
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
     "SAPS2T": 6680,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_ds13",
@@ -237,7 +239,8 @@
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
     "SAPS2T": 24180,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_ds15v2",
@@ -939,7 +942,8 @@
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
     "SAPS2T": 4355,
-    "Hyperthreaded": "Yes"
+    "Hyperthreaded": "Yes",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_e8sv3",
@@ -963,7 +967,8 @@
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
     "SAPS2T": 8710,
-    "Hyperthreaded": "Yes"
+    "Hyperthreaded": "Yes",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_e16sv3",
@@ -987,7 +992,8 @@
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
     "SAPS2T": 17420,
-    "Hyperthreaded": "Yes"
+    "Hyperthreaded": "Yes",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_e32sv3",
@@ -1011,7 +1017,8 @@
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
     "SAPS2T": 34840,
-    "Hyperthreaded": "Yes"
+    "Hyperthreaded": "Yes",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_e64sv3",
@@ -1035,7 +1042,8 @@
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
     "SAPS2T": 70050,
-    "Hyperthreaded": "Yes"
+    "Hyperthreaded": "Yes",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_e64isv3",
@@ -1060,7 +1068,8 @@
     "TempDiskWriteMBs": -1,
     "SAPS2T": 70050,
     "Hyperthreaded": "Yes",
-    "Isolated": "Yes"
+    "Isolated": "Yes",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_e64isv3",
@@ -1085,7 +1094,8 @@
     "TempDiskWriteMBs": -1,
     "SAPS2T": 70050,
     "Hyperthreaded": "Yes",
-    "Isolated": "Yes"
+    "Isolated": "Yes",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_fs2v2",
@@ -1860,7 +1870,8 @@
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
     "SAPS2T": 3530,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_ds12",
@@ -1909,7 +1920,8 @@
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
     "SAPS2T": 6680,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_ds13",
@@ -1958,7 +1970,8 @@
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
     "SAPS2T": 12300,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_ds14",
@@ -2006,7 +2019,8 @@
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
     "SAPS2T": 24180,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_ds15v2",
@@ -2411,7 +2425,8 @@
     "TempDiskWriteMBs": -1,
     "SAPS2T": 22680,
     "SAPS3T": 247880,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_gs5",
@@ -2436,7 +2451,8 @@
     "TempDiskWriteMBs": -1,
     "SAPS2T": 41670,
     "HANA": "Yes",
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_m128ms",
@@ -2462,7 +2478,8 @@
     "SAPS2T": 134630,
     "HANA": "Yes",
     "Hyperthreaded": "Yes",
-    "Isolated": "Yes"
+    "Isolated": "Yes",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_m128s",
@@ -2513,7 +2530,8 @@
     "TempDiskWriteMBs": -1,
     "SAPS2T": 68930,
     "HANA": "Yes",
-    "Hyperthreaded": "Yes"
+    "Hyperthreaded": "Yes",
+    "Constrained": "Yes"
   },
   {
     "Name": "standard_m64s",
