@@ -1,7 +1,7 @@
 var reference = require('./referencedata.json');
 var referencessd = require('./referencedata-ssd.json');
 var currency = require('./currency.json');
-var debug = false;
+var debug = true;
 
 var pricing = {
     "payg": './apipricing-base-payg.json',
@@ -9,7 +9,7 @@ var pricing = {
     "ri3y": './apipricing-base-3y.json'
 };
 
-console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,SAPHANA,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,burstable,isolated,constrained,os");
+console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,SAPHANA,SAPLI,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,burstable,isolated,constrained,os");
 
 for (var pricesheet in pricing) {
     var jsonfile = require(pricing[pricesheet]);
@@ -82,23 +82,28 @@ for (var pricesheet in pricing) {
                     // SAP HANA check
                     var SAPHANA = "No";
                     if (picked.HANA !== undefined) {
-                        SAPHANA = picked.HANA
+                        SAPHANA = picked.HANA;
                     }
                     // SAP SAPS2T check
                     var SAPS2T = "-1";
                     if (picked.SAPS2T !== undefined) {
-                        SAPS2T = picked.SAPS2T
+                        SAPS2T = picked.SAPS2T;
                     }
                     // SAP SAPS3T check
                     var SAPS3T = "-1";
                     if (picked.SAPS3T !== undefined) {
-                        SAPS3T = picked.SAPS3T
+                        SAPS3T = picked.SAPS3T;
+                    }
+                    // SAP LI check
+                    var SAPLI = "No";
+                    if (picked.LargeInstance !== undefined) {
+                        SAPLI = picked.LargeInstance;
                     }
                     // Calc max disk size for VM
                     picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
                     // Print output
 
-                    if (debug == false) {
+                    if (debug === false) {
                         console.log(
                             name +
                             ",vm," +
@@ -127,6 +132,7 @@ for (var pricesheet in pricing) {
                             SAPS2T + "," +
                             SAPS3T + "," +
                             SAPHANA + "," +
+                            SAPLI + "," +
                             picked.Hyperthreaded + "," +
                             offer + "," +
                             vmid + "," +
@@ -184,22 +190,27 @@ for (var pricesheet in pricing) {
                         // SAP HANA check
                         var SAPHANA = "No";
                         if (picked.HANA !== undefined) {
-                            SAPHANA = picked.HANA
+                            SAPHANA = picked.HANA;
                         }
                         // SAP SAPS2T check
                         var SAPS2T = "-1";
                         if (picked.SAPS2T !== undefined) {
-                            SAPS2T = picked.SAPS2T
+                            SAPS2T = picked.SAPS2T;
                         }
                         // SAP SAPS3T check
                         var SAPS3T = "-1";
                         if (picked.SAPS3T !== undefined) {
-                            SAPS3T = picked.SAPS3T
+                            SAPS3T = picked.SAPS3T;
+                        }
+                        // SAP LI check
+                        var SAPLI = "No";
+                        if (picked.LargeInstance !== undefined) {
+                            SAPLI = picked.LargeInstance;
                         }
                         // Calc max disk size for VM
                         picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
                         // Print output
-                        if (debug == false) {
+                        if (debug === false) {
                             console.log(
                                 pickedname +
                                 ",vm," +
@@ -228,6 +239,7 @@ for (var pricesheet in pricing) {
                                 SAPS2T + "," +
                                 SAPS3T + "," +
                                 SAPHANA + "," +
+                                SAPLI + "," +
                                 picked.Hyperthreaded + "," +
                                 pickedoffer + "," +
                                 vmid + "," +
