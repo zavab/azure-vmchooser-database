@@ -1,7 +1,7 @@
 var reference = require('./referencedata.json');
 var referencessd = require('./referencedata-ssd.json');
 var currency = require('./currency.json');
-var debug = true;
+var debug = false;
 
 var pricing = {
     "payg": './apipricing-base-payg.json',
