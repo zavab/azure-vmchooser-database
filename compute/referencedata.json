@@ -1829,7 +1829,6 @@
     "TempDiskWriteMBs": -1,
     "HANA": "No",
     "Hyperthreaded": "Yes",
-    "Isolated": "Yes",
     "Constrained": "Yes"
   },
   {
@@ -1853,7 +1852,6 @@
     "TempDiskReadMBs": 100,
     "TempDiskWriteMBs": -1,
     "HANA": "No",
-    "Hyperthreaded": "Yes",
-    "Isolated": "Yes"
+    "Hyperthreaded": "Yes"
   }
 ]

@@ -2782,8 +2782,7 @@
     "TempDiskWriteMBs": -1,
     "SAPS2T": 134630,
     "HANA": "Yes",
-    "Hyperthreaded": "Yes",
-    "Isolated": "Yes"
+    "Hyperthreaded": "Yes"
   },
   {
     "Name": "standard_sap96",
