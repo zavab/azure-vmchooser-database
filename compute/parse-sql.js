@@ -4,7 +4,9 @@ var currency = require('./currency.json');
 var debug = false;
 
 var pricing = {
-    "payg": './apipricing-software.json'
+    "payg": './apipricing-software.json',
+    "ri1y": './apipricing-software-ri1y.json',
+    "ri3y": './apipricing-software-ri3y.json'
 };
 
 console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,SAPHANA,SAPLI,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,burstable,isolated,constrained,os");
