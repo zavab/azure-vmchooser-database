@@ -1,2 +1,2 @@
 #!/bin/bash
-nodejs parse.js > newpricingsql.csv
+nodejs parse-sql.js > newpricingsql.csv
