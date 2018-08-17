@@ -24,7 +24,7 @@ console.log(
     'priceSEK,' +
     'priceIDR,' +
     'priceINR,' +
-    'vmid'
+    '_id'
 );
 
 for (var offer in offers) {
