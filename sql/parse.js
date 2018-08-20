@@ -17,18 +17,18 @@ console.log(
     'maxiops,' +
     'maxthroughput,' +
     'storage,' +
-    'priceUSD,' +
-    'priceUSD,' +
-    'priceEUR,' +
-    'priceGBP,' +
-    'priceAUD,' +
-    'priceJPY,' +
-    'priceCAD,' +
-    'priceDKK,' +
-    'priceCHF,' +
-    'priceSEK,' +
-    'priceIDR,' +
-    'priceINR,' +
+    'price,' +
+    'price_USD,' +
+    'price_EUR,' +
+    'price_GBP,' +
+    'price_AUD,' +
+    'price_JPY,' +
+    'price_CAD,' +
+    'price_DKK,' +
+    'price_CHF,' +
+    'price_SEK,' +
+    'price_IDR,' +
+    'price_INR,' +
     '_id'
 );
 
@@ -218,7 +218,7 @@ for (var offer in offers) {
                 maxiops + ',' +
                 maxthroughput + ',' +
                 storage + ',' +
-                price + ',' +
+                priceUSD + ',' +
                 priceUSD + ',' +
                 priceEUR + ',' +
                 priceGBP + ',' +
