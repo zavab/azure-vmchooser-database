@@ -18,6 +18,7 @@ console.log(
     'maxthroughput,' +
     'storage,' +
     'priceUSD,' +
+    'priceUSD,' +
     'priceEUR,' +
     'priceGBP,' +
     'priceAUD,' +
@@ -217,6 +218,7 @@ for (var offer in offers) {
                 maxiops + ',' +
                 maxthroughput + ',' +
                 storage + ',' +
+                price + ',' +
                 priceUSD + ',' +
                 priceEUR + ',' +
                 priceGBP + ',' +
