@@ -105,7 +105,7 @@ for (var offer in offers) {
             if (cores >= 24) { maxstorage = 4; }
         }
     }
-    // - Single Database
+    // - Elastic Database
     if (purchasemodel === 'elastic') {
         if (offername[4] === 'gen4' & offername[2] === 'general') {
             maxiops = cores * 500;
@@ -171,6 +171,8 @@ for (var offer in offers) {
             }
         }
     }
+    // Convert max storage from TB to GB
+    maxstorage = maxstorage * 1024;
 
     // Storage Related
     if (offername[2] === "operations") {
