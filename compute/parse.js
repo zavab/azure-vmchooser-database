@@ -17,9 +17,15 @@ for (var pricesheet in pricing) {
     for (var offer in offers) {
         // if (offer.indexOf("linux") > -1) {
         var offername = offer.split("-");
-        var os = offername[0];
-        var name = offername[1];
-        var tier = offername[2];
+        if (offername.length > 3) {
+            var os = offername[0];
+            var name = offername[1] + '-' + offername[2] + '-' + offername[3];
+            var tier = offername[4];
+        } else {
+            var os = offername[0];
+            var name = offername[1];
+            var tier = offername[2];
+        }
         var cores = offers[offer].cores;
         var mem = offers[offer].ram;
         if (offer.indexOf("lowpriority") > -1) {
