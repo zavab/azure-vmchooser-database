@@ -15,7 +15,8 @@ for (var pricesheet in pricing) {
     var jsonfile = require(pricing[pricesheet]);
     var offers = jsonfile.offers;
     for (var offer in offers) {
-        // if (offer.indexOf("linux") > -1) {
+        var cores = offers[offer].cores;
+        var mem = offers[offer].ram;
         var offername = offer.split("-");
         if (offername.length > 3) {
             var os = offername[0];
@@ -26,8 +27,7 @@ for (var pricesheet in pricing) {
             var name = offername[1];
             var tier = offername[2];
         }
-        var cores = offers[offer].cores;
-        var mem = offers[offer].ram;
+
         if (offer.indexOf("lowpriority") > -1) {
             var filtertier = "standard";
         } else {
@@ -84,6 +84,7 @@ for (var pricesheet in pricing) {
                     var constrained = "No";
                     if (picked.Constrained !== undefined) {
                         var constrained = "Yes";
+                        cores = picked.NumberOfCores;
                     }
                     // SAP HANA check
                     var SAPHANA = "No";
