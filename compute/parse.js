@@ -106,8 +106,12 @@ for (var pricesheet in pricing) {
                     if (picked.LargeInstance !== undefined) {
                         SAPLI = picked.LargeInstance;
                     }
-                    // Calc max disk size for VM
+                    // Calc storage specs (standard storage)
                     picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
+                    picked.MaxDataDiskIops = picked.MaxDataDiskCount * 500; // disks * 500 IOPS
+                    picked.MaxDataDiskThroughputMBs = picked.MaxDataDiskCount * 60; // disks * 60MB/s
+                    picked.MaxVmIops = picked.MaxDataDiskIops; 
+                    picked.MaxVmThroughputMBs = picked.MaxDataDiskThroughputMBs;
                     // Print output
 
                     if (debug === false) {
