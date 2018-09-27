@@ -14,18 +14,15 @@ for(var offer in offers){
     var tier = "standard";
   }
   var capacity = offers[offer].size;
-  if (tier == "standard") {
-    var throughput = 60;
-    var iops = 500;
-  } else {
-    var throughput = offers[offer].speed;
-    var iops = offers[offer].iops;
-  }
+  var throughput = offers[offer].speed;
+  var iops = offers[offer].iops;
+  
   for(var price in offers[offer].prices) {
     if (price === undefined) {
       //console.log(picked);
     } else {
-      if (capacity === undefined) {
+        if (capacity === undefined) {
+          //console.log(picked);
       } else {
         var priceUSD = offers[offer].prices[price].value;
         var priceEUR = priceUSD * currency.eur.conversion;
