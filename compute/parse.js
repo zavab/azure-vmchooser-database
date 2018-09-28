@@ -108,8 +108,8 @@ for (var pricesheet in pricing) {
                     }
                     // Calc storage specs (standard storage)
                     picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 32 * 1024; // current max disk size is 32TB
-                    picked.MaxDataDiskIops = picked.MaxDataDiskCount * 2000; // current max disk iops is 2000
-                    picked.MaxDataDiskThroughputMBs = picked.MaxDataDiskCount * 500; // curent max disks throughput is 500 MB/s
+                    picked.MaxDataDiskIops = picked.MaxDataDiskCount * 500; // current max disk iops is 500 for a non-premium
+                    picked.MaxDataDiskThroughputMBs = picked.MaxDataDiskCount * 60; // curent max disks throughput is 60 MB/s for non-premium
                     picked.MaxVmIops = picked.MaxDataDiskIops; 
                     picked.MaxVmThroughputMBs = picked.MaxDataDiskThroughputMBs;
                     // Print output
@@ -219,7 +219,7 @@ for (var pricesheet in pricing) {
                             SAPLI = picked.LargeInstance;
                         }
                         // Calc max disk size for VM
-                        picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
+                        picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 32 * 1024; // current max disk size is 32TB
                         // Print output
                         if (debug === false) {
                             console.log(
