@@ -468,6 +468,7 @@
     "TempDiskReadMBs": 40,
     "TempDiskWriteMBs": 20,
     "SAPS2T": 11000,
+    "Infiniband": "Yes",
     "Hyperthreaded": "No"
   },
   {
@@ -535,6 +536,7 @@
     "TempDiskReadMBs": 160,
     "TempDiskWriteMBs": 80,
     "SAPS2T": 22000,
+    "Infiniband": "Yes",
     "Hyperthreaded": "No"
   },
   {
@@ -1223,6 +1225,7 @@
     "TempDiskIops": 80000,
     "TempDiskReadMBs": 2000,
     "TempDiskWriteMBs": -1,
+    "Infiniband": "Yes",
     "Hyperthreaded": "No"
   },
   {
@@ -1245,6 +1248,7 @@
     "TempDiskIops": -1,
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
+    "Infiniband": "Yes",
     "Hyperthreaded": "No"
   },
   {
@@ -1380,6 +1384,7 @@
     "TempDiskReadMBs": 172.8,
     "TempDiskWriteMBs": -1,
     "GPU": "Yes",
+    "Infiniband": "Yes",
     "Hyperthreaded": "No"
   },
   {

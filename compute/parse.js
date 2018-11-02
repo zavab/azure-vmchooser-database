@@ -9,7 +9,7 @@ var pricing = {
     "ri3y": './apipricing-base-3y.json'
 };
 
-console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,SAPHANA,SAPLI,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,burstable,isolated,constrained,os,gpu");
+console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,SAPHANA,SAPLI,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,burstable,isolated,constrained,os,infiniband,gpu");
 
 for (var pricesheet in pricing) {
     var jsonfile = require(pricing[pricesheet]);
@@ -74,6 +74,11 @@ for (var pricesheet in pricing) {
                     var burstable = "No";
                     if (picked.Burstable !== undefined) {
                         var burstable = "Yes";
+                    }
+                    // Infiniband check
+                    var infiniband = "No";
+                    if (picked.Infiniband !== undefined) {
+                        infiniband = picked.Infiniband;
                     }
                     // GPU check
                     var gpu = "No";
@@ -167,6 +172,7 @@ for (var pricesheet in pricing) {
                             isolated + "," +
                             constrained + "," +
                             os + "," +
+                            infiniband + "," +
                             gpu);
                     } else {
                         console.log(name + "@found@standard@" + pricesheet);
@@ -198,6 +204,11 @@ for (var pricesheet in pricing) {
                         var gpu = "No";
                         if (picked.GPU !== undefined) {
                             gpu = picked.GPU;
+                        }
+                        // Infiniband check
+                        var infiniband = "No";
+                        if (picked.Infiniband !== undefined) {
+                            infiniband = picked.Infiniband;
                         }
                         // Isolated check
                         var isolated = "No";
@@ -280,6 +291,7 @@ for (var pricesheet in pricing) {
                                 isolated + "," +
                                 constrained + "," +
                                 os + "," +
+                                infiniband + "," +
                                 gpu);
                         } else {
                             console.log(name + "@found@premium@" + pricesheet);
