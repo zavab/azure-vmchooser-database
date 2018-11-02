@@ -1333,6 +1333,7 @@
     "TempDiskIops": "35294",
     "TempDiskReadMBs": 81.6,
     "TempDiskWriteMBs": -1,
+    "GPU": "Yes",
     "Hyperthreaded": "No"
   },
   {
@@ -1355,6 +1356,7 @@
     "TempDiskIops": "22222.22",
     "TempDiskReadMBs": 172.8,
     "TempDiskWriteMBs": -1,
+    "GPU": "Yes",
     "Hyperthreaded": "No"
   },
   {
@@ -1377,6 +1379,7 @@
     "TempDiskIops": "22222.22",
     "TempDiskReadMBs": 172.8,
     "TempDiskWriteMBs": -1,
+    "GPU": "Yes",
     "Hyperthreaded": "No"
   },
   {
@@ -1399,6 +1402,7 @@
     "TempDiskIops": "31578.95",
     "TempDiskReadMBs": 45.6,
     "TempDiskWriteMBs": -1,
+    "GPU": "Yes",
     "Hyperthreaded": "No"
   },
   {
@@ -1421,6 +1425,7 @@
     "TempDiskIops": "35294.12",
     "TempDiskReadMBs": 81.6,
     "TempDiskWriteMBs": -1,
+    "GPU": "Yes",
     "Hyperthreaded": "No"
   },
   {
@@ -1443,6 +1448,7 @@
     "TempDiskIops": "22222.22",
     "TempDiskReadMBs": 172.8,
     "TempDiskWriteMBs": -1,
+    "GPU": "Yes",
     "Hyperthreaded": "No"
   },
   {
@@ -1465,6 +1471,7 @@
     "TempDiskIops": "31578.95",
     "TempDiskReadMBs": 45.6,
     "TempDiskWriteMBs": -1,
+    "GPU": "Yes",
     "Hyperthreaded": "No"
   },
   {
