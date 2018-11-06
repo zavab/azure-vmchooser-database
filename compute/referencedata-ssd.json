@@ -1,7 +1,55 @@
 [
   {
+    "Name": "standard_dc2s",
+    "Link": "standard_dc2s",
+    "Type": "VM",
+    "ACU": -1,
+    "SSD": "Yes",
+    "NumberOfCores": 2,
+    "MemoryInMB": 8192,
+    "MaxNics": 2,
+    "Bandwidth": 1500,
+    "MaxDataDiskCount": 2,
+    "MaxDataDiskSizeGB": 16384,
+    "MaxDataDiskIops": 30000,
+    "MaxDataDiskThroughputMBs": 1000,
+    "MaxVmIops": 4000,
+    "MaxVmThroughputMBs": 43,
+    "ResourceDiskSizeInMB": 102400,
+    "TempDiskSizeInGB": 100,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "No",
+    "SGX": "Yes"
+  },
+  {
+    "Name": "standard_dc4s",
+    "Link": "standard_dc4s",
+    "Type": "VM",
+    "ACU": -1,
+    "SSD": "Yes",
+    "NumberOfCores": 4,
+    "MemoryInMB": 16384,
+    "MaxNics": 2,
+    "Bandwidth": 3000,
+    "MaxDataDiskCount": 4,
+    "MaxDataDiskSizeGB": 16384,
+    "MaxDataDiskIops": 30000,
+    "MaxDataDiskThroughputMBs": 1000,
+    "MaxVmIops": 8000,
+    "MaxVmThroughputMBs": 86,
+    "ResourceDiskSizeInMB": 204800,
+    "TempDiskSizeInGB": 200,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "No",
+    "SGX": "Yes"
+  },
+  {
     "Name": "standard_ds1",
-    "Link": "standard_d1",
+    "Link": "standard_d1s",
     "Type": "VM",
     "ACU": 160,
     "SSD": "Yes",
@@ -24,7 +72,7 @@
   },
   {
     "Name": "standard_ds1v2",
-    "Link": "standard_d1v2",
+    "Link": "standard_ds1v2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -47,7 +95,7 @@
   },
   {
     "Name": "standard_ds11",
-    "Link": "standard_d11",
+    "Link": "standard_d11s",
     "Type": "VM",
     "ACU": 160,
     "SSD": "Yes",
@@ -71,7 +119,7 @@
   },
   {
     "Name": "standard_ds11v2",
-    "Link": "standard_d11v2",
+    "Link": "standard_ds11v2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -121,7 +169,7 @@
   },
   {
     "Name": "standard_ds12",
-    "Link": "standard_d12",
+    "Link": "standard_d12s",
     "Type": "VM",
     "ACU": 160,
     "SSD": "Yes",
@@ -146,7 +194,7 @@
   },
   {
     "Name": "standard_ds12v2",
-    "Link": "standard_d12v2",
+    "Link": "standard_ds12v2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -221,7 +269,7 @@
   },
   {
     "Name": "standard_ds13",
-    "Link": "standard_d13",
+    "Link": "standard_d13s",
     "Type": "VM",
     "ACU": 160,
     "SSD": "Yes",
@@ -246,7 +294,7 @@
   },
   {
     "Name": "standard_ds13v2",
-    "Link": "standard_d13v2",
+    "Link": "standard_ds13v2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -318,7 +366,7 @@
   },
   {
     "Name": "standard_ds14",
-    "Link": "standard_d14",
+    "Link": "standard_d14s",
     "Type": "VM",
     "ACU": 160,
     "SSD": "Yes",
@@ -342,7 +390,7 @@
   },
   {
     "Name": "standard_ds14v2",
-    "Link": "standard_d14v2",
+    "Link": "standard_ds14v2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -417,7 +465,7 @@
   },
   {
     "Name": "standard_ds15v2",
-    "Link": "standard_d15v2",
+    "Link": "standard_ds15v2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -442,7 +490,7 @@
   },
   {
     "Name": "standard_ds2",
-    "Link": "standard_d2",
+    "Link": "standard_d2s",
     "Type": "VM",
     "ACU": 160,
     "SSD": "Yes",
@@ -465,7 +513,7 @@
   },
   {
     "Name": "standard_ds2v2",
-    "Link": "standard_d2v2",
+    "Link": "standard_ds2v2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -488,7 +536,7 @@
   },
   {
     "Name": "standard_ds3",
-    "Link": "standard_d3",
+    "Link": "standard_d3s",
     "Type": "VM",
     "ACU": 160,
     "SSD": "Yes",
@@ -512,7 +560,7 @@
   },
   {
     "Name": "standard_ds3v2",
-    "Link": "standard_d3v2",
+    "Link": "standard_ds3v2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -536,7 +584,7 @@
   },
   {
     "Name": "standard_ds4",
-    "Link": "standard_d4",
+    "Link": "standard_d4s",
     "Type": "VM",
     "ACU": 160,
     "SSD": "Yes",
@@ -560,7 +608,7 @@
   },
   {
     "Name": "standard_ds4v2",
-    "Link": "standard_d4v2",
+    "Link": "standard_ds4v2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -584,7 +632,7 @@
   },
   {
     "Name": "standard_ds5v2",
-    "Link": "standard_d5v2",
+    "Link": "standard_ds5v2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -608,7 +656,7 @@
   },
   {
     "Name": "standard_f16s",
-    "Link": "standard_f16",
+    "Link": "standard_fs16",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -631,7 +679,7 @@
   },
   {
     "Name": "standard_f1s",
-    "Link": "standard_f1",
+    "Link": "standard_f1s",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -654,7 +702,7 @@
   },
   {
     "Name": "standard_f2s",
-    "Link": "standard_f2",
+    "Link": "standard_f2s",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -677,7 +725,7 @@
   },
   {
     "Name": "standard_f4s",
-    "Link": "standard_f4",
+    "Link": "standard_f4s",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -700,7 +748,7 @@
   },
   {
     "Name": "standard_f8s",
-    "Link": "standard_f8",
+    "Link": "standard_f8s",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -723,7 +771,7 @@
   },
   {
     "Name": "standard_gs1",
-    "Link": "standard_g1",
+    "Link": "standard_gs1",
     "Type": "VM",
     "ACU": 180,
     "SSD": "Yes",
@@ -748,7 +796,7 @@
   },
   {
     "Name": "standard_gs2",
-    "Link": "standard_g2",
+    "Link": "standard_gs2",
     "Type": "VM",
     "ACU": 180,
     "SSD": "Yes",
@@ -773,7 +821,7 @@
   },
   {
     "Name": "standard_gs3",
-    "Link": "standard_g3",
+    "Link": "standard_gs3",
     "Type": "VM",
     "ACU": 180,
     "SSD": "Yes",
@@ -798,7 +846,7 @@
   },
   {
     "Name": "standard_gs4",
-    "Link": "standard_g4",
+    "Link": "standard_gs4",
     "Type": "VM",
     "ACU": 180,
     "SSD": "Yes",
@@ -873,7 +921,7 @@
   },
   {
     "Name": "standard_gs5",
-    "Link": "standard_g5",
+    "Link": "standard_gs5",
     "Type": "VM",
     "ACU": 180,
     "SSD": "Yes",
@@ -951,7 +999,7 @@
   },
   {
     "Name": "standard_m128s",
-    "Link": "standard_m128",
+    "Link": "standard_m128s",
     "Type": "VM",
     "ACU": 160,
     "SSD": "Yes",
@@ -977,7 +1025,7 @@
   },
   {
     "Name": "standard_m64ms",
-    "Link": "standard_m64m",
+    "Link": "standard_m64ms",
     "Type": "VM",
     "ACU": 160,
     "SSD": "Yes",
@@ -1052,7 +1100,7 @@
   },
   {
     "Name": "standard_m64s",
-    "Link": "standard_m64",
+    "Link": "standard_m64s",
     "Type": "VM",
     "ACU": 160,
     "SSD": "Yes",
@@ -1077,7 +1125,7 @@
   },
   {
     "Name": "standard_d2sv3",
-    "Link": "standard_d2v3",
+    "Link": "standard_d2sv3",
     "Type": "VM",
     "ACU": 190,
     "CoreFactor": -1,
@@ -1103,7 +1151,7 @@
   },
   {
     "Name": "standard_d4sv3",
-    "Link": "standard_d4v3",
+    "Link": "standard_d4sv3",
     "Type": "VM",
     "ACU": 190,
     "SSD": "Yes",
@@ -1127,7 +1175,7 @@
   },
   {
     "Name": "standard_d8sv3",
-    "Link": "standard_d8v3",
+    "Link": "standard_d8sv3",
     "Type": "VM",
     "ACU": 190,
     "SSD": "Yes",
@@ -1151,7 +1199,7 @@
   },
   {
     "Name": "standard_d16sv3",
-    "Link": "standard_d16v3",
+    "Link": "standard_d16sv3",
     "Type": "VM",
     "ACU": 190,
     "SSD": "Yes",
@@ -1175,7 +1223,7 @@
   },
   {
     "Name": "standard_d32sv3",
-    "Link": "standard_d32v3",
+    "Link": "standard_d32sv3",
     "Type": "VM",
     "ACU": 190,
     "SSD": "Yes",
@@ -1199,7 +1247,7 @@
   },
   {
     "Name": "standard_d64sv3",
-    "Link": "standard_d64v3",
+    "Link": "standard_d64sv3",
     "Type": "VM",
     "ACU": 190,
     "SSD": "Yes",
@@ -1223,7 +1271,7 @@
   },
   {
     "Name": "standard_e2sv3",
-    "Link": "standard_e2v3",
+    "Link": "standard_e2sv3",
     "Type": "VM",
     "ACU": 190,
     "SSD": "Yes",
@@ -1247,7 +1295,7 @@
   },
   {
     "Name": "standard_e4sv3",
-    "Link": "standard_e4v3",
+    "Link": "standard_e4sv3",
     "Type": "VM",
     "ACU": 190,
     "SSD": "Yes",
@@ -1297,7 +1345,7 @@
   },
   {
     "Name": "standard_e8sv3",
-    "Link": "standard_e8v3",
+    "Link": "standard_e8sv3",
     "Type": "VM",
     "ACU": 190,
     "SSD": "Yes",
@@ -1372,7 +1420,7 @@
   },
   {
     "Name": "standard_e16sv3",
-    "Link": "standard_e16v3",
+    "Link": "standard_e16sv3",
     "Type": "VM",
     "ACU": 190,
     "SSD": "Yes",
@@ -1446,8 +1494,32 @@
     "Constrained": "Yes"
   },
   {
+    "Name": "standard_e20v3",
+    "Link": "standard_e20sv3",
+    "Type": "VM",
+    "ACU": 190,
+    "SSD": "Yes",
+    "NumberOfCores": 20,
+    "MemoryInMB": 163840,
+    "MaxNics": 8,
+    "Bandwidth": 10000,
+    "MaxDataDiskCount": 32,
+    "MaxDataDiskSizeGB": 262144,
+    "MaxDataDiskIops": 40000,
+    "MaxDataDiskThroughputMBs": 3840,
+    "MaxVmIops": 40000,
+    "MaxVmThroughputMBs": 320,
+    "ResourceDiskSizeInMB": -1,
+    "TempDiskSizeInGB": 320,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "SAPS2T": -1,
+    "Hyperthreaded": "Yes"
+  },
+  {
     "Name": "standard_e32sv3",
-    "Link": "standard_e32v3",
+    "Link": "standard_e32sv3",
     "Type": "VM",
     "ACU": 190,
     "SSD": "Yes",
@@ -1522,7 +1594,7 @@
   },
   {
     "Name": "standard_e64sv3",
-    "Link": "standard_e64v3",
+    "Link": "standard_e64sv3",
     "Type": "VM",
     "ACU": 190,
     "SSD": "Yes",
@@ -1597,7 +1669,7 @@
   },
   {
     "Name": "standard_e64isv3",
-    "Link": "standard_e64iv3",
+    "Link": "standard_e64isv3",
     "Type": "VM",
     "ACU": 190,
     "SSD": "Yes",
@@ -1649,7 +1721,7 @@
   },
   {
     "Name": "standard_fs2v2",
-    "Link": "standard_f2v2",
+    "Link": "standard_f2sv2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -1673,7 +1745,7 @@
   },
   {
     "Name": "standard_fs4v2",
-    "Link": "standard_f4v2",
+    "Link": "standard_f4sv2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -1697,7 +1769,7 @@
   },
   {
     "Name": "standard_fs8v2",
-    "Link": "standard_f8v2",
+    "Link": "standard_f8sv2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -1721,7 +1793,7 @@
   },
   {
     "Name": "standard_fs16v2",
-    "Link": "standard_f16v2",
+    "Link": "standard_f16sv2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -1745,7 +1817,7 @@
   },
   {
     "Name": "standard_fs32v2",
-    "Link": "standard_f32v2",
+    "Link": "standard_f32sv2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -1769,7 +1841,7 @@
   },
   {
     "Name": "standard_fs64v2",
-    "Link": "standard_f64v2",
+    "Link": "standard_f64sv2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -1793,7 +1865,7 @@
   },
   {
     "Name": "standard_fs72v2",
-    "Link": "standard_f72v2",
+    "Link": "standard_f72sv2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -1929,7 +2001,8 @@
     "TempDiskIops": -1,
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "GPU":  "Yes"
   },
   {
     "Name": "standard_nd12s",
@@ -1952,7 +2025,8 @@
     "TempDiskIops": -1,
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "GPU": "Yes"
   },
   {
     "Name": "standard_nd24s",
@@ -1975,7 +2049,8 @@
     "TempDiskIops": -1,
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "GPU": "Yes"
   },
   {
     "Name": "standard_nd24rs",
@@ -1999,7 +2074,8 @@
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
     "Infiniband": "Yes",
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "No",
+    "GPU": "Yes"
   },
   {
     "Name": "standard_nc6sv2",
@@ -2798,7 +2874,7 @@
   },
   {
     "Name": "standard_f1s",
-    "Link": "standard_f1",
+    "Link": "standard_fs1",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -2821,7 +2897,7 @@
   },
   {
     "Name": "standard_f2s",
-    "Link": "standard_f2",
+    "Link": "standard_fs2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -2844,7 +2920,7 @@
   },
   {
     "Name": "standard_f4s",
-    "Link": "standard_f4",
+    "Link": "standard_fs4",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -2867,7 +2943,7 @@
   },
   {
     "Name": "standard_f8s",
-    "Link": "standard_f8",
+    "Link": "standard_fs8",
     "Type": "VM",
     "ACU": 210,
     "SSD": "Yes",
@@ -3888,5 +3964,77 @@
     "TempDiskWriteMBs": -1,
     "Hyperthreaded": "Yes",
     "Burstable": "Yes"
+  },
+  {
+    "Name": "standard_nv6sv2",
+    "Link": "standard_nv6sv2",
+    "Type": "VM",
+    "ACU": -1,
+    "SSD": "Yes",
+    "NumberOfCores": 6,
+    "MemoryInMB": 114688,
+    "MaxNics": 4,
+    "Bandwidth": -1,
+    "MaxDataDiskCount": 12,
+    "MaxDataDiskSizeGB": -1,
+    "MaxDataDiskIops": -1,
+    "MaxDataDiskThroughputMBs": -1,
+    "MaxVmIops": -1,
+    "MaxVmThroughputMBs": -1,
+    "ResourceDiskSizeInMB": 344064,
+    "TempDiskSizeInGB": 320,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "No",
+    "GPU": "Yes"
+  },
+  {
+    "Name": "standard_nv12sv2",
+    "Link": "standard_nv12sv2",
+    "Type": "VM",
+    "ACU": -1,
+    "SSD": "Yes",
+    "NumberOfCores": 12,
+    "MemoryInMB": 229376,
+    "MaxNics": 8,
+    "Bandwidth": -1,
+    "MaxDataDiskCount": 24,
+    "MaxDataDiskSizeGB": -1,
+    "MaxDataDiskIops": -1,
+    "MaxDataDiskThroughputMBs": -1,
+    "MaxVmIops": -1,
+    "MaxVmThroughputMBs": -1,
+    "ResourceDiskSizeInMB": 344064,
+    "TempDiskSizeInGB": 640,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "No",
+    "GPU": "Yes"
+  },
+  {
+    "Name": "standard_nv24sv2",
+    "Link": "standard_nv24sv2",
+    "Type": "VM",
+    "ACU": -1,
+    "SSD": "Yes",
+    "NumberOfCores": 24,
+    "MemoryInMB": 458752,
+    "MaxNics": 8,
+    "Bandwidth": -1,
+    "MaxDataDiskCount": 32,
+    "MaxDataDiskSizeGB": -1,
+    "MaxDataDiskIops": -1,
+    "MaxDataDiskThroughputMBs": -1,
+    "MaxVmIops": -1,
+    "MaxVmThroughputMBs": -1,
+    "ResourceDiskSizeInMB": 344064,
+    "TempDiskSizeInGB": 1280,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "No",
+    "GPU": "Yes"
   }
 ]

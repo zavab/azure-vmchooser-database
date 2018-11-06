@@ -24,7 +24,7 @@
     "name": "ARS",
     "locale": "es-ar",
     "glyph": "$",
-    "conversion": 26.2,
+    "conversion": 39.0,
     "invertGlyph": false
   },
   "aud": {
@@ -101,7 +101,7 @@
     "name": "ZAR",
     "locale": "en-za",
     "glyph": "R&nbsp",
-    "conversion": 13.0,
+    "conversion": 16.0,
     "invertGlyph": false
   },
   "sek": {
@@ -122,7 +122,7 @@
     "name": "TRY",
     "locale": "tr-tr",
     "glyph": "₺&nbsp",
-    "conversion": 4.0,
+    "conversion": 4.8,
     "invertGlyph": false
   },
   "gbp": {
