@@ -1660,7 +1660,7 @@
     "MaxDataDiskCount": 4,
     "MaxDataDiskSizeGB": 16384,
     "MaxDataDiskIops": 4000,
-    "MaxDataDiskThroughputMBs": -1,
+    "MaxDataDiskThroughputMBs": 32,
     "MaxVmIops": 4000,
     "MaxVmThroughputMBs": 32,
     "ResourceDiskSizeInMB": 16000,
