@@ -9,7 +9,7 @@ var pricing = {
     "ri3y": './apipricing-base-3y.json'
 };
 
-console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,SAPHANA,SAPLI,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,burstable,isolated,constrained,os,infiniband,gpu");
+console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,SAPHANA,SAPLI,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,burstable,isolated,constrained,os,infiniband,gpu,sgx");
 
 for (var pricesheet in pricing) {
     var jsonfile = require(pricing[pricesheet]);
@@ -90,15 +90,20 @@ for (var pricesheet in pricing) {
                     if (picked.GPU !== undefined) {
                         gpu = picked.GPU;
                     }
+                    // SGX check
+                    var sgx = "No";
+                    if (picked.SGX !== undefined) {
+                        sgx = picked.SGX;
+                    }
                     // Isolated check
                     var isolated = "No";
                     if (picked.Isolated !== undefined) {
-                        var isolated = "Yes";
+                        isolated = "Yes";
                     }
                     // Constrained check
                     var constrained = "No";
                     if (picked.Constrained !== undefined) {
-                        var constrained = "Yes";
+                        constrained = "Yes";
                         cores = picked.NumberOfCores;
                     }
                     // SAP HANA check
@@ -178,7 +183,8 @@ for (var pricesheet in pricing) {
                             constrained + "," +
                             os + "," +
                             infiniband + "," +
-                            gpu);
+                            gpu, "," +
+                            sgx);
                     } else {
                         console.log(name + "@found@standard@" + pricesheet);
                     }
@@ -215,15 +221,20 @@ for (var pricesheet in pricing) {
                         if (picked.Infiniband !== undefined) {
                             infiniband = picked.Infiniband;
                         }
+                        // SGX check
+                        var sgx = "No";
+                        if (picked.SGX !== undefined) {
+                            sgx = picked.SGX;
+                        }
                         // Isolated check
                         var isolated = "No";
                         if (picked.Isolated !== undefined) {
-                            var isolated = "Yes";
+                            isolated = "Yes";
                         }
                         // Constrained check
                         var constrained = "No";
                         if (picked.Constrained !== undefined) {
-                            var constrained = "Yes";
+                            constrained = "Yes";
                         }
                         // SAP HANA check
                         var SAPHANA = "No";
@@ -297,7 +308,8 @@ for (var pricesheet in pricing) {
                                 constrained + "," +
                                 os + "," +
                                 infiniband + "," +
-                                gpu);
+                                gpu + "," +
+                                sgx);
                         } else {
                             console.log(name + "@found@premium@" + pricesheet);
                         }
