@@ -678,6 +678,29 @@
     "Hyperthreaded": "No"
   },
   {
+    "Name": "standard_f16s",
+    "Link": "standard_f16s",
+    "Type": "VM",
+    "ACU": 210,
+    "SSD": "Yes",
+    "NumberOfCores": 16,
+    "MemoryInMB": 32768,
+    "MaxNics": 8,
+    "Bandwidth": "12000",
+    "MaxDataDiskCount": 64,
+    "MaxDataDiskSizeGB": 262144,
+    "MaxDataDiskIops": 480000,
+    "MaxDataDiskThroughputMBs": 16000,
+    "MaxVmIops": 51200,
+    "MaxVmThroughputMBs": 768,
+    "ResourceDiskSizeInMB": 65536,
+    "TempDiskSizeInGB": 64,
+    "TempDiskIops": 64000,
+    "TempDiskReadMBs": 512,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "No"
+  },
+  {
     "Name": "standard_f1s",
     "Link": "standard_f1s",
     "Type": "VM",
@@ -973,7 +996,7 @@
   },
   {
     "Name": "standard_gs5-16",
-    "Link": "\"standard_gs5-16,",
+    "Link": "standard_gs5-16",
     "Type": "VM",
     "ACU": 180,
     "SSD": "Yes",
@@ -2002,7 +2025,7 @@
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
     "Hyperthreaded": "No",
-    "GPU":  "Yes"
+    "GPU": "Yes"
   },
   {
     "Name": "standard_nd12s",
