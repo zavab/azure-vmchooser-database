@@ -1743,7 +1743,7 @@
     "Constrained": "Yes"
   },
   {
-    "Name": "standard_fs2v2",
+    "Name": "standard_f2sv2",
     "Link": "standard_f2sv2",
     "Type": "VM",
     "ACU": 210,
@@ -1767,7 +1767,7 @@
     "Isolated": "No"
   },
   {
-    "Name": "standard_fs4v2",
+    "Name": "standard_f4sv2",
     "Link": "standard_f4sv2",
     "Type": "VM",
     "ACU": 210,
@@ -1791,7 +1791,7 @@
     "Isolated": "No"
   },
   {
-    "Name": "standard_fs8v2",
+    "Name": "standard_f8sv2",
     "Link": "standard_f8sv2",
     "Type": "VM",
     "ACU": 210,
@@ -1815,7 +1815,7 @@
     "Isolated": "No"
   },
   {
-    "Name": "standard_fs16v2",
+    "Name": "standard_f16sv2",
     "Link": "standard_f16sv2",
     "Type": "VM",
     "ACU": 210,
@@ -1839,7 +1839,7 @@
     "Isolated": "No"
   },
   {
-    "Name": "standard_fs32v2",
+    "Name": "standard_f32sv2",
     "Link": "standard_f32sv2",
     "Type": "VM",
     "ACU": 210,
@@ -1863,7 +1863,7 @@
     "Isolated": "No"
   },
   {
-    "Name": "standard_fs64v2",
+    "Name": "standard_f64sv2",
     "Link": "standard_f64sv2",
     "Type": "VM",
     "ACU": 210,
@@ -1887,7 +1887,7 @@
     "Isolated": "No"
   },
   {
-    "Name": "standard_fs72v2",
+    "Name": "standard_f72sv2",
     "Link": "standard_f72sv2",
     "Type": "VM",
     "ACU": 210,
