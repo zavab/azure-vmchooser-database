@@ -3,7 +3,7 @@ var disk = require('./disk.json');
 var currency = require('./currency.json');
 var offers = jsonfile.offers;
 
-console.log("name,type,tier,size,region,price,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR");
+console.log("name,type,tier,size,region,price,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,price_RUB");
 
 for(var offer in offers){
   var offername = offer.split("-");
@@ -35,9 +35,10 @@ for(var offer in offers){
         var priceSEK = priceUSD * currency.sek.conversion;
         var priceIDR = priceUSD * currency.idr.conversion;
         var priceINR = priceUSD * currency.inr.conversion;
+        var priceRUB = priceUSD * currency.rub.conversion;
         var region = price;
         var name = "md-"+size+"-"+tier+"-"+price;
-      console.log(name+",disk,"+tier+","+size+","+region+","+priceUSD+","+capacity+","+iops+","+throughput+","+name+","+priceUSD+","+priceEUR+","+priceGBP+","+priceAUD+","+priceJPY+","+priceCAD+","+priceDKK+","+priceCHF+","+priceSEK+","+priceIDR+","+priceINR);
+      console.log(name+",disk,"+tier+","+size+","+region+","+priceUSD+","+capacity+","+iops+","+throughput+","+name+","+priceUSD+","+priceEUR+","+priceGBP+","+priceAUD+","+priceJPY+","+priceCAD+","+priceDKK+","+priceCHF+","+priceSEK+","+priceIDR+","+priceINR+","+priceRUB);
       }
     }
   }

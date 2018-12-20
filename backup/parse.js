@@ -23,6 +23,7 @@ console.log(
     'price_SEK,' +
     'price_IDR,' +
     'price_INR,' +
+    'price_RUB,' +
     '_id'
 );
 
@@ -41,6 +42,7 @@ for (var region in offers['backup'].prices) {
     var priceSEK = priceUSD * currency.sek.conversion;
     var priceIDR = priceUSD * currency.idr.conversion;
     var priceINR = priceUSD * currency.inr.conversion;
+    var priceRUB = priceUSD * currency.rub.conversion;
     id = dimension + '-' + region;
     console.log(
         id + ',' +
@@ -62,6 +64,7 @@ for (var region in offers['backup'].prices) {
         priceSEK + ',' +
         priceIDR + ',' +
         priceINR + ',' +
+        priceRUB + ',' +
         id
     );
 }
@@ -80,6 +83,7 @@ for (dimension in graduatedOffers) {
         priceSEK = priceUSD * currency.sek.conversion;
         priceIDR = priceUSD * currency.idr.conversion;
         priceINR = priceUSD * currency.inr.conversion;
+        priceRUB = priceUSD * currency.rub.conversion;
         id = dimension + '-' + region;
         console.log(
             id + ',' +
@@ -101,6 +105,7 @@ for (dimension in graduatedOffers) {
             priceSEK + ',' +
             priceIDR + ',' +
             priceINR + ',' +
+            priceRUB + ',' +
             id
         );
     }

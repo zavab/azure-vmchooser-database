@@ -29,6 +29,7 @@ console.log(
     'price_SEK,' +
     'price_IDR,' +
     'price_INR,' +
+    'price_RUB,' +
     '_id'
 );
 
@@ -204,6 +205,7 @@ for (var offer in offers) {
             var priceSEK = priceUSD * currency.sek.conversion;
             var priceIDR = priceUSD * currency.idr.conversion;
             var priceINR = priceUSD * currency.inr.conversion;
+            var priceRUB = priceUSD * currency.rub.conversion;
             id = 'sql-' + offer + '-' + region
             console.log(
                 offer + ',' +
@@ -232,6 +234,7 @@ for (var offer in offers) {
                 priceSEK + ',' +
                 priceIDR + ',' +
                 priceINR + ',' +
+                priceRUB + ',' +
                 id
             );
         }
