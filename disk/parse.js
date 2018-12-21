@@ -21,9 +21,6 @@ for(var offer in offers){
     if (price === undefined) {
       //console.log(picked);
     } else {
-        if (capacity === undefined) {
-          //console.log(picked);
-      } else {
         var priceUSD = offers[offer].prices[price].value;
         var priceEUR = priceUSD * currency.eur.conversion;
         var priceGBP = priceUSD * currency.gbp.conversion;
@@ -39,7 +36,6 @@ for(var offer in offers){
         var region = price;
         var name = "md-"+size+"-"+tier+"-"+price;
       console.log(name+",disk,"+tier+","+size+","+region+","+priceUSD+","+capacity+","+iops+","+throughput+","+name+","+priceUSD+","+priceEUR+","+priceGBP+","+priceAUD+","+priceJPY+","+priceCAD+","+priceDKK+","+priceCHF+","+priceSEK+","+priceIDR+","+priceINR+","+priceRUB);
-      }
     }
   }
 }
