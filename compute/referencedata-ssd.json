@@ -4141,7 +4141,7 @@
     "MaxNics": 8,
     "Bandwidth": 12800,
     "MaxDataDiskCount": 32,
-    "MaxDataDiskSizeGB":,
+    "MaxDataDiskSizeGB": -1,
     "MaxDataDiskIops": 1400000,
     "MaxDataDiskThroughputMBs": 9000,
     "MaxVmIops": 1400000,
