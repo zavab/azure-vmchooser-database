@@ -9,11 +9,19 @@ var pricing = {
     "ri3y": './apipricing-software-ri3y.json'
 };
 
-console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,SAPHANA,SAPLI,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,price_RUB,burstable,isolated,constrained,os,infiniband,gpu,sgx");
+var sku = {
+    "payg": './static-apipricing-software-payg.json',
+    "ri1y": './static-apipricing-software-1y.json',
+    "ri3y": './static-apipricing-software-3y.json'
+};
+
+console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,SAPHANA,SAPLI,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,price_RUB,burstable,isolated,constrained,os,infiniband,gpu,sgx,sku");
 
 for (var pricesheet in pricing) {
     var jsonfile = require(pricing[pricesheet]);
     var offers = jsonfile.offers;
+    var jsonsku = require(sku['payg']);
+    var skus = jsonsku.offers;
     for (var offer in offers) {
         var skip = false;
         var skipname = "";
@@ -163,6 +171,11 @@ for (var pricesheet in pricing) {
                     if (picked.LargeInstance !== undefined) {
                         SAPLI = picked.LargeInstance;
                     }
+                    // SKU Check
+                    var SKU = "Unknown";
+                    if (skus[offer] !== undefined) {
+                        SKU = skus[offer].partNumbers[region].sku;
+                    }
                     // Calc max disk size for VM
                     picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
                     // Print output
@@ -218,7 +231,9 @@ for (var pricesheet in pricing) {
                             os + "," +
                             infiniband + "," +
                             gpu + "," +
-                            sgx);
+                            sgx + "," +
+                            SKU
+                        );
                     } else {
                         // console.log(name + "@found@standard@" + pricesheet);
                     }
@@ -290,6 +305,11 @@ for (var pricesheet in pricing) {
                         if (picked.LargeInstance !== undefined) {
                             SAPLI = picked.LargeInstance;
                         }
+                        // SKU Check
+                        var SKU = "Unknown";
+                        if (skus[offer] !== undefined) {
+                            SKU = skus[offer].partNumbers[region].sku;
+                        }
                         // Calc max disk size for VM
                         picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
                         // Print output
@@ -344,7 +364,9 @@ for (var pricesheet in pricing) {
                                 os + "," +
                                 infiniband + "," +
                                 gpu + "," +
-                                sgx);
+                                sgx + "," +
+                                SKU
+                            );
                         } else {
                             // console.log(name + "@found@premium@" + pricesheet);
                         }
