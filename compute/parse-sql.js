@@ -173,8 +173,13 @@ for (var pricesheet in pricing) {
                     }
                     // SKU Check
                     var SKU = "Unknown";
-                    if (skus[offer] !== undefined) {
-                        SKU = skus[offer].partNumbers[region].sku;
+                    try {
+                        if (skus[offer] !== undefined) {
+                            SKU = skus[offer].partNumbers[region].sku;
+                        }
+                    }
+                    catch (e) {
+                        SKU = "Undefined";
                     }
                     // Calc max disk size for VM
                     picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
@@ -307,8 +312,13 @@ for (var pricesheet in pricing) {
                         }
                         // SKU Check
                         var SKU = "Unknown";
-                        if (skus[offer] !== undefined) {
-                            SKU = skus[offer].partNumbers[region].sku;
+                        try {
+                            if (skus[offer] !== undefined) {
+                                SKU = skus[offer].partNumbers[region].sku;
+                            }
+                        }
+                        catch (e) {
+                            SKU = "Undefined";
                         }
                         // Calc max disk size for VM
                         picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
