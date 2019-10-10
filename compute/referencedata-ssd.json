@@ -1639,6 +1639,29 @@
     "Constrained": "Yes"
   },
   {
+    "Name": "standard_e48sv3",
+    "Link": "standard_e48sv3",
+    "Type": "VM",
+    "ACU": 190,
+    "SSD": "Yes",
+    "NumberOfCores": 48,
+    "MemoryInMB": 393216,
+    "MaxNics": 8,
+    "Bandwidth": 24000,
+    "MaxDataDiskCount": 64,
+    "MaxDataDiskSizeGB": 262144,
+    "MaxDataDiskIops": 32000,
+    "MaxDataDiskThroughputMBs": 3840,
+    "MaxVmIops": 96000,
+    "MaxVmThroughputMBs": 768,
+    "ResourceDiskSizeInMB": -1,
+    "TempDiskSizeInGB": 768,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "Yes"
+  },
+  {
     "Name": "standard_e64sv3",
     "Link": "standard_e64sv3",
     "Type": "VM",
@@ -1886,6 +1909,30 @@
     "Isolated": "No"
   },
   {
+    "Name": "standard_f48sv2",
+    "Link": "standard_f48sv2",
+    "Type": "VM",
+    "ACU": 210,
+    "SSD": "Yes",
+    "NumberOfCores": 48,
+    "MemoryInMB": 98304,
+    "MaxNics": 8,
+    "Bandwidth": 21000,
+    "MaxDataDiskCount": 32,
+    "MaxDataDiskSizeGB": 131072,
+    "MaxDataDiskIops": 64000,
+    "MaxDataDiskThroughputMBs": 512,
+    "MaxVmIops": 96000,
+    "MaxVmThroughputMBs": 768,
+    "ResourceDiskSizeInMB": 256000,
+    "TempDiskSizeInGB": 384,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "Yes",
+    "Isolated": "No"
+  },
+  {
     "Name": "standard_f64sv2",
     "Link": "standard_f64sv2",
     "Type": "VM",
@@ -1934,8 +1981,8 @@
     "Isolated": "Yes"
   },
   {
-    "Name": "standard_ls16",
-    "Link": "standard_l16",
+    "Name": "standard_l16s",
+    "Link": "standard_l16s",
     "Type": "VM",
     "ACU": 180,
     "SSD": "Yes",
@@ -1957,8 +2004,8 @@
     "Hyperthreaded": "No"
   },
   {
-    "Name": "standard_ls32",
-    "Link": "standard_l32",
+    "Name": "standard_l32s",
+    "Link": "standard_l32s",
     "Type": "VM",
     "ACU": 180,
     "SSD": "Yes",
@@ -1981,8 +2028,8 @@
     "Isolated": "Yes"
   },
   {
-    "Name": "standard_ls4",
-    "Link": "standard_l4",
+    "Name": "standard_l4s",
+    "Link": "standard_l4s",
     "Type": "VM",
     "ACU": 180,
     "SSD": "Yes",
@@ -2004,8 +2051,8 @@
     "Hyperthreaded": "No"
   },
   {
-    "Name": "standard_ls8",
-    "Link": "standard_l8",
+    "Name": "standard_l8s",
+    "Link": "standard_l8s",
     "Type": "VM",
     "ACU": 180,
     "SSD": "Yes",
@@ -2028,7 +2075,7 @@
   },
   {
     "Name": "standard_nd6s",
-    "Link": "standard_nd6",
+    "Link": "standard_nd6s",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -2052,7 +2099,7 @@
   },
   {
     "Name": "standard_nd12s",
-    "Link": "standard_nd12",
+    "Link": "standard_nd12s",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -2076,7 +2123,7 @@
   },
   {
     "Name": "standard_nd24s",
-    "Link": "standard_nd24",
+    "Link": "standard_nd24s",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -2100,7 +2147,7 @@
   },
   {
     "Name": "standard_nd24rs",
-    "Link": "standard_nd24r",
+    "Link": "standard_nd24rs",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -2125,7 +2172,7 @@
   },
   {
     "Name": "standard_nc6sv2",
-    "Link": "standard_nc6v2",
+    "Link": "standard_nc6sv2",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -2149,7 +2196,7 @@
   },
   {
     "Name": "standard_nc12sv2",
-    "Link": "standard_nc12v2",
+    "Link": "standard_nc12sv2",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -2197,7 +2244,7 @@
   },
   {
     "Name": "standard_nc24rsv2",
-    "Link": "standard_nc24rv2",
+    "Link": "standard_nc24rsv2",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -4634,8 +4681,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_e64av3",
-    "Link": "standard_e64av3",
+    "Name": "standard_e64asv3",
+    "Link": "standard_e64avs3",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -4654,6 +4701,54 @@
     "TempDiskIops": -1,
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "Yes"
+  },
+  {
+    "Name": "standard_hb60rs",
+    "Link": "standard_hb60rs",
+    "Type": "VM",
+    "ACU": 216,
+    "SSD": "Yes",
+    "NumberOfCores": 60,
+    "MemoryInMB": 245760,
+    "MaxNics": 1,
+    "Bandwidth": -1,
+    "MaxDataDiskCount": 4,
+    "MaxDataDiskSizeGB": -1,
+    "MaxDataDiskIops": -1,
+    "MaxDataDiskThroughputMBs": -1,
+    "MaxVmIops": -1,
+    "MaxVmThroughputMBs": -1,
+    "ResourceDiskSizeInMB": -1,
+    "TempDiskSizeInGB": 700,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Infiniband": "Yes",
+    "Hyperthreaded": "Yes"
+  },
+  {
+    "Name": "standard_hb60rs",
+    "Link": "standard_hb60rs",
+    "Type": "VM",
+    "ACU": 216,
+    "SSD": "Yes",
+    "NumberOfCores": 44,
+    "MemoryInMB": 360448,
+    "MaxNics": 1,
+    "Bandwidth": -1,
+    "MaxDataDiskCount": 4,
+    "MaxDataDiskSizeGB": -1,
+    "MaxDataDiskIops": -1,
+    "MaxDataDiskThroughputMBs": -1,
+    "MaxVmIops": -1,
+    "MaxVmThroughputMBs": -1,
+    "ResourceDiskSizeInMB": -1,
+    "TempDiskSizeInGB": 700,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Infiniband": "Yes",
     "Hyperthreaded": "Yes"
   }
 ]
