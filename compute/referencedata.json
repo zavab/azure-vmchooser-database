@@ -2235,8 +2235,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_d64av3",
-    "Link": "standard_d64av3",
+    "Name": "standard_e64av3",
+    "Link": "standard_e64av3",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
