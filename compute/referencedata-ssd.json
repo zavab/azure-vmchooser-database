@@ -4757,7 +4757,7 @@
   },
   {
     "Name": "standard_e64asv3",
-    "Link": "standard_e64avs3",
+    "Link": "standard_e64asv3",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
