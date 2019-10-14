@@ -54,7 +54,7 @@ for (var offer in offers) {
         var priceIDR = priceUSD * currency.idr.conversion;
         var priceINR = priceUSD * currency.inr.conversion;
         var priceRUB = priceUSD * currency.rub.conversion;
-        id = dimension + '-' + contract + '-' + region;
+        id = dimension + '-' + region;
         console.log(
             id + ',' +
             region + ',' +
