@@ -4457,8 +4457,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_d2asv3",
-    "Link": "standard_d2asv3",
+    "Name": "standard_d2asv4",
+    "Link": "standard_d2asv4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -4480,8 +4480,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_d4asv3",
-    "Link": "standard_d4asv3",
+    "Name": "standard_d4asv4",
+    "Link": "standard_d4asv4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -4503,8 +4503,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_d8asv3",
-    "Link": "standard_d8asv3",
+    "Name": "standard_d8asv4",
+    "Link": "standard_d8asv4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -4526,8 +4526,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_d16asv3",
-    "Link": "standard_d16asv3",
+    "Name": "standard_d16asv4",
+    "Link": "standard_d16asv4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -4549,8 +4549,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_d32asv3",
-    "Link": "standard_d32asv3",
+    "Name": "standard_d32asv4",
+    "Link": "standard_d32asv4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -4572,8 +4572,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_d48asv3",
-    "Link": "standard_d48asv3",
+    "Name": "standard_d48asv4",
+    "Link": "standard_d48asv4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -4595,8 +4595,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_d64asv3",
-    "Link": "standard_d64asv3",
+    "Name": "standard_d64asv4",
+    "Link": "standard_d64asv4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -4618,8 +4618,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_e2asv3",
-    "Link": "standard_e2asv3",
+    "Name": "standard_e2asv4",
+    "Link": "standard_e2asv4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -4641,8 +4641,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_e4asv3",
-    "Link": "standard_e4asv3",
+    "Name": "standard_e4asv4",
+    "Link": "standard_e4asv4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -4664,8 +4664,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_e8asv3",
-    "Link": "standard_e8asv3",
+    "Name": "standard_e8asv4",
+    "Link": "standard_e8asv4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -4687,8 +4687,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_e16asv3",
-    "Link": "standard_e16asv3",
+    "Name": "standard_e16asv4",
+    "Link": "standard_e16asv4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -4710,8 +4710,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_e32asv3",
-    "Link": "standard_e32asv3",
+    "Name": "standard_e32asv4",
+    "Link": "standard_e32asv4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -4733,8 +4733,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_e48asv3",
-    "Link": "standard_e48asv3",
+    "Name": "standard_e48asv4",
+    "Link": "standard_e48asv4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -4756,8 +4756,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_e64asv3",
-    "Link": "standard_e64asv3",
+    "Name": "standard_e64asv4",
+    "Link": "standard_e64asv4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -4869,6 +4869,52 @@
     "TempDiskSizeInGB": 4096,
     "TempDiskIops": 80000,
     "TempDiskReadMBs": 800,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "Yes"
+  },
+  {
+    "Name": "standard_m416sv2",
+    "Link": "standard_m416sv2",
+    "Type": "VM",
+    "ACU": -1,
+    "SSD": "Yes",
+    "NumberOfCores": 416,
+    "MemoryInMB": 5836800,
+    "MaxNics": 8,
+    "Bandwidth": 320000,
+    "MaxDataDiskCount": 64,
+    "MaxDataDiskSizeGB": -1,
+    "MaxDataDiskIops": -1,
+    "MaxDataDiskThroughputMBs": -1,
+    "MaxVmIops": 250000,
+    "MaxVmThroughputMBs": 1600,
+    "ResourceDiskSizeInMB": -1,
+    "TempDiskSizeInGB": 14080,
+    "TempDiskIops": 250000,
+    "TempDiskReadMBs": 1600,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "Yes"
+  },
+  {
+    "Name": "standard_m416msv2",
+    "Link": "standard_m416msv2",
+    "Type": "VM",
+    "ACU": -1,
+    "SSD": "Yes",
+    "NumberOfCores": 416,
+    "MemoryInMB": 11673600,
+    "MaxNics": 8,
+    "Bandwidth": 320000,
+    "MaxDataDiskCount": 64,
+    "MaxDataDiskSizeGB": -1,
+    "MaxDataDiskIops": -1,
+    "MaxDataDiskThroughputMBs": -1,
+    "MaxVmIops": 250000,
+    "MaxVmThroughputMBs": 1600,
+    "ResourceDiskSizeInMB": -1,
+    "TempDiskSizeInGB": 14080,
+    "TempDiskIops": 250000,
+    "TempDiskReadMBs": 1600,
     "TempDiskWriteMBs": -1,
     "Hyperthreaded": "Yes"
   },

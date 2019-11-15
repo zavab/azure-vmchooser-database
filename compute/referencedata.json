@@ -1935,8 +1935,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_d2av3",
-    "Link": "standard_d2av3",
+    "Name": "standard_d2av4",
+    "Link": "standard_d2av4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -1958,8 +1958,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_d4av3",
-    "Link": "standard_d4av3",
+    "Name": "standard_d4av4",
+    "Link": "standard_d4av4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -1981,8 +1981,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_d8av3",
-    "Link": "standard_d8av3",
+    "Name": "standard_d8av4",
+    "Link": "standard_d8av4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -2004,8 +2004,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_d16av3",
-    "Link": "standard_d16av3",
+    "Name": "standard_d16av4",
+    "Link": "standard_d16av4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -2027,8 +2027,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_d32av3",
-    "Link": "standard_d32av3",
+    "Name": "standard_d32av4",
+    "Link": "standard_d32av4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -2050,8 +2050,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_d48av3",
-    "Link": "standard_d48av3",
+    "Name": "standard_d48av4",
+    "Link": "standard_d48av4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -2073,8 +2073,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_d64av3",
-    "Link": "standard_d64av3",
+    "Name": "standard_d64av4",
+    "Link": "standard_d64av4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -2097,8 +2097,8 @@
   },
 
   {
-    "Name": "standard_e2av3",
-    "Link": "standard_e2av3",
+    "Name": "standard_e2av4",
+    "Link": "standard_e2av4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -2120,8 +2120,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_e4av3",
-    "Link": "standard_e4av3",
+    "Name": "standard_e4av4",
+    "Link": "standard_e4av4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -2143,8 +2143,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_e8av3",
-    "Link": "standard_e8av3",
+    "Name": "standard_e8av4",
+    "Link": "standard_e8av4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -2166,8 +2166,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_e16av3",
-    "Link": "standard_e16av3",
+    "Name": "standard_e16av4",
+    "Link": "standard_e16av4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -2189,8 +2189,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_e32av3",
-    "Link": "standard_e32av3",
+    "Name": "standard_e32av4",
+    "Link": "standard_e32av4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -2212,8 +2212,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_e48av3",
-    "Link": "standard_e48av3",
+    "Name": "standard_e48av4",
+    "Link": "standard_e48av4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
@@ -2235,8 +2235,8 @@
     "Hyperthreaded": "Yes"
   },
   {
-    "Name": "standard_e64av3",
-    "Link": "standard_e64av3",
+    "Name": "standard_e64av4",
+    "Link": "standard_e64av4",
     "Type": "VM",
     "ACU": -1,
     "SSD": "Yes",
