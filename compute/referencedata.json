@@ -2095,7 +2095,29 @@
     "TempDiskWriteMBs": -1,
     "Hyperthreaded": "Yes"
   },
-
+  {
+    "Name": "standard_d96av4",
+    "Link": "standard_d96av4",
+    "Type": "VM",
+    "ACU": -1,
+    "SSD": "Yes",
+    "NumberOfCores": 96,
+    "MemoryInMB": 393216,
+    "MaxNics": -1,
+    "Bandwidth": -1,
+    "MaxDataDiskCount": 0,
+    "MaxDataDiskSizeGB": -1,
+    "MaxDataDiskIops": -1,
+    "MaxDataDiskThroughputMBs": -1,
+    "MaxVmIops": -1,
+    "MaxVmThroughputMBs": -1,
+    "ResourceDiskSizeInMB": 2457600,
+    "TempDiskSizeInGB": 2400,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "Yes"
+  },
   {
     "Name": "standard_e2av4",
     "Link": "standard_e2av4",
