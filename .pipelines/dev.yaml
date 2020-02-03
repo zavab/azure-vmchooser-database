@@ -1,0 +1,71 @@
+name: $(Build.BuildId)
+resources:
+  repositories:
+  - repository: vmchooserdatabase
+    type: github
+    name: vmchooser/azure-vmchooser-database
+    endpoint: vmchooser
+trigger:
+  batch: true
+  branches:
+    include:
+    - develop
+stages:
+- stage: Prepare
+  displayName: Prepare
+  jobs: 
+  - job: Create Artifact
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps: 
+    - publish: $(Build.SourcesDirectory)/
+      artifact: vmchooserdatabasedevelop
+- stage: RetrieveProcessUpsert
+  displayName: Retrieve, Process & Upsert
+  jobs: 
+    - deployment: Currency
+      variables:
+      - group: vmchooser
+      - group: vmchooserdev
+      environment: 'vmchooserdev'
+      strategy: 
+        runOnce:
+          deploy:          
+            pool: 
+              vmImage: 'ubuntu-latest'
+            steps:
+            - download: current
+              artifact: vmchooserdatabasedevelop
+            - bash: |
+                wget -O currency.html https://azure.microsoft.com/en-us/pricing/calculator/ 
+                result=$(grep -E '\global.rawCurrencyData = {(.*?)\}}' currency.html | sed 's/global.rawCurrencyData = //g' | sed 's/;//g' > currency.json)
+                cp currency.json ../backup/currency.json
+                cp currency.json ../cloudsimple/currency.json
+                cp currency.json ../compute/currency.json
+                cp currency.json ../disk/currency.json
+                cp currency.json ../sql/currency.json
+              displayName: Currency
+              workingDirectory: $(Pipeline.Workspace)/deployvmchooserfrontend/currency
+    - deployment: Metadata
+      variables:
+      - group: vmchooser
+      - group: vmchooserdev
+      environment: 'vmchooserdev'
+      strategy: 
+        runOnce:
+          deploy:          
+            pool: 
+              vmImage: 'ubuntu-latest'
+            steps:
+            - download: current
+              artifact: vmchooserdatabasedevelop
+            - bash: |
+                wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
+                echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
+                sudo apt-get update
+                sudo apt-get install -y mongodb-org-tools
+                wget -O apipricing.json https://azure.microsoft.com/api/v2/pricing/virtual-machines-base/calculator/?showSkus=true&showGuids=true
+                nodejs parse.js > newpricing.csv
+                mongodbimport --ssl --host $(cosmosdbHostName) --port 10255 -u $(cosmosdbDatabaseName) -p $(cosmosdbPassword) -d $(cosmosdbDatabaseName) -c $(cosmosdbCollectionName) --type csv --file newpricing.csv --headerline --upsert
+              displayName: Currency
+              workingDirectory: $(Pipeline.Workspace)/deployvmchooserfrontend/metadata
