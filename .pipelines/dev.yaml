@@ -14,7 +14,7 @@ stages:
 - stage: Prepare
   displayName: Prepare
   jobs: 
-  - job: Create Artifact
+  - job: CreateArtifact
     pool:
       vmImage: 'ubuntu-latest'
     steps: 
