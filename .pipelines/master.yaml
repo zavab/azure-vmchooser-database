@@ -23,7 +23,7 @@ stages:
 - stage: RetrieveProcessUpsert
   displayName: Retrieve, Process & Upsert
   jobs: 
-    - deployment: Currency
+    - deployment: RetrieveProcessUpsert
       variables:
       - group: vmchooser
       - group: vmchooserdev
@@ -55,7 +55,7 @@ stages:
               workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/currency
             - bash: |
                 wget -O apipricing.json https://azure.microsoft.com/api/v2/pricing/virtual-machines-base/calculator/?showSkus=true&showGuids=true
-                nodejs parse.js > newpricing.csv
+                node parse.js > newpricing.csv
                 mongodbimport --ssl --host $(cosmosdbHostName) --port 10255 -u $(cosmosdbDatabaseName) -p $(cosmosdbPassword) -d $(cosmosdbDatabaseName) -c $(cosmosdbCollectionName) --type csv --file newpricing.csv --headerline --upsert
               displayName: Metadata
               workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/metadata
