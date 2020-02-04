@@ -56,6 +56,6 @@ stages:
             - bash: |
                 wget -O apipricing.json https://azure.microsoft.com/api/v2/pricing/virtual-machines-base/calculator/?showSkus=true&showGuids=true
                 node parse.js > newpricing.csv
-                mongodbimport --ssl --host $(cosmosdbHostName) --port 10255 -u $(cosmosdbDatabaseName) -p $(cosmosdbPassword) -d $(cosmosdbDatabaseName) -c $(cosmosdbCollectionName) --type csv --file newpricing.csv --headerline --upsert
+                mongoimport --ssl --host $(cosmosdbHostName) --port 10255 -u $(cosmosdbDatabaseName) -p $(cosmosdbPassword) -d $(cosmosdbDatabaseName) -c $(cosmosdbCollectionName) --type csv --file newpricing.csv --headerline --upsert
               displayName: Metadata
               workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/metadata
