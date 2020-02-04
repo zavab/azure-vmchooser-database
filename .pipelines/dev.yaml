@@ -45,7 +45,7 @@ stages:
                 cp currency.json ../disk/currency.json
                 cp currency.json ../sql/currency.json
               displayName: Currency
-              workingDirectory: $(Pipeline.Workspace)/deployvmchooserfrontend/currency
+              workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/currency
     - deployment: Metadata
       variables:
       - group: vmchooser
@@ -68,4 +68,4 @@ stages:
                 nodejs parse.js > newpricing.csv
                 mongodbimport --ssl --host $(cosmosdbHostName) --port 10255 -u $(cosmosdbDatabaseName) -p $(cosmosdbPassword) -d $(cosmosdbDatabaseName) -c $(cosmosdbCollectionName) --type csv --file newpricing.csv --headerline --upsert
               displayName: Currency
-              workingDirectory: $(Pipeline.Workspace)/deployvmchooserfrontend/metadata
+              workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/metadata
