@@ -37,6 +37,7 @@ stages:
             - download: current
               artifact: vmchooserdatabasedevelop
             - bash: |
+                ls -la
                 wget -O currency.html https://azure.microsoft.com/en-us/pricing/calculator/ 
                 result=$(grep -E '\global.rawCurrencyData = {(.*?)\}}' currency.html | sed 's/global.rawCurrencyData = //g' | sed 's/;//g' > currency.json)
                 cp currency.json ../backup/currency.json
@@ -45,7 +46,7 @@ stages:
                 cp currency.json ../disk/currency.json
                 cp currency.json ../sql/currency.json
               displayName: Currency
-              workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/currency
+              workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/
     - deployment: Metadata
       variables:
       - group: vmchooser
