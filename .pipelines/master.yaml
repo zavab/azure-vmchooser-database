@@ -71,3 +71,29 @@ stages:
                 mongoimport --ssl --host "$(cosmosdbDatabaseName).documents.azure.com" --port 10255 -u "$(cosmosdbDatabaseName)" -p "$(cosmosdbPassword)" -d "$(cosmosdbDatabaseName)" -c "$(cosmosdbCollectionName)" --type csv --file disk.csv --headerline --upsert --batchSize 1
               displayName: Disk
               workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/disk
+            - bash: |
+                wget -O cloudsimple.json "https://azure.microsoft.com/api/v2/pricing/azure-vmware-cloudsimple/calculator/"
+                node parse.js > cloudsimple.csv
+                mongoimport --ssl --host "$(cosmosdbDatabaseName).documents.azure.com" --port 10255 -u "$(cosmosdbDatabaseName)" -p "$(cosmosdbPassword)" -d "$(cosmosdbDatabaseName)" -c "$(cosmosdbCollectionName)" --type csv --file cloudsimple.csv --headerline --upsert --batchSize 1
+              displayName: CloudSimple
+              workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/disk
+            - bash: |
+                wget -O sql.json "https://azure.microsoft.com/api/v2/pricing/managed-disks/calculator/"
+                node parse.js > sql.csv
+                mongoimport --ssl --host "$(cosmosdbDatabaseName).documents.azure.com" --port 10255 -u "$(cosmosdbDatabaseName)" -p "$(cosmosdbPassword)" -d "$(cosmosdbDatabaseName)" -c "$(cosmosdbCollectionName)" --type csv --file sql.csv --headerline --upsert --batchSize 1
+              displayName: SQL
+              workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/sql
+            - bash: |
+                wget -O apipricing-base-payg.json "https://azure.microsoft.com/api/v2/pricing/virtual-machines-base/calculator/"
+                wget -O apipricing-base-1y.json "https://azure.microsoft.com/api/v2/pricing/virtual-machines-base-one-year/calculator/"
+                wget -O apipricing-base-3y.json "https://azure.microsoft.com/api/v2/pricing/virtual-machines-base-three-year/calculator/"
+                wget -O databricks.json "https://azure.microsoft.com/api/v2/pricing/databricks/calculator/"
+                node parse.js > compute.csv
+                mongoimport --ssl --host "$(cosmosdbDatabaseName).documents.azure.com" --port 10255 -u "$(cosmosdbDatabaseName)" -p "$(cosmosdbPassword)" -d "$(cosmosdbDatabaseName)" -c "$(cosmosdbCollectionName)" --type csv --file compute.csv --headerline --upsert --batchSize 1
+              displayName: Compute
+              workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/compute
+            - bash: |
+                node parse-sql.js > computesql.csv
+                mongoimport --ssl --host "$(cosmosdbDatabaseName).documents.azure.com" --port 10255 -u "$(cosmosdbDatabaseName)" -p "$(cosmosdbPassword)" -d "$(cosmosdbDatabaseName)" -c "$(cosmosdbCollectionName)" --type csv --file computesql.csv --headerline --upsert --batchSize 1
+              displayName: ComputeSql
+              workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/compute
