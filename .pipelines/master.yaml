@@ -26,8 +26,8 @@ stages:
     - deployment: RetrieveProcessUpsert
       variables:
       - group: vmchooser
-      - group: vmchooserdev
-      environment: 'vmchooserdev'
+      - group: vmchooserprd
+      environment: 'vmchooserprd'
       strategy: 
         runOnce:
           deploy:          
