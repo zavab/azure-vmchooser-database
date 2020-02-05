@@ -44,7 +44,7 @@ stages:
               displayName: Mongodb
               workingDirectory: $(Pipeline.Workspace)/
             - bash: |
-                wget -O currency.html https://azure.microsoft.com/en-us/pricing/calculator/ 
+                wget -O currency.html "https://azure.microsoft.com/en-us/pricing/calculator/"
                 grep -E '\global.rawCurrencyData = {(.*?)\}}' currency.html | sed 's/global.rawCurrencyData = //g' | sed 's/;//g' > currency.json
                 cp currency.json ../backup/currency.json
                 cp currency.json ../cloudsimple/currency.json
@@ -54,7 +54,7 @@ stages:
               displayName: Currency
               workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/currency
             - bash: |
-                wget -O metadata.json https://azure.microsoft.com/api/v2/pricing/virtual-machines-base/calculator/?showSkus=true&showGuids=true
+                wget -O metadata.json "https://azure.microsoft.com/api/v2/pricing/virtual-machines-base/calculator/"
                 cat metadata.json
                 node parse.js > metadata.csv
                 cat metadata.csv
