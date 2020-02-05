@@ -97,3 +97,7 @@ stages:
                 mongoimport --ssl --host "$(cosmosdbDatabaseName).documents.azure.com" --port 10255 -u "$(cosmosdbDatabaseName)" -p "$(cosmosdbPassword)" -d "$(cosmosdbDatabaseName)" -c "$(cosmosdbCollectionName)" --type csv --file computesql.csv --headerline --upsert --batchSize 1
               displayName: ComputeSql
               workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/compute
+            - bash: |
+                node check.js
+              displayName: ComputeCheck
+              workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/compute
