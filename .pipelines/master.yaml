@@ -54,7 +54,8 @@ stages:
               displayName: Currency
               workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/currency
             - bash: |
-                wget -O apipricing.json https://azure.microsoft.com/api/v2/pricing/virtual-machines-base/calculator/?showSkus=true&showGuids=true
+                wget -O metadata.json https://azure.microsoft.com/api/v2/pricing/virtual-machines-base/calculator/?showSkus=true&showGuids=true
+                cat metadata.json
                 node parse.js > metadata.csv
                 cat metadata.csv
                 mongoimport --ssl --host "$(cosmosdbDatabaseName).documents.azure.com" --port 10255 -u "$(cosmosdbDatabaseName)" -p "$(cosmosdbPassword)" -d "$(cosmosdbDatabaseName)" -c "$(cosmosdbCollectionName)" --type csv --file metadata.csv --headerline --upsert --batchSize 1
