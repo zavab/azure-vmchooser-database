@@ -55,9 +55,19 @@ stages:
               workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/currency
             - bash: |
                 wget -O metadata.json "https://azure.microsoft.com/api/v2/pricing/virtual-machines-base/calculator/"
-                cat metadata.json
                 node parse.js > metadata.csv
-                cat metadata.csv
                 mongoimport --ssl --host "$(cosmosdbDatabaseName).documents.azure.com" --port 10255 -u "$(cosmosdbDatabaseName)" -p "$(cosmosdbPassword)" -d "$(cosmosdbDatabaseName)" -c "$(cosmosdbCollectionName)" --type csv --file metadata.csv --headerline --upsert --batchSize 1
               displayName: Metadata
               workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/metadata
+            - bash: |
+                wget -O backup.json "https://azure.microsoft.com/api/v2/pricing/backup/calculator/"
+                node parse.js > backup.csv
+                mongoimport --ssl --host "$(cosmosdbDatabaseName).documents.azure.com" --port 10255 -u "$(cosmosdbDatabaseName)" -p "$(cosmosdbPassword)" -d "$(cosmosdbDatabaseName)" -c "$(cosmosdbCollectionName)" --type csv --file backup.csv --headerline --upsert --batchSize 1
+              displayName: Backup
+              workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/backup
+            - bash: |
+                wget -O disk.json "https://azure.microsoft.com/api/v2/pricing/managed-disks/calculator/"
+                node parse.js > disk.csv
+                mongoimport --ssl --host "$(cosmosdbDatabaseName).documents.azure.com" --port 10255 -u "$(cosmosdbDatabaseName)" -p "$(cosmosdbPassword)" -d "$(cosmosdbDatabaseName)" -c "$(cosmosdbCollectionName)" --type csv --file disk.csv --headerline --upsert --batchSize 1
+              displayName: Disk
+              workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/disk

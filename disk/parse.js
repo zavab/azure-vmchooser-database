@@ -1,5 +1,5 @@
-var jsonfile = require('./apipricing.json');
-var disk = require('./disk.json');
+var jsonfile = require('./disk.json');
+var disk = require('./disk-reference.json');
 var currency = require('./currency.json');
 var offers = jsonfile.offers;
 
