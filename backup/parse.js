@@ -1,4 +1,4 @@
-var jsonfile = require('./backuppricing.json');
+var jsonfile = require('./backup.json');
 var currency = require('./currency.json');
 var offers = jsonfile.offers;
 

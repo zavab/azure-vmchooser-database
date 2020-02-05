@@ -1,4 +1,4 @@
-var jsonfile = require('./apipricing.json');
+var jsonfile = require('./metadata.json');
 var vmsizes = jsonfile.sizesPayGo;
 var regions = jsonfile.regions;
 
