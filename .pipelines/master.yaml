@@ -49,7 +49,7 @@ stages:
               displayName: AzLogin
               workingDirectory: $(Pipeline.Workspace)/
             - bash: |
-                az cosmosdb mongodb collection throughput update -g "vmchooser-dev-core" --account-name "$(cosmosdbDatabaseName)" --database-name "$(cosmosdbDatabaseName)" --name "$(cosmosdbCollectionName)" --throughput 10000 
+                az cosmosdb mongodb collection throughput update -g "vmchooser-prd-core" --account-name "$(cosmosdbDatabaseName)" --database-name "$(cosmosdbDatabaseName)" --name "$(cosmosdbCollectionName)" --throughput 10000 
               displayName: ScaleUp
               workingDirectory: $(Pipeline.Workspace)/
             - bash: |
@@ -111,6 +111,6 @@ stages:
               displayName: ComputeCheck
               workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasemaster/compute
             - bash: |
-                az cosmosdb mongodb collection throughput update -g "vmchooser-dev-core" --account-name "$(cosmosdbDatabaseName)" --database-name "$(cosmosdbDatabaseName)" --name "$(cosmosdbCollectionName)" --throughput 400 
+                az cosmosdb mongodb collection throughput update -g "vmchooser-prd-core" --account-name "$(cosmosdbDatabaseName)" --database-name "$(cosmosdbDatabaseName)" --name "$(cosmosdbCollectionName)" --throughput 400 
               displayName: ScaleDown
               workingDirectory: $(Pipeline.Workspace)/
