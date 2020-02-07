@@ -13,6 +13,9 @@ trigger:
 schedules:
 - cron: "0 12 * * 6"
   displayName: Weekly Saturday
+  branches:
+    include:
+    - develop
   always: true
 stages:
 - stage: Prepare
