@@ -34,7 +34,7 @@ stages:
       variables:
       - group: vmchooser
       - group: vmchooserdev
-      environment: 'vmchooserdev'
+      environment: 'vmchooserdevdb'
       strategy: 
         runOnce:
           deploy:          
