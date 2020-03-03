@@ -34,7 +34,7 @@ stages:
       variables:
       - group: vmchooser
       - group: vmchooserprd
-      environment: 'vmchooserprd'
+      environment: 'vmchooserprddb'
       strategy: 
         runOnce:
           deploy:          
