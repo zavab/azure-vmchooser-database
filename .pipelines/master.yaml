@@ -95,7 +95,7 @@ stages:
               displayName: CloudSimple
               workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasemaster/cloudsimple
             - bash: |
-                wget -O sql.json "https://azure.microsoft.com/api/v2/pricing/managed-disks/calculator/"
+                wget -O sql.json "https://azure.microsoft.com/api/v3/pricing/sql-database/calculator/"
                 node parse.js > sql.csv
                 mongoimport --ssl --host "$(cosmosdbDatabaseName).documents.azure.com" --port 10255 -u "$(cosmosdbDatabaseName)" -p "$(cosmosdbPassword)" -d "$(cosmosdbDatabaseName)" -c "$(cosmosdbCollectionName)" --type csv --file sql.csv --headerline --upsert
               displayName: SQL
