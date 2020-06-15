@@ -22,6 +22,28 @@
     "Hyperthreaded": "No"
   },
   {
+    "Name": "basic_a0",
+    "Type": "VM",
+    "ACU": 43,
+    "SSD": "No",
+    "NumberOfCores": 1,
+    "MemoryInMB": 768,
+    "MaxNics": 2,
+    "Bandwidth": -1,
+    "MaxDataDiskCount": 1,
+    "MaxDataDiskSizeGB": 4096,
+    "MaxDataDiskIops": 300,
+    "MaxDataDiskThroughputMBs": 60,
+    "MaxVmIops": 300,
+    "MaxVmThroughputMBs": 60,
+    "ResourceDiskSizeInMB": 20480,
+    "TempDiskSizeInGB": 20,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "No"
+  },
+  {
     "Name": "basic_a1",
     "Type": "VM",
     "ACU": 50,
