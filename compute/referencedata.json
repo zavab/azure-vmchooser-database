@@ -1,5 +1,159 @@
 [
   {
+    "Name": "standard_d2v4",
+    "Type": "VM",
+    "ACU": 210,
+    "SSD": "No",
+    "NumberOfCores": 2,
+    "MemoryInMB": -1,
+    "MaxNics": 2,
+    "Bandwidth": 1000,
+    "MaxDataDiskCount": 4,
+    "MaxDataDiskSizeGB": -1,
+    "MaxDataDiskIops": -1,
+    "MaxDataDiskThroughputMBs": -1,
+    "MaxVmIops": -1,
+    "MaxVmThroughputMBs": -1,
+    "ResourceDiskSizeInMB": -1,
+    "TempDiskSizeInGB": -1,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "Yes"
+  },
+  {
+    "Name": "standard_d4v4",
+    "Type": "VM",
+    "ACU": 210,
+    "SSD": "No",
+    "NumberOfCores": 4,
+    "MemoryInMB": -1,
+    "MaxNics": 2,
+    "Bandwidth": 2000,
+    "MaxDataDiskCount": 8,
+    "MaxDataDiskSizeGB": -1,
+    "MaxDataDiskIops": -1,
+    "MaxDataDiskThroughputMBs": -1,
+    "MaxVmIops": -1,
+    "MaxVmThroughputMBs": -1,
+    "ResourceDiskSizeInMB": -1,
+    "TempDiskSizeInGB": -1,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "Yes"
+  },
+  {
+    "Name": "standard_d8v4",
+    "Type": "VM",
+    "ACU": 210,
+    "SSD": "No",
+    "NumberOfCores": 8,
+    "MemoryInMB": -1,
+    "MaxNics": 4,
+    "Bandwidth": 4000,
+    "MaxDataDiskCount": 16,
+    "MaxDataDiskSizeGB": -1,
+    "MaxDataDiskIops": -1,
+    "MaxDataDiskThroughputMBs": -1,
+    "MaxVmIops": -1,
+    "MaxVmThroughputMBs": -1,
+    "ResourceDiskSizeInMB": -1,
+    "TempDiskSizeInGB": -1,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "Yes"
+  },
+  {
+    "Name": "standard_d16v4",
+    "Type": "VM",
+    "ACU": 210,
+    "SSD": "No",
+    "NumberOfCores": 16,
+    "MemoryInMB": -1,
+    "MaxNics": 8,
+    "Bandwidth": 8000,
+    "MaxDataDiskCount": 32,
+    "MaxDataDiskSizeGB": -1,
+    "MaxDataDiskIops": -1,
+    "MaxDataDiskThroughputMBs": -1,
+    "MaxVmIops": -1,
+    "MaxVmThroughputMBs": -1,
+    "ResourceDiskSizeInMB": -1,
+    "TempDiskSizeInGB": -1,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "Yes"
+  },
+  {
+    "Name": "standard_d32v4",
+    "Type": "VM",
+    "ACU": 210,
+    "SSD": "No",
+    "NumberOfCores": 32,
+    "MemoryInMB": -1,
+    "MaxNics": 8,
+    "Bandwidth": 16000,
+    "MaxDataDiskCount": 32,
+    "MaxDataDiskSizeGB": -1,
+    "MaxDataDiskIops": -1,
+    "MaxDataDiskThroughputMBs": -1,
+    "MaxVmIops": -1,
+    "MaxVmThroughputMBs": -1,
+    "ResourceDiskSizeInMB": -1,
+    "TempDiskSizeInGB": -1,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "Yes"
+  },
+  {
+    "Name": "standard_d48v4",
+    "Type": "VM",
+    "ACU": 210,
+    "SSD": "No",
+    "NumberOfCores": 48,
+    "MemoryInMB": -1,
+    "MaxNics": 8,
+    "Bandwidth": 24000,
+    "MaxDataDiskCount": 32,
+    "MaxDataDiskSizeGB": -1,
+    "MaxDataDiskIops": -1,
+    "MaxDataDiskThroughputMBs": -1,
+    "MaxVmIops": -1,
+    "MaxVmThroughputMBs": -1,
+    "ResourceDiskSizeInMB": -1,
+    "TempDiskSizeInGB": -1,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "Yes"
+  },
+  {
+    "Name": "standard_d64v4",
+    "Type": "VM",
+    "ACU": 210,
+    "SSD": "No",
+    "NumberOfCores": 64,
+    "MemoryInMB": -1,
+    "MaxNics": 8,
+    "Bandwidth": 30000,
+    "MaxDataDiskCount": 32,
+    "MaxDataDiskSizeGB": -1,
+    "MaxDataDiskIops": -1,
+    "MaxDataDiskThroughputMBs": -1,
+    "MaxVmIops": -1,
+    "MaxVmThroughputMBs": -1,
+    "ResourceDiskSizeInMB": -1,
+    "TempDiskSizeInGB": -1,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "Yes"
+  },
+  {
     "Name": "standard_d2dv4",
     "Type": "VM",
     "ACU": 210,
@@ -19,7 +173,7 @@
     "TempDiskIops": -1,
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "Yes"
   },
   {
     "Name": "standard_d4dv4",
@@ -41,7 +195,7 @@
     "TempDiskIops": -1,
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "Yes"
   },
   {
     "Name": "standard_d8dv4",
@@ -63,7 +217,7 @@
     "TempDiskIops": -1,
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "Yes"
   },
   {
     "Name": "standard_d16dv4",
@@ -85,7 +239,7 @@
     "TempDiskIops": -1,
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "Yes"
   },
   {
     "Name": "standard_d32dv4",
@@ -107,7 +261,7 @@
     "TempDiskIops": -1,
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "Yes"
   },
   {
     "Name": "standard_d48dv4",
@@ -129,7 +283,7 @@
     "TempDiskIops": -1,
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "Yes"
   },
   {
     "Name": "standard_d64dv4",
@@ -151,7 +305,7 @@
     "TempDiskIops": -1,
     "TempDiskReadMBs": -1,
     "TempDiskWriteMBs": -1,
-    "Hyperthreaded": "No"
+    "Hyperthreaded": "Yes"
   },
   {
     "Name": "basic_a0",
@@ -940,7 +1094,7 @@
     "Hyperthreaded": "No"
   },
   {
-    "Name": "standard_d15v2",
+    "Name": "standard_d15iv2",
     "Type": "VM",
     "ACU": 210,
     "SSD": "No",
@@ -961,6 +1115,28 @@
     "TempDiskWriteMBs": -1,
     "Hyperthreaded": "No",
     "Isolated": "Yes"
+  },
+  {
+    "Name": "standard_d15v2",
+    "Type": "VM",
+    "ACU": 210,
+    "SSD": "No",
+    "NumberOfCores": 20,
+    "MemoryInMB": 143360,
+    "MaxNics": 8,
+    "Bandwidth": "20000",
+    "MaxDataDiskCount": 64,
+    "MaxDataDiskSizeGB": 262144,
+    "MaxDataDiskIops": 32000,
+    "MaxDataDiskThroughputMBs": 3840,
+    "MaxVmIops": 32000,
+    "MaxVmThroughputMBs": 3840,
+    "ResourceDiskSizeInMB": 286720,
+    "TempDiskSizeInGB": 280,
+    "TempDiskIops": -1,
+    "TempDiskReadMBs": -1,
+    "TempDiskWriteMBs": -1,
+    "Hyperthreaded": "No"
   },
   {
     "Name": "standard_d2",
