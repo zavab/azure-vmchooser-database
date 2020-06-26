@@ -10,18 +10,18 @@ for (var offer in offers) {
                 var type = offername[0];
                 var cores = offername[1];
                 var contract = offername[3];
-                var priceUSD = price.value;
-                var priceEUR = priceUSD * currency.eur.conversion;
-                var priceGBP = priceUSD * currency.gbp.conversion;
-                var priceAUD = priceUSD * currency.aud.conversion;
-                var priceJPY = priceUSD * currency.jpy.conversion;
-                var priceCAD = priceUSD * currency.cad.conversion;
-                var priceDKK = priceUSD * currency.dkk.conversion;
-                var priceCHF = priceUSD * currency.chf.conversion;
-                var priceSEK = priceUSD * currency.sek.conversion;
-                var priceIDR = priceUSD * currency.idr.conversion;
-                var priceINR = priceUSD * currency.inr.conversion;
-                var priceRUB = priceUSD * currency.rub.conversion;
+                var price_USD = price.value;
+                var price_EUR = priceUSD * currency.eur.conversion;
+                var price_GBP = priceUSD * currency.gbp.conversion;
+                var price_AUD = priceUSD * currency.aud.conversion;
+                var price_JPY = priceUSD * currency.jpy.conversion;
+                var price_CAD = priceUSD * currency.cad.conversion;
+                var price_DKK = priceUSD * currency.dkk.conversion;
+                var price_CHF = priceUSD * currency.chf.conversion;
+                var price_SEK = priceUSD * currency.sek.conversion;
+                var price_IDR = priceUSD * currency.idr.conversion;
+                var price_INR = priceUSD * currency.inr.conversion;
+                var price_RUB = priceUSD * currency.rub.conversion;
                 console.log(
                     offer + 
                     ",openshiftlicense," + 
