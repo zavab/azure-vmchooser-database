@@ -15,3 +15,4 @@ disk/currency.json
 sql/currency.json
 sql/sql.csv
 sql/sql.json
+compute/openshift.json
