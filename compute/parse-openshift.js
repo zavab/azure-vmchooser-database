@@ -6,15 +6,15 @@ var openshift = require('./openshift.json');
 var debug = false;
 
 var pricing = {
-    "payg": './apipricing-base-payg.json',
-    "ri1y": './apipricing-base-1y.json',
-    "ri3y": './apipricing-base-3y.json'
+    "payg": './apipricing-software.json',
+    "ri1y": './apipricing-software-ri1y.json',
+    "ri3y": './apipricing-software-ri3y.json'
 };
 
 var sku = {
-    "payg": './static-apipricing-base-payg.json',
-    "ri1y": './static-apipricing-base-1y.json',
-    "ri3y": './static-apipricing-base-3y.json'
+    "payg": './static-apipricing-software-payg.json',
+    "ri1y": './static-apipricing-software-1y.json',
+    "ri3y": './static-apipricing-software-3y.json'
 };
 
 console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,SAPHANA,SAPLI,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,price_RUB,burstable,isolated,constrained,os,infiniband,gpu,sgx,sku,OpenShiftAppNodes,OpenShiftMasterNodes,dbu");
@@ -25,31 +25,68 @@ for (var pricesheet in pricing) {
     var jsonsku = require(sku['payg']);
     var skus = jsonsku.offers;
     for (var offer in offers) {
+        var skip = false;
+        var skipname = "";
+        // if (offer.indexOf("linux") > -1) {
+        var offername = offer.split("-");
+        var objectcount = offername.length;
+        if (objectcount === 4) {
+            // biztalk-enterprise-m128s-standard 
+            var os = offername[0] + "-" + offername[1];
+            var name = offername[2];
+            var tier = offername[3];
+        }
+        if (objectcount === 5) {
+            if (offername[0] === 'ubuntu') {
+                // ubuntu-advantage-essential-gs5-16-standard
+                var os = offername[0] + "-" + offername[1] + "-" + offername[2];
+                var name = offername[3];
+                var tier = offername[4];
+            } else {
+                // biztalk-enterprise-m128-32ms-standard
+                var os = offername[0] + "-" + offername[1];
+                var name = offername[2] + "-" + offername[3];
+                var tier = offername[4];
+            }
+        }
+        if (objectcount === 6) {
+            if (offername[0] === 'ubuntu') {
+                // ubuntu-advantage-essential-m64-32ms-standard
+                var os = offername[0] + "-" + offername[1] + "-" + offername[2];
+                var name = offername[3] + "-" + offername[4];;
+                var tier = offername[5];
+            } else {
+                // biztalk-enterprise-ds14-4-v2-standard
+                var os = offername[0] + "-" + offername[1];
+                var name = offername[2] + "-" + offername[3] + "-" + offername[4];
+                var tier = offername[5];
+            }
+        }
+        if (debug) {
+            console.log(os + "/" + name + "/" + tier);
+        }
         var cores = offers[offer].cores;
         var mem = offers[offer].ram;
-        var offername = offer.split("-");
-        var os = offername[0];
-        var name = offername[1];
-        var tier = offername[2];
-        if (offername.length > 3) {
-            if (offername[3] !== "v3" && offername[3] !== "v2") {
-                // console.log('v1');
-                os = offername[0];
-                name = offername[1] + '-' + offername[2];
-                tier = offername[3];
-            } else {
-                // console.log('v2 or v3');
-                os = offername[0];
-                name = offername[1] + '-' + offername[2] + '-' + offername[3];
-                tier = offername[4];
-            }
-        } 
-        var filtertier = tier;
         if (offer.indexOf("lowpriority") > -1) {
-            filtertier = "standard";
+            var filtertier = "standard";
+        } else {
+            var filtertier = tier;
         }
         if (offer.indexOf("promo") > -1) {
-            //console.log("Skipping promo offer : "+offer);
+            skip = true;
+            skipname = "promo";
+        }
+        if (os === "sql-web" || os === "sql-standard" || os === "sql-enterprise" ) {
+            skip = false;
+            skipname = "promo";
+        } else {
+            skip = true;
+            skipname = os;
+        }
+        if (skip) {
+            if (debug) {
+                console.log("Skipping : " + skipname);
+            }
         } else {
             for (var price in offers[offer].prices) {
                 var region = price;
@@ -75,7 +112,7 @@ for (var pricesheet in pricing) {
                 // Checkup for non-ssd powered machines
                 if (picked === undefined) {
                     if (debug) {
-                        console.log(name + "@notfound@standard@" + pricesheet);
+                        // console.log(name + "@notfound@standard@" + pricesheet);
                     }
                 } else {
                     if (picked.hasOwnProperty("BaseCpuPerformancePct")) {
@@ -91,15 +128,15 @@ for (var pricesheet in pricing) {
                     if (picked.Burstable !== undefined) {
                         var burstable = "Yes";
                     }
-                    // Infiniband check
-                    var infiniband = "No";
-                    if (picked.Infiniband !== undefined) {
-                        infiniband = picked.Infiniband;
-                    }
                     // GPU check
                     var gpu = "No";
                     if (picked.GPU !== undefined) {
                         gpu = picked.GPU;
+                    }
+                    // Infiniband check
+                    var infiniband = "No";
+                    if (picked.Infiniband !== undefined) {
+                        infiniband = picked.Infiniband;
                     }
                     // SGX check
                     var sgx = "No";
@@ -115,7 +152,6 @@ for (var pricesheet in pricing) {
                     var constrained = "No";
                     if (picked.Constrained !== undefined) {
                         constrained = "Yes";
-                        cores = picked.NumberOfCores;
                     }
                     // SAP HANA check
                     var SAPHANA = "No";
@@ -153,7 +189,7 @@ for (var pricesheet in pricing) {
                         dbuslug = databricks.offers[dboffer].vmOfferSlug;
                         if (offer === dbuslug) {
                             DBU = databricks.offers[dboffer].dbuCount;
-                        }   
+                        }
                     }
                     // OpenShift Lookup
                     var OpenShiftAppNodes = "No";
@@ -170,12 +206,8 @@ for (var pricesheet in pricing) {
                             OpenShiftMasterNodes = "Yes";
                         }
                     }
-                    // Calc storage specs (standard storage)
-                    picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 32 * 1024; // current max disk size is 32TB
-                    picked.MaxDataDiskIops = picked.MaxDataDiskCount * 500; // current max disk iops is 500 for a non-premium
-                    picked.MaxDataDiskThroughputMBs = picked.MaxDataDiskCount * 60; // curent max disks throughput is 60 MB/s for non-premium
-                    picked.MaxVmIops = picked.MaxDataDiskIops; 
-                    picked.MaxVmThroughputMBs = picked.MaxDataDiskThroughputMBs;
+                    // Calc max disk size for VM
+                    picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
                     // Print output
 
                     if (debug === false) {
@@ -236,7 +268,7 @@ for (var pricesheet in pricing) {
                             DBU
                         );
                     } else {
-                        console.log(name + "@found@standard@" + pricesheet);
+                        // console.log(name + "@found@standard@" + pricesheet);
                     }
                 } 
                 // Checkup for SSD Powered (or other variants, like Isolated) Machines that leverage the same pricing SKU
@@ -271,7 +303,7 @@ for (var pricesheet in pricing) {
                         if (picked.Infiniband !== undefined) {
                             infiniband = picked.Infiniband;
                         }
-                        // SGX check
+                        // SGX Check
                         var sgx = "No";
                         if (picked.SGX !== undefined) {
                             sgx = picked.SGX;
@@ -340,7 +372,7 @@ for (var pricesheet in pricing) {
                             }
                         }
                         // Calc max disk size for VM
-                        picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 32 * 1024; // current max disk size is 32TB
+                        picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
                         // Print output
                         if (debug === false) {
                             console.log(
@@ -400,12 +432,12 @@ for (var pricesheet in pricing) {
                                 DBU
                             );
                         } else {
-                            console.log(name + "@found@premium@" + pricesheet);
+                            // console.log(name + "@found@premium@" + pricesheet);
                         }
                     }
                 } else {
                     if (debug) {
-                        console.log(name + "@notfound@premium@" + pricesheet);
+                        // console.log(name + "@notfound@premium@" + pricesheet);
                     }
                 }
             }
