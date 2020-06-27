@@ -2,6 +2,7 @@ var reference = require('./referencedata.json');
 var referencessd = require('./referencedata-ssd.json');
 var currency = require('./currency.json');
 var databricks = require('./databricks.json');
+var openshift = require('./openshift.json');
 var debug = false;
 
 var pricing = {
@@ -16,7 +17,7 @@ var sku = {
     "ri3y": './static-apipricing-base-3y.json'
 };
 
-console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,SAPHANA,SAPLI,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,price_RUB,burstable,isolated,constrained,os,infiniband,gpu,sgx,sku,dbu");
+console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,SAPHANA,SAPLI,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,price_RUB,burstable,isolated,constrained,os,infiniband,gpu,sgx,sku,OpenShiftAppNodes,OpenShiftMasterNodes,dbu");
 
 for (var pricesheet in pricing) {
     var jsonfile = require(pricing[pricesheet]);
@@ -154,6 +155,21 @@ for (var pricesheet in pricing) {
                             DBU = databricks.offers[dboffer].dbuCount;
                         }   
                     }
+                    // OpenShift Lookup
+                    var OpenShiftAppNodes = "No";
+                    for (var openshiftoffer in openshift.applicationNodeInstances) {
+                        dbuslug = openshift.applicationNodeInstances[openshiftoffer].vmOfferSlug;
+                        if (offer === dbuslug) {
+                            OpenShiftAppNodes = "Yes";
+                        }
+                    }
+                    var OpenShiftMasterNodes = "No";
+                    for (var openshiftoffer in openshift.masterNodesInstances) {
+                        dbuslug = openshift.masterNodesInstances[openshiftoffer].vmOfferSlug;
+                        if (offer === dbuslug) {
+                            OpenShiftMasterNodes = "Yes";
+                        }
+                    }
                     // Calc storage specs (standard storage)
                     picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 32 * 1024; // current max disk size is 32TB
                     picked.MaxDataDiskIops = picked.MaxDataDiskCount * 500; // current max disk iops is 500 for a non-premium
@@ -215,6 +231,8 @@ for (var pricesheet in pricing) {
                             gpu + "," +
                             sgx + "," +
                             SKU + "," +
+                            OpenShiftAppNodes + "," +
+                            OpenShiftMasterNodes + "," +
                             DBU
                         );
                     } else {
@@ -306,6 +324,21 @@ for (var pricesheet in pricing) {
                                 DBU = databricks.offers[dboffer].dbuCount;
                             }
                         }
+                        // OpenShift Lookup
+                        var OpenShiftAppNodes = "No";
+                        for (var openshiftoffer in openshift.applicationNodeInstances) {
+                            dbuslug = openshift.applicationNodeInstances[openshiftoffer].vmOfferSlug;
+                            if (offer === dbuslug) {
+                                OpenShiftAppNodes = "Yes";
+                            }
+                        }
+                        var OpenShiftMasterNodes = "No";
+                        for (var openshiftoffer in openshift.masterNodesInstances) {
+                            dbuslug = openshift.masterNodesInstances[openshiftoffer].vmOfferSlug;
+                            if (offer === dbuslug) {
+                                OpenShiftMasterNodes = "Yes";
+                            }
+                        }
                         // Calc max disk size for VM
                         picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 32 * 1024; // current max disk size is 32TB
                         // Print output
@@ -362,6 +395,8 @@ for (var pricesheet in pricing) {
                                 gpu + "," +
                                 sgx + "," +
                                 SKU + "," +
+                                OpenShiftAppNodes + "," +
+                                OpenShiftMasterNodes + "," +
                                 DBU
                             );
                         } else {

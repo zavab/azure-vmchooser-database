@@ -88,7 +88,7 @@ stages:
               displayName: Disk
               workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasemaster/disk
             - bash: |
-                wget -O cloudsimple.json "https://azure.microsoft.com/api/v2/pricing/azure-vmware-cloudsimple/calculator/"
+                wget -O cloudsimple.json "https://azure.microsoft.com/api/v2/pricing/azure-vmware/calculator/"
                 node parse.js > cloudsimple.csv
                 cat cloudsimple.csv
                 mongoimport --ssl --host "$(cosmosdbDatabaseName).documents.azure.com" --port 10255 -u "$(cosmosdbDatabaseName)" -p "$(cosmosdbPassword)" -d "$(cosmosdbDatabaseName)" -c "$(cosmosdbCollectionName)" --type csv --file cloudsimple.csv --headerline --upsert
@@ -105,6 +105,7 @@ stages:
                 wget -O apipricing-base-1y.json "https://azure.microsoft.com/api/v2/pricing/virtual-machines-base-one-year/calculator/"
                 wget -O apipricing-base-3y.json "https://azure.microsoft.com/api/v2/pricing/virtual-machines-base-three-year/calculator/"
                 wget -O databricks.json "https://azure.microsoft.com/api/v2/pricing/databricks/calculator/"
+                wget -O openshift.json "https://azure.microsoft.com/api/v2/pricing/openshift/calculator/"
                 node parse.js > compute.csv
                 mongoimport --ssl --host "$(cosmosdbDatabaseName).documents.azure.com" --port 10255 -u "$(cosmosdbDatabaseName)" -p "$(cosmosdbPassword)" -d "$(cosmosdbDatabaseName)" -c "$(cosmosdbCollectionName)" --type csv --file compute.csv --headerline --upsert
               displayName: Compute
@@ -116,6 +117,11 @@ stages:
                 node parse-sql.js > computesql.csv
                 mongoimport --ssl --host "$(cosmosdbDatabaseName).documents.azure.com" --port 10255 -u "$(cosmosdbDatabaseName)" -p "$(cosmosdbPassword)" -d "$(cosmosdbDatabaseName)" -c "$(cosmosdbCollectionName)" --type csv --file computesql.csv --headerline --upsert
               displayName: ComputeSql
+              workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasemaster/compute
+            - bash: |
+                node parse-openshift.js > openshift.csv
+                mongoimport --ssl --host "$(cosmosdbDatabaseName).documents.azure.com" --port 10255 -u "$(cosmosdbDatabaseName)" -p "$(cosmosdbPassword)" -d "$(cosmosdbDatabaseName)" -c "$(cosmosdbCollectionName)" --type csv --file openshift.csv --headerline --upsert
+              displayName: OpenShift
               workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasemaster/compute
             - bash: |
                 node check.js
