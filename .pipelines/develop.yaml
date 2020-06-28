@@ -122,7 +122,7 @@ stages:
                 node parse-openshift.js > openshift.csv
                 mongoimport --ssl --host "$(cosmosdbDatabaseName).documents.azure.com" --port 10255 -u "$(cosmosdbDatabaseName)" -p "$(cosmosdbPassword)" -d "$(cosmosdbDatabaseName)" -c "$(cosmosdbCollectionName)" --type csv --file openshift.csv --headerline --upsert
               displayName: OpenShift
-              workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasemaster/compute
+              workingDirectory: $(Pipeline.Workspace)/vmchooserdatabasedevelop/compute
             - bash: |
                 node check.js
               displayName: ComputeCheck
