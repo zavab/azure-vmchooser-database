@@ -131,3 +131,4 @@ stages:
                 az cosmosdb mongodb collection throughput update -g "vmchooser-prd-core" --account-name "$(cosmosdbDatabaseName)" --database-name "$(cosmosdbDatabaseName)" --name "$(cosmosdbCollectionName)" --throughput 400 
               displayName: ScaleDown
               workingDirectory: $(Pipeline.Workspace)/
+              condition: always()
