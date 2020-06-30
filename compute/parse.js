@@ -158,15 +158,15 @@ for (var pricesheet in pricing) {
                     // OpenShift Lookup
                     var OpenShiftAppNodes = "No";
                     for (var openshiftoffer in openshift.applicationNodeInstances) {
-                        dbuslug = openshift.applicationNodeInstances[openshiftoffer].vmOfferSlug;
-                        if (offer === dbuslug) {
+                        aroapp = openshift.applicationNodeInstances[openshiftoffer].slug;
+                        if (offer === aroapp) {
                             OpenShiftAppNodes = "Yes";
                         }
                     }
                     var OpenShiftMasterNodes = "No";
                     for (var openshiftoffer in openshift.masterNodesInstances) {
-                        dbuslug = openshift.masterNodesInstances[openshiftoffer].vmOfferSlug;
-                        if (offer === dbuslug) {
+                        aroworker = openshift.masterNodesInstances[openshiftoffer].slug;
+                        if (offer === aroworker) {
                             OpenShiftMasterNodes = "Yes";
                         }
                     }
@@ -327,15 +327,15 @@ for (var pricesheet in pricing) {
                         // OpenShift Lookup
                         var OpenShiftAppNodes = "No";
                         for (var openshiftoffer in openshift.applicationNodeInstances) {
-                            dbuslug = openshift.applicationNodeInstances[openshiftoffer].vmOfferSlug;
-                            if (offer === dbuslug) {
+                            aroapp = openshift.applicationNodeInstances[openshiftoffer].slug;
+                            if (offer === aroapp) {
                                 OpenShiftAppNodes = "Yes";
                             }
                         }
                         var OpenShiftMasterNodes = "No";
                         for (var openshiftoffer in openshift.masterNodesInstances) {
-                            dbuslug = openshift.masterNodesInstances[openshiftoffer].vmOfferSlug;
-                            if (offer === dbuslug) {
+                            aroworker = openshift.masterNodesInstances[openshiftoffer].slug;
+                            if (offer === aroworker) {
                                 OpenShiftMasterNodes = "Yes";
                             }
                         }
