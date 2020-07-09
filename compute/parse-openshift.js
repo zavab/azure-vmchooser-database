@@ -10,8 +10,7 @@ for (var offer in offers) {
                 var type = offername[0];
                 var cores = offername[1];
                 var contract = offername[3];
-                var category = offers[offer].category
-                var price_USD = price.value;
+                var price_USD = price;
                 var price_EUR = price_USD * currency.eur.conversion;
                 var price_GBP = price_USD * currency.gbp.conversion;
                 var price_AUD = price_USD * currency.aud.conversion;
@@ -28,7 +27,7 @@ for (var offer in offers) {
                     ",openshiftlicense," + 
                     cores + "," + 
                     contract + "," +  
-                    category + "," +  
+                    type + "," +  
                     price_USD + "," + 
                     price_EUR + "," + 
                     price_GBP + "," + 
