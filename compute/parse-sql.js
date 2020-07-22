@@ -2,6 +2,7 @@ var reference = require('./referencedata.json');
 var referencessd = require('./referencedata-ssd.json');
 var currency = require('./currency.json');
 var databricks = require('./databricks.json');
+var openshift = require('./openshift.json');
 var debug = false;
 
 var pricing = {
@@ -16,7 +17,7 @@ var sku = {
     "ri3y": './static-apipricing-software-3y.json'
 };
 
-console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,SAPHANA,SAPLI,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,price_RUB,burstable,isolated,constrained,os,infiniband,gpu,sgx,sku,dbu");
+console.log("name,type,contract,tier,cores,pcores,mem,region,price,ACU,SSD,MaxNics,Bandwidth,MaxDataDiskCount,MaxDataDiskSizeGB,MaxDataDiskIops,MaxDataDiskThroughputMBs,MaxVmIops,MaxVmThroughputMBs,ResourceDiskSizeInMB,TempDiskSizeInGB,TempDiskIops,TempDiskReadMBs,TempDiskWriteMBs,SAPS2T,SAPS3T,SAPHANA,SAPLI,Hyperthreaded,OfferName,_id,price_USD,price_EUR,price_GBP,price_AUD,price_JPY,price_CAD,price_DKK,price_CHF,price_SEK,price_IDR,price_INR,price_RUB,burstable,isolated,constrained,os,infiniband,gpu,sgx,sku,OpenShiftAppNodes,OpenShiftMasterNodes,dbu,category");
 
 for (var pricesheet in pricing) {
     var jsonfile = require(pricing[pricesheet]);
@@ -66,6 +67,14 @@ for (var pricesheet in pricing) {
         }
         var cores = offers[offer].cores;
         var mem = offers[offer].ram;
+        var memcoreratio = mem / cores;
+        var category = "generalpurpose"
+        if (memcoreratio < 4) {
+            var category = "computeoptimized"
+        }
+        if (memcoreratio > 4) {
+            var category = "memoryoptimized"
+        }
         if (offer.indexOf("lowpriority") > -1) {
             var filtertier = "standard";
         } else {
@@ -190,6 +199,21 @@ for (var pricesheet in pricing) {
                             DBU = databricks.offers[dboffer].dbuCount;
                         }
                     }
+                    // OpenShift Lookup
+                    var OpenShiftAppNodes = "No";
+                    for (var openshiftoffer in openshift.applicationNodeInstances) {
+                        aroapp = openshift.applicationNodeInstances[openshiftoffer].slug;
+                        if (offer === aroapp) {
+                            OpenShiftAppNodes = "Yes";
+                        }
+                    }
+                    var OpenShiftMasterNodes = "No";
+                    for (var openshiftoffer in openshift.masterNodesInstances) {
+                        aroworker = openshift.masterNodesInstances[openshiftoffer].slug;
+                        if (offer === aroworker) {
+                            OpenShiftMasterNodes = "Yes";
+                        }
+                    }
                     // Calc max disk size for VM
                     picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
                     // Print output
@@ -247,7 +271,10 @@ for (var pricesheet in pricing) {
                             gpu + "," +
                             sgx + "," +
                             SKU + "," +
-                            DBU
+                            OpenShiftAppNodes + "," +
+                            OpenShiftMasterNodes + "," +
+                            DBU + "," +
+                            category
                         );
                     } else {
                         // console.log(name + "@found@standard@" + pricesheet);
@@ -338,6 +365,21 @@ for (var pricesheet in pricing) {
                                 DBU = databricks.offers[dboffer].dbuCount;
                             }
                         }
+                        // OpenShift Lookup
+                        var OpenShiftAppNodes = "No";
+                        for (var openshiftoffer in openshift.applicationNodeInstances) {
+                            aroapp = openshift.applicationNodeInstances[openshiftoffer].slug;
+                            if (offer === aroapp) {
+                                OpenShiftAppNodes = "Yes";
+                            }
+                        }
+                        var OpenShiftMasterNodes = "No";
+                        for (var openshiftoffer in openshift.masterNodesInstances) {
+                            aroworker = openshift.masterNodesInstances[openshiftoffer].slug;
+                            if (offer === aroworker) {
+                                OpenShiftMasterNodes = "Yes";
+                            }
+                        }
                         // Calc max disk size for VM
                         picked.MaxDataDiskSizeGB = picked.MaxDataDiskCount * 4 * 1024; // current max disk size is 4TB
                         // Print output
@@ -394,7 +436,10 @@ for (var pricesheet in pricing) {
                                 gpu + "," +
                                 sgx + "," +
                                 SKU + "," +
-                                DBU
+                                OpenShiftAppNodes + "," +
+                                OpenShiftMasterNodes + "," +
+                                DBU + "," +
+                                category
                             );
                         } else {
                             // console.log(name + "@found@premium@" + pricesheet);
