@@ -165,8 +165,8 @@ for (var pricesheet in pricing) {
                     }
                     // OpenShift Lookup
                     var OpenShiftAppNodes = "No";
-                    for (var openshiftoffer in openshift.applicationNodeInstances) {
-                        aroapp = openshift.applicationNodeInstances[openshiftoffer].slug;
+                    for (var openshiftoffer in openshift.nodeInstances) {
+                        aroapp = openshift.nodeInstances[openshiftoffer].slug;
                         if (offer === aroapp) {
                             OpenShiftAppNodes = "Yes";
                         }
@@ -335,8 +335,8 @@ for (var pricesheet in pricing) {
                         }
                         // OpenShift Lookup
                         var OpenShiftAppNodes = "No";
-                        for (var openshiftoffer in openshift.applicationNodeInstances) {
-                            aroapp = openshift.applicationNodeInstances[openshiftoffer].slug;
+                        for (var openshiftoffer in openshift.nodeInstances) {
+                            aroapp = openshift.nodeInstances[openshiftoffer].slug;
                             if (offer === aroapp) {
                                 OpenShiftAppNodes = "Yes";
                             }
