@@ -11,8 +11,8 @@ trigger:
     include:
     - develop
 schedules:
-- cron: "0 12 * * 6"
-  displayName: Weekly Saturday
+- cron: "0 12 * * 1"
+  displayName: Weekly Monday
   branches:
     include:
     - develop
